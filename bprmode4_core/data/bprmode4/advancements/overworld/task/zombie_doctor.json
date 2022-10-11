@@ -1,0 +1,49 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:golden_apple"
+    },
+    "title": {
+      "translate": "%1$s%3427655$s",
+      "with": [
+        "Finally!.. Now Do It Again",
+        {
+          "translate": "advancement.bprmode4.overworld.task.zombie_doctor.title"
+        }
+      ]
+    },
+    "description": [
+      {
+        "translate": "%1$s%3427655$s",
+        "with": [
+          "Stand less than 3 blocks away from a Witch to have them splash you with Weakness.\n\n",
+          {
+            "translate": "advancement.bprmode4.overworld.task.zombie_doctor.description.1"
+          }
+        ],
+        "color": "gray"
+      },
+      {
+        "translate": "%1$s%3427655$s",
+        "with": [
+          "Cure a Zombie Villager splashed with Weakness by feeding them a Golden Apple.",
+          {
+            "translate": "advancement.bprmode4.overworld.task.zombie_doctor.description.2"
+          }
+        ],
+        "color": "gray"
+      }
+    ],
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "parent": "bprmode4:overworld/task/zombie_villager",
+  "criteria": {
+    "Cure Zombie Villager": {
+      "trigger": "minecraft:cured_zombie_villager",
+      "conditions": {}
+    }
+  }
+}

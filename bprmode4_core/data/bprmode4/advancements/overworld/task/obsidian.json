@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:obsidian"
+    },
+    "title": {
+      "translate": "%1$s%3427655$s",
+      "with": [
+        "Hopefully This Wasn't A Mistake...",
+        {
+          "translate": "advancement.bprmode4.overworld.commerce.obsidian.title"
+        }
+      ]
+    },
+    "description": {
+      "translate": "%1$s%3427655$s",
+      "with": [
+        "Make Obsidian",
+        {
+          "translate": "advancement.bprmode4.overworld.commerce.obsidian.description"
+        }
+      ],
+      "color": "gray"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "parent": "bprmode4:overworld/get/lava",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:placed_block"
+    }
+  }
+}

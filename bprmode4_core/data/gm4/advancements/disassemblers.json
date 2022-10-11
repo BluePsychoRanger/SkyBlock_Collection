@@ -1,0 +1,64 @@
+{
+  "display": {
+    "icon": {
+      "item": "tnt",
+      "nbt": "{CustomModelData:3420002}"
+    },
+    "title": {
+      "translate": "%1$s%3427655$s",
+      "with": [
+        "Disassemblers",
+        {
+          "translate": "advancement.bprmode4.disassemblers.title"
+        }
+      ]
+    },
+    "description": [
+      {
+        "translate": "%1$s%3427655$s",
+        "with": [
+          "Construct a Disassembler\nin a Custom Crafter with\nthe following recipe:\n",
+          {
+            "translate": "advancement.bprmode4.custom_crafters.description"
+          }
+        ],
+        "color": "gray"
+      },
+      {
+        "translate": "%1$s%3427657$s",
+        "with": [
+          {
+            "text": " I T I\n O S O\n C C C",
+            "font": "minecraft:default",
+            "color": "gray"
+          },
+          {
+            "translate": "gui.advancements.disassembler_recipe",
+            "font": "bprmode4:skyblock",
+            "color": "white"
+          }
+        ]
+      }
+    ],
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "gm4:custom_crafters",
+  "criteria": {
+    "Craft Disassembler": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:player_head"
+            ],
+            "nbt": "{gm4_machines:{id:\"disassembler\"}}"
+          }
+        ]
+      }
+    }
+  }
+}

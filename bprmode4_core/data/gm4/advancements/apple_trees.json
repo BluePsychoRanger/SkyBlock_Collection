@@ -1,0 +1,47 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:oak_sapling",
+      "nbt": "{CustomModelData:3420004,gm4_fruiting_trees:{item:{id:\"sapling\",type:\"apple\"}},gm4_podzol_rooting_soil:{id:\"apple_tree_sapling\"}}"
+    },
+    "title": {
+      "translate": "%1$s%3427655$s",
+      "with": [
+        "Apple Trees",
+        {
+          "translate": "advancement.bprmode4.overworld.apple_tree.title"
+        }
+      ]
+    },
+    "description": {
+      "translate": "%1$s%3427655$s",
+      "with": [
+        "Apples only drop from Apple Trees.  Purchase one from a Wandering Trader.",
+        {
+          "translate": "advancement.bprmode4.overworld.apple_tree.description"
+        }
+      ],
+      "color": "gray"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "gm4:calling_bell",
+  "criteria": {
+    "Apple Tree Sapling": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:oak_sapling"
+            ],
+            "nbt": "{CustomModelData:3420004,gm4_fruiting_trees:{item:{id:\"sapling\",type:\"apple\"}},gm4_podzol_rooting_soil:{id:\"apple_tree_sapling\"}}"
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:grass_block"
+      },
+      "title": {
+        "translate": "%1$s%3427655$s",
+        "with": [
+          "Overworld",
+          {
+            "translate": "advancement.bprmode4.overworld.root.title"
+          }
+        ]
+      },
+      "description": {
+        "translate": "%1$s%3427655$s",
+        "with": [
+          "",
+          {
+            "translate": "advancement.bprmode4.overworld.root.description"
+          }
+        ],
+        "color": "gray"
+      },
+      "background": "minecraft:textures/gui/advancements/backgrounds/stone.png",
+      "frame": "task",
+      "show_toast": false,
+      "announce_to_chat": false,
+      "hidden": false
+    },
+    "criteria": {
+      "Welcome": {
+        "trigger": "minecraft:tick",
+        "conditions": {}
+      }
+    }
+  }
+  

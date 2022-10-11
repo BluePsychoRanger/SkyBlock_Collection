@@ -1,0 +1,44 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:flint_and_steel"
+    },
+    "title": {
+      "translate": "%1$s%3427655$s",
+      "with": [
+        "A Whole New World",
+        {
+          "translate": "advancement.bprmode4.overworld.unlock.enter_nether.title"
+        }
+      ]
+    },
+    "description": {
+      "translate": "%1$s%3427655$s",
+      "with": [
+        "Enter The Nether",
+        {
+          "translate": "advancement.bprmode4.overworld.unlock.enter_nether.description"
+        }
+      ],
+      "color": "gray"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "parent": "bprmode4:overworld/task/obsidian",
+  "criteria": {
+    "entered_nether": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "minecraft:the_nether"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "entered_nether"
+    ]
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:carrot_on_a_stick"
+    },
+    "title": {
+      "translate": "%1$s%3427655$s",
+      "with": [
+        "Pig Tractors",
+        {
+          "translate": "advancement.bprmode4.pig_tractors.title"
+        }
+      ]
+    },
+    "description": [
+      {
+        "translate": "%1$s%3427655$s",
+        "with": [
+          "Harvest and Till quickly by holding a Carrot on a Stick while riding a Pig.\n",
+          {
+            "translate": "advancement.bprmode4.pig_tractors.description.1"
+          }
+        ],
+        "color": "gray"
+      },
+      {
+        "translate": "%1$s%3427655$s",
+        "with": [
+          "Seeds in your offhand will be planted after harvesting",
+          {
+            "translate": "advancement.bprmode4.pig_tractors.description.2"
+          }
+        ],
+        "color": "gray"
+      }
+    ],
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "bprmode4:overworld/task/passive_animals",
+  "criteria": {
+    "Pig Tractors": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

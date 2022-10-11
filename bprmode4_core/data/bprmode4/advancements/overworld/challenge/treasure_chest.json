@@ -1,0 +1,58 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:chest"
+    },
+    "title": {
+      "translate": "%1$s%3427655$s",
+      "with": [
+        "Underwater Loot Crate",
+        {
+          "translate": "advancement.bprmode4.overworld.challenge.treasure_chest.title"
+        }
+      ]
+    },
+    "description": {
+      "translate": "%1$s%3427655$s",
+      "with": [
+        "Open a Treasure Chest from Sunken Treasure",
+        {
+          "translate": "advancement.bprmode4.overworld.challenge.treasure_chest.description"
+        }
+      ],
+      "color": "gray"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "gm4:sunken_treasure",
+  "criteria": {
+    "Unlock Sunken Treasure Chest": {
+      "trigger": "minecraft:player_generates_container_loot",
+      "conditions": {
+        "loot_table": "gm4_sunken_treasure:chests/treasure_chest"
+      }
+    },
+    "Unlock Shipwreck Supply Chest": {
+      "trigger": "minecraft:player_generates_container_loot",
+      "conditions": {
+        "loot_table": "minecraft:chests/shipwreck_supply"
+      }
+    },
+    "Unlock Shipwreck Treasure Chest": {
+      "trigger": "minecraft:player_generates_container_loot",
+      "conditions": {
+        "loot_table": "minecraft:chests/shipwreck_treasure"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "Unlock Shipwreck Treasure Chest",
+      "Unlock Shipwreck Supply Chest",
+      "Unlock Sunken Treasure Chest"
+    ]
+  ]
+}

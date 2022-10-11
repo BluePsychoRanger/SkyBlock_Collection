@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:fishing_rod"
+    },
+    "title": {
+      "translate": "%1$s%3427655$s",
+      "with": [
+        "Void Fishing",
+        {
+          "translate": "advancement.bprmode4.void_fishing.title"
+        }
+      ]
+    },
+    "description": {
+      "translate": "%1$s%3427655$s",
+      "with": [
+        "Cast a line into the void",
+        {
+          "translate": "advancement.bprmode4.void_fishing.description"
+        }
+      ],
+      "color": "gray"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "gm4:undead_players",
+  "criteria": {
+    "Void Fishing": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

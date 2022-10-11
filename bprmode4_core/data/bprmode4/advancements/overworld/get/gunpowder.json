@@ -1,0 +1,45 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:gunpowder"
+    },
+    "title": {
+      "translate": "%1$s%3427655$s",
+      "with": [
+        "It Would Be A Ssshame...",
+        {
+          "translate": "advancement.bprmode4.overworld.obtain.gunpowder.title"
+        }
+      ]
+    },
+    "description": {
+      "translate": "%1$s%3427655$s",
+      "with": [
+        "Obtain Gunpowder",
+        {
+          "translate": "advancement.bprmode4.overworld.obtain.gunpowder.description"
+        }
+      ],
+      "color": "gray"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "parent": "bprmode4:overworld/task/mob_farm",
+  "criteria": {
+    "gunpowder": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:redstone"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

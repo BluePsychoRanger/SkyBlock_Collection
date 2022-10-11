@@ -1,0 +1,33 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:water_bucket"
+    },
+    "title": {
+      "translate": "%1$s%3427655$s",
+      "with": [
+        "Make An Infinite Water Source",
+        {
+          "translate": "advancement.bprmode4.overworld.task.infinite_water.title"
+        }
+      ]
+    },
+    "description": {
+      "translate": "%1$s%3427655$s",
+      "with": [
+        "Create a 2x2 or 1x3 infinite water source",
+        {
+          "translate": "advancement.bprmode4.overworld.task.infinite_water.description"
+        }
+      ],
+      "color": "gray"
+    },
+    "announce_to_chat": false
+  },
+  "parent": "bprmode4:overworld/craft/bucket",
+  "criteria": {
+    "Infinite Water": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

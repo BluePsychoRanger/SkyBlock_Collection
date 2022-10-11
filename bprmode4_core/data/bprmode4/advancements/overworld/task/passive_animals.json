@@ -1,0 +1,39 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:porkchop"
+    },
+    "title": {
+      "translate": "%1$s%3427655$s",
+      "with": [
+        "New Friends",
+        {
+          "translate": "advancement.bprmode4.overworld.task.passive_animals.title"
+        }
+      ]
+    },
+    "description": [
+      {
+        "translate": "%1$s%3427655$s",
+        "with": [
+          "Create a patch of grass and stand 24-48 blocks away to let passive mobs spawn.  Then breed them.",
+          {
+            "translate": "advancement.bprmode4.overworld.task.passive_animals.description"
+          }
+        ],
+        "color": "gray"
+      }
+    ],
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "parent": "bprmode4:overworld/task/farm",
+  "criteria": {
+    "Bred Animals": {
+      "trigger": "minecraft:bred_animals",
+      "conditions": {}
+    }
+  }
+}

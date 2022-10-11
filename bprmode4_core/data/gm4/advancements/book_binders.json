@@ -1,0 +1,40 @@
+{
+  "display": {
+    "icon": {
+      "item": "lectern",
+      "nbt": "{CustomModelData:3420001}"
+    },
+    "title": {
+      "translate": "%1$s%3427655$s",
+      "with": [
+        "Ain't Got Rhythm",
+        {
+          "translate": "advancement.bprmode4.book_binders.title"
+        }
+      ]
+    },
+    "description": {
+      "translate": "%1$s%3427655$s",
+      "with": [
+        "Set up a Book Binder",
+        {
+          "translate": "advancement.bprmode4.book_binders.description"
+        }
+      ],
+      "color": "gray"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "bprmode4:overworld/craft/fishing_rod",
+  "criteria": {
+    "Place Lectern": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "block": "minecraft:lectern"
+      }
+    }
+  }
+}

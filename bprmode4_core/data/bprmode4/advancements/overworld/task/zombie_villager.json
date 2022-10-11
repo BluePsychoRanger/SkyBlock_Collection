@@ -1,0 +1,55 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:splash_potion",
+      "nbt": "{Potion:\"weakness\"}"
+    },
+    "title": {
+      "translate": "%1$s%3427655$s",
+      "with": [
+        "(Slightly Less) Dangerous Passenger",
+        {
+          "translate": "advancement.bprmode4.overworld.task.zombie_villager.title"
+        }
+      ]
+    },
+    "description": [
+      {
+        "translate": "%1$s%3427655$s",
+        "with": [
+          "Capture a Zombie Villager in a Boat",
+          {
+            "translate": "advancement.bprmode4.overworld.task.zombie_villager.description"
+          }
+        ],
+        "color": "gray"
+      }
+    ],
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "parent": "bprmode4:overworld/task/witch",
+  "criteria": {
+    "Zombie Villager Passenger": {
+      "trigger": "minecraft:started_riding",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "vehicle": {
+                "type": "minecraft:boat",
+                "passenger": {
+                  "type": "minecraft:zombie_villager"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

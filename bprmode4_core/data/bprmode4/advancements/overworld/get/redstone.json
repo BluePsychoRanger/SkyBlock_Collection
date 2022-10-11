@@ -1,0 +1,46 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:redstone"
+      },
+      "title": {
+        "translate": "%1$s%3427655$s",
+        "with": [
+          "Age of Logic",
+          {
+            "translate": "advancement.bprmode4.overworld.obtain.redstone.title"
+          }
+        ]
+      },
+      "description": {
+        "translate": "%1$s%3427655$s",
+        "with": [
+          "Obtain Redstone",
+          {
+            "translate": "advancement.bprmode4.overworld.obtain.redstone.description"
+          }
+        ],
+        "color": "gray"
+      },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": false,
+      "hidden": false
+    },
+    "parent": "bprmode4:overworld/task/mob_farm",
+    "criteria": {
+      "redstone": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "items": [
+            {
+              "items": [
+                "minecraft:redstone"
+              ]
+            }
+          ]
+        }
+      }
+    }
+  }
+  

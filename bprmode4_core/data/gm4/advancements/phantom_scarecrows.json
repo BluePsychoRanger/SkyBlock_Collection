@@ -1,0 +1,92 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:firework_rocket",
+      "nbt": "{CustomModelData:3420001}"
+    },
+    "title": {
+      "translate": "%1$s%3427655$s",
+      "with": [
+        "Phantom Scarecrows",
+        {
+          "translate": "advancement.bprmode4.phantom_scarecrows.title"
+        }
+      ]
+    },
+    "description": {
+      "translate": "%1$s%3427655$s",
+      "with": [
+        "Equip an Armor Stand with a Skull and a Chestplate with Curse of Binding",
+        {
+          "translate": "advancement.bprmode4.phantom_scarecrows.description"
+        }
+      ],
+      "color": "gray"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "bprmode4:nether/obtain/wither_skeleton_skull",
+  "criteria": {
+    "Build Phantom Scarecrow": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:alternative",
+            "terms": [
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "type": "minecraft:armor_stand",
+                  "equipment": {
+                    "chest": {
+                      "enchantments": [
+                        {
+                          "enchantment": "minecraft:binding_curse"
+                        }
+                      ]
+                    },
+                    "head": {
+                      "items": [
+                        "minecraft:skeleton_skull",
+                        "minecraft:wither_skeleton_skull",
+                        "minecraft:zombie_head"
+                      ]
+                    }
+                  }
+                }
+              },
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "type": "minecraft:armor_stand",
+                  "equipment": {
+                    "chest": {
+                      "enchantments": [
+                        {
+                          "enchantment": "minecraft:vanishing_curse"
+                        }
+                      ]
+                    },
+                    "head": {
+                      "items": [
+                        "minecraft:skeleton_skull",
+                        "minecraft:wither_skeleton_skull",
+                        "minecraft:zombie_head"
+                      ]
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:bone_meal"
+    },
+    "title": {
+      "translate": "%1$s%3427655$s",
+      "with": [
+        "Has This Always Been A Thing?",
+        {
+          "translate": "advancement.bprmode4.overworld.task.bonemeal_water.title"
+        }
+      ]
+    },
+    "description": {
+      "translate": "%1$s%3427655$s",
+      "with": [
+        "Bonemeal Water for more Water source blocks",
+        {
+          "translate": "advancement.bprmode4.overworld.task.bonemeal_water.description"
+        }
+      ],
+      "color": "gray"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "parent": "bprmode4:overworld/craft/bucket",
+  "criteria": {
+    "Infinite Water": {
+      "trigger": "minecraft:item_used_on_block",
+      "conditions": {
+        "player": [],
+        "item": {
+          "items": [
+            "minecraft:bone_meal"
+          ]
+        },
+        "location": {
+          "fluid": {
+            "tag": "minecraft:water"
+          }
+        }
+      }
+    }
+  }
+}

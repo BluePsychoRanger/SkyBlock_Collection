@@ -1,0 +1,37 @@
+{
+  "display": {
+    "icon": {
+      "item": "iron_shovel",
+      "nbt": "{Enchantments:[{id:\"minecraft:fortune\",lvl:3s}]}"
+    },
+    "title": {
+      "translate": "%1$s%3427655$s",
+      "with": [
+        "Sunken Treasure",
+        {
+          "translate": "advancement.bprmode4.sunken_treasure.title"
+        }
+      ]
+    },
+    "description": {
+      "translate": "%1$s%3427655$s",
+      "with": [
+        "Obtain treasures by breaking Sand or Gravel with a Fortune Shovel, under at least 4 blocks of Water",
+        {
+          "translate": "advancement.bprmode4.sunken_treasure.description"
+        }
+      ],
+      "color": "gray"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "gm4:sandy_husks",
+  "criteria": {
+    "Digging For Treasure": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

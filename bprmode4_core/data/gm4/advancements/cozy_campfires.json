@@ -1,0 +1,37 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:campfire"
+      },
+      "title": {
+        "translate": "%1$s%3427655$s",
+        "with": [
+          "Cozy Campfires",
+          {
+            "translate": "advancement.bprmode4.cozy_campfires.title"
+          }
+        ]
+      },
+      "description": {
+        "translate": "%1$s%3427655$s",
+        "with": [
+          "Standing next to a Campfire provides Absorption",
+          {
+            "translate": "advancement.bprmode4.cozy_campfires.description"
+          }
+        ],
+        "color": "gray"
+      },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": false,
+      "hidden": false
+    },
+    "parent": "bprmode4:overworld/craft/torch",
+    "criteria": {
+      "Cozy Campfires": {
+        "trigger": "minecraft:impossible"
+      }
+    }
+  }
+  

@@ -1,0 +1,45 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:blaze_rod"
+    },
+    "title": {
+      "translate": "%1$s%3427655$s",
+      "with": [
+        "The First of Many",
+        {
+          "translate": "advancement.bprmode4.nether.obtain.blaze_rod.title"
+        }
+      ]
+    },
+    "description": {
+      "translate": "%1$s%3427655$s",
+      "with": [
+        "Obtain a Blaze Rod",
+        {
+          "translate": "advancement.bprmode4.nether.obtain.blaze_rod.description"
+        }
+      ],
+      "color": "gray"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "parent": "bprmode4:nether/craft/nether_bricks",
+  "criteria": {
+    "nether_bricks": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:nether_bricks"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

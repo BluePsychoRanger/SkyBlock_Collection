@@ -1,0 +1,45 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:spawner"
+    },
+    "title": {
+      "translate": "%1$s%3427655$s",
+      "with": [
+        "The First of Many",
+        {
+          "translate": "advancement.bprmode4.nether.craft.nether_bricks.title"
+        }
+      ]
+    },
+    "description": {
+      "translate": "%1$s%3427655$s",
+      "with": [
+        "Craft and place Nether Bricks in the Nether Fortress to spawn Blazes and Wither Skeletons",
+        {
+          "translate": "advancement.bprmode4.nether.craft.nether_bricks.description"
+        }
+      ],
+      "color": "gray"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "parent": "bprmode4:nether/task/find_fortress",
+  "criteria": {
+    "nether_bricks": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:nether_bricks"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "display": {
+    "icon": {
+      "item": "zombie_head",
+      "nbt": "{CustomModelData:3420001}"
+    },
+    "title": {
+      "translate": "%1$s%3427655$s",
+      "with": [
+        "Undead Players",
+        {
+          "translate": "advancement.bprmode4.undead_players.title"
+        }
+      ]
+    },
+    "description": [
+      {
+        "translate": "%1$s%3427655$s",
+        "with": [
+          "Die.",
+          {
+            "translate": "advancement.bprmode4.undead_players.description.1"
+          }
+        ],
+        "color": "gray"
+      },
+      {
+        "translate": "%1$s%3427655$s",
+        "with": [
+          "\n\n",
+          {
+            "translate": "advancement.bprmode4.description.newline"
+          }
+        ],
+        "color": "gray"
+      },
+      {
+        "translate": "%1$s%3427655$s",
+        "with": [
+          "Well, it was going to happen eventually.",
+          {
+            "translate": "advancement.bprmode4.undead_players.description.2"
+          }
+        ],
+        "color": "gray",
+        "italic": true
+      }
+    ],
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "bprmode4:overworld/get/oak_log",
+  "criteria": {
+    "Die": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

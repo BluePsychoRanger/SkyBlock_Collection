@@ -1,0 +1,50 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:lava_bucket"
+    },
+    "title": {
+      "translate": "%1$s%3427655$s",
+      "with": [
+        "More Lava",
+        {
+          "translate": "advancement.bprmode4.overworld.commerce.lava_cauldron.title"
+        }
+      ]
+    },
+    "description": {
+      "translate": "%1$s%3427655$s",
+      "with": [
+        "Have Lava drip into a Cauldron by placing a Lava source above a Dripstone Block above a Pointed Dripstone.  Pick up the Lava with a Bucket.",
+        {
+          "translate": "advancement.bprmode4.overworld.commerce.lava_cauldron.description"
+        }
+      ],
+      "color": "gray"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "parent": "bprmode4:overworld/get/pointed_dripstone",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:item_used_on_block",
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:bucket"
+          ]
+        },
+        "location": {
+          "block": {
+            "blocks": [
+              "minecraft:lava_cauldron"
+            ]
+          }
+        }
+      }
+    }
+  }
+}

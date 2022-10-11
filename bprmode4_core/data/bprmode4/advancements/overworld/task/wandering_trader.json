@@ -1,0 +1,51 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:lead"
+    },
+    "title": {
+      "translate": "%1$s%3427655$s",
+      "with": [
+        "What's New?",
+        {
+          "translate": "advancement.bprmode4.overworld.task.zombie_doctor.title"
+        }
+      ]
+    },
+    "description": [
+      {
+        "translate": "%1$s%3427655$s",
+        "with": [
+          "Have a Wandering Trader spawn",
+          {
+            "translate": "advancement.bprmode4.overworld.task.wandering_trader.description"
+          }
+        ],
+        "color": "gray"
+      }
+    ],
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "parent": "bprmode4:overworld/root",
+  "criteria": {
+    "wandering_trader": {
+      "trigger": "minecraft:tick",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "targeted_entity": {
+                "type": "minecraft:wandering_trader"
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

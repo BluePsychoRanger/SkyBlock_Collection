@@ -1,0 +1,76 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:gold_ingot"
+    },
+    "title": {
+      "translate": "%1$s%3427655$s",
+      "with": [
+        "A Much Better Deal!",
+        {
+          "translate": "advancement.bprmode4.barter.title"
+        }
+      ]
+    },
+    "description": {
+      "translate": "%1$s%3427655$s",
+      "with": [
+        "Barter with a Piglin using a Gold Ingot",
+        {
+          "translate": "advancement.bprmode4.barter.description"
+        }
+      ],
+      "color": "gray"
+    },
+    "announce_to_chat": false
+  },
+  "parent": "bprmode4:nether/root",
+  "criteria": {
+    "barter_drop": {
+      "trigger": "minecraft:thrown_item_picked_up_by_entity",
+      "conditions": {
+        "player": [],
+        "entity": {
+          "type": "minecraft:piglin",
+          "flags": {
+            "is_baby": false
+          }
+        },
+        "item": {
+          "items": [
+            "minecraft:gold_ingot"
+          ]
+        }
+      }
+    },
+    "barter_direct": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "player": [],
+        "item": {
+          "items": [
+            "minecraft:gold_ingot"
+          ]
+        },
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:piglin",
+              "flags": {
+                "is_baby": false
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "barter_drop",
+      "barter_direct"
+    ]
+  ]
+}

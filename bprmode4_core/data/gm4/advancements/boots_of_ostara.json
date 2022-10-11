@@ -1,0 +1,63 @@
+{
+  "display": {
+    "icon": {
+      "item": "leather_boots",
+      "nbt": "{display:{color:3705899},CustomModelData:3420003}"
+    },
+    "title": {
+      "translate": "%1$s%3427655$s",
+      "with": [
+        "Boots of Ostara",
+        {
+          "translate": "advancement.bprmode4.boots_of_ostara.title"
+        }
+      ]
+    },
+    "description": [
+      {
+        "translate": "%1$s%3427655$s",
+        "with": [
+          "Craft Boots of Ostara in a Custom Crafter with the following recipe:\n\n",
+          {
+            "translate": "advancement.bprmode4.boots_of_ostara.description.1"
+          }
+        ],
+        "color": "gray"
+      },
+      {
+        "translate": "%1$s%3427655$s",
+        "with": [
+          {
+            "text": "  _ S _\n  G L M\n  _ W _",
+            "font": "minecraft:default",
+            "color": "white"
+          },
+          {
+            "translate": "gui.advancements.boots_of_ostara_recipe"
+          }
+        ],
+        "color": "gray"
+      }
+    ],
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "bprmode4:overworld/commerce/moss",
+  "criteria": {
+    "Craft Boots of Ostara": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:leather_boots"
+            ],
+            "nbt": "{gm4_boots_of_ostara:1b}"
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:oak_sapling"
+      },
+      "title": {
+        "translate": "%1$s%3427655$s",
+        "with": [
+          "Please Drop...",
+          {
+            "translate": "advancement.bprmode4.overworld.obtain.sapling.title"
+          }
+        ]
+      },
+      "description": {
+        "translate": "%1$s%3427655$s",
+        "with": [
+          "Obtain another Sapling",
+          {
+            "translate": "advancement.bprmode4.overworld.obtain.sapling.description"
+          }
+        ],
+        "color": "gray"
+      },
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": false,
+      "hidden": false
+    },
+    "parent": "bprmode4:overworld/get/oak_log",
+    "criteria": {
+      "oak_sapling": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "items": [
+            {
+              "items": [
+                "minecraft:oak_sapling"
+              ]
+            }
+          ]
+        }
+      }
+    }
+  }
+  

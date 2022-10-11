@@ -1,0 +1,64 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:stone_pickaxe"
+      },
+      "title": {
+        "translate": "%1$s%3427655$s",
+        "with": [
+          "Stone Age",
+          {
+            "translate": "advancement.bprmode4.overworld.unlock.stone_tools.title"
+          }
+        ]
+      },
+      "description": {
+        "translate": "%1$s%3427655$s",
+        "with": [
+          "Craft stone tools",
+          {
+            "translate": "advancement.bprmode4.overworld.unlock.stone_tools.description"
+          }
+        ],
+        "color": "gray"
+      },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": false,
+      "hidden": false
+    },
+    "parent": "bprmode4:overworld/task/cobblestone_generator",
+    "criteria": {
+      "stone_pickaxe": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "items": [
+            {
+              "items": [
+                "minecraft:stone_pickaxe"
+              ]
+            }
+          ]
+        }
+      },
+      "stone_axe": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+            "items": [
+                {
+                    "items": [
+                        "minecraft:stone_axe"
+                    ]
+                }
+            ]
+        }
+      }
+    },
+    "requirements": [
+        [
+            "stone_pickaxe",
+            "stone_axe"
+        ]
+    ]
+  }
+  

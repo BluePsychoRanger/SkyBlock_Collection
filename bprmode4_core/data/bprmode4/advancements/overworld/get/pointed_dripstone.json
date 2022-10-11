@@ -1,0 +1,45 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:pointed_dripstone"
+    },
+    "title": {
+      "translate": "%1$s%3427655$s",
+      "with": [
+        "Power of Erosion",
+        {
+          "translate": "advancement.bprmode4.overworld.obtain.pointed_dripstone.title"
+        }
+      ]
+    },
+    "description": {
+      "translate": "%1$s%3427655$s",
+      "with": [
+        "Obtain Pointed Dripstone",
+        {
+          "translate": "advancement.bprmode4.overworld.obtain.pointed_dripstone.description"
+        }
+      ],
+      "color": "gray"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "parent": "gm4:calling_bell",
+  "criteria": {
+    "pointed_dripstone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:pointed_dripstone"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

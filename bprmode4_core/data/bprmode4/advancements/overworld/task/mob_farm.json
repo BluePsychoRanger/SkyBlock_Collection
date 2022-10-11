@@ -1,0 +1,160 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:rotten_flesh"
+    },
+    "title": {
+      "translate": "%1$s%3427655$s",
+      "with": [
+        "Time to Get Deadly",
+        {
+          "translate": "advancement.bprmode4.overworld.task.mob_farm.title"
+        }
+      ]
+    },
+    "description": [
+      {
+        "translate": "%1$s%3427655$s",
+        "with": [
+          "Build a mob farm",
+          {
+            "translate": "advancement.bprmode4.overworld.task.mob_farm.description.1"
+          }
+        ],
+        "color": "gray"
+      },
+      {
+        "translate": "%1$s%3427655$s",
+        "with": [
+          "\n\n",
+          {
+            "translate": "advancement.bprmode4.description.newline"
+          }
+        ],
+        "color": "gray"
+      },
+      {
+        "translate": "%1$s%3427655$s",
+        "with": [
+          "Kill at least one of the following:\n Creeper\n Enderman\n Skeleton\n Spider\n Witch\n Zombie",
+          {
+            "translate": "advancement.bprmode4.overworld.task.mob_farm.description.2"
+          }
+        ],
+        "color": "gray"
+      }
+    ],
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "parent": "bprmode4:overworld/task/island_expansion",
+  "criteria": {
+    "creeper": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "player": [],
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:creeper"
+            }
+          }
+        ]
+      }
+    },
+    "enderman": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:enderman"
+            }
+          }
+        ]
+      }
+    },
+    "skeleton": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:skeleton"
+            }
+          }
+        ]
+      }
+    },
+    "spider": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:spider"
+            }
+          }
+        ]
+      }
+    },
+    "witch": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:witch"
+            }
+          }
+        ]
+      }
+    },
+    "zombie": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:witch"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "creeper"
+    ],
+    [
+      "enderman"
+    ],
+    [
+      "skeleton"
+    ],
+    [
+      "spider"
+    ],
+    [
+      "witch"
+    ],
+    [
+      "zombie"
+    ]
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:fishing_rod"
+    },
+    "title": {
+      "translate": "%1$s%3427655$s",
+      "with": [
+        "Craving Seafood",
+        {
+          "translate": "advancement.bprmode4.overworld.craft.fishing_rod.title"
+        }
+      ]
+    },
+    "description": {
+      "translate": "%1$s%3427655$s",
+      "with": [
+        "Craft a Fishing Rod",
+        {
+          "translate": "advancement.bprmode4.overworld.craft.fishing_rod.description"
+        }
+      ],
+      "color": "gray"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "parent": "bprmode4:overworld/task/infinite_water",
+  "criteria": {
+    "fishing_rod": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:fishing_rod"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

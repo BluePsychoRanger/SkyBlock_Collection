@@ -1,0 +1,43 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:moss_block"
+    },
+    "title": {
+      "translate": "%1$s%3427655$s",
+      "with": [
+        "Greener Grass",
+        {
+          "translate": "advancement.bprmode4.overworld.commerce.moss.title"
+        }
+      ]
+    },
+    "description": {
+      "translate": "%1$s%3427655$s",
+      "with": [
+        "Purchase Moss from the Wandering Trader",
+        {
+          "translate": "advancement.bprmode4.overworld.commerce.moss.description"
+        }
+      ],
+      "color": "gray"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "parent": "gm4:calling_bell",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:moss_block"
+          ]
+        }
+      }
+    }
+  }
+}

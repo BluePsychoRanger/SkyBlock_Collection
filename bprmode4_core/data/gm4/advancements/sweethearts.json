@@ -1,0 +1,37 @@
+{
+  "display": {
+    "icon": {
+      "item": "poppy",
+      "nbt": "{CustomModelData:3420001}"
+    },
+    "title": {
+      "translate": "%1$s%3427655$s",
+      "with": [
+        "Sweethearts",
+        {
+          "translate": "advancement.bprmode4.sweethearts.title"
+        }
+      ]
+    },
+    "description": {
+      "translate": "%1$s%3427655$s",
+      "with": [
+        "Hold a small flower (except a Wither Rose) and crouch while standing next to someone to give them your health",
+        {
+          "translate": "advancement.bprmode4.sweethearts.description"
+        }
+      ],
+      "color": "gray"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "bprmode4:overworld/get/oak_log",
+  "criteria": {
+    "Donate Health": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

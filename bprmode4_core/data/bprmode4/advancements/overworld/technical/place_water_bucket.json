@@ -1,0 +1,17 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:water_bucket"
+          ]
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "bprmode4:make/infinite_water/delay_check"
+  }
+}

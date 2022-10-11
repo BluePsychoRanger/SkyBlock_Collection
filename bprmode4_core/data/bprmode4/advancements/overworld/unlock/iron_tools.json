@@ -1,0 +1,63 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:iron_pickaxe"
+    },
+    "title": {
+      "translate": "%1$s%3427655$s",
+      "with": [
+        "Iron Age",
+        {
+          "translate": "advancement.bprmode4.overworld.unlock.iron_tools.title"
+        }
+      ]
+    },
+    "description": {
+      "translate": "%1$s%3427655$s",
+      "with": [
+        "Craft iron tools",
+        {
+          "translate": "advancement.bprmode4.overworld.unlock.iron_tools.description"
+        }
+      ],
+      "color": "gray"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "parent": "bprmode4:overworld/get/iron",
+  "criteria": {
+    "iron_pickaxe": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:iron_pickaxe"
+            ]
+          }
+        ]
+      }
+    },
+    "iron_axe": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+          "items": [
+              {
+                  "items": [
+                      "minecraft:iron_axe"
+                  ]
+              }
+          ]
+      }
+    }
+  },
+  "requirements": [
+      [
+          "iron_pickaxe",
+          "iron_axe"
+      ]
+  ]
+}

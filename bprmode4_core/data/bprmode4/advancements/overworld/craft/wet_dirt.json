@@ -1,0 +1,51 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:mud"
+    },
+    "title": {
+      "translate": "%1$s%3427655$s",
+      "with": [
+        "Wet Dirt",
+        {
+          "translate": "advancement.bprmode4.overworld.craft.wet_dirt.title"
+        }
+      ]
+    },
+    "description": {
+      "translate": "%1$s%3427655$s",
+      "with": [
+        "Use a Water Bottle on Dirt",
+        {
+          "translate": "advancement.bprmode4.overworld.craft.wet_dirt.description"
+        }
+      ],
+      "color": "gray"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "parent": "bprmode4:overworld/get/pointed_dripstone",
+  "criteria": {
+    "mud": {
+      "trigger": "minecraft:item_used_on_block",
+      "conditions": {
+        "item": {
+          "items": [
+            "potion"
+          ],
+          "potion": "minecraft:water"
+        },
+        "location": {
+          "block": {
+            "blocks": [
+              "minecraft:mud"
+            ]
+          }
+        }
+      }
+    }
+  }
+}

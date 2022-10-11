@@ -1,0 +1,41 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:cod"
+    },
+    "title": {
+      "translate": "%1$s%3427655$s",
+      "with": [
+        "Live Catch",
+        {
+          "translate": "advancement.bprmode4.live_catch.title"
+        }
+      ]
+    },
+    "description": {
+      "translate": "%1$s%3427655$s",
+      "with": [
+        "Fishing reels actual fish!",
+        {
+          "translate": "advancement.bprmode4.live_catch.description"
+        }
+      ],
+      "color": "gray"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "bprmode4:overworld/craft/fishing_rod",
+  "criteria": {
+    "Catch Fish": {
+      "trigger": "minecraft:fishing_rod_hooked",
+      "conditions": {
+        "item": {
+          "tag": "minecraft:fishes"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,184 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:spruce_sapling"
+    },
+    "title": {
+      "translate": "%1$s%3427655$s",
+      "with": [
+        "Sapling Enthusiast",
+        {
+          "translate": "advancement.bprmode4.overworld.completion.all_saplings.title"
+        }
+      ]
+    },
+    "description": {
+      "translate": "%1$s%3427655$s",
+      "with": [
+        "Collect all Sapling types",
+        {
+          "translate": "advancement.bprmode4.overworld.completion.all_saplings.description"
+        }
+      ],
+      "color": "gray"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "gm4:calling_bell",
+  "criteria": {
+    "acacia_sapling": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:acacia_sapling"
+            ]
+          }
+        ]
+      }
+    },
+    "Apple Tree Sapling": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:oak_sapling"
+            ],
+            "nbt": "{CustomModelData:3420004,gm4_fruiting_trees:{item:{id:\"sapling\",type:\"apple\"}},gm4_podzol_rooting_soil:{id:\"apple_tree_sapling\"}}"
+          }
+        ]
+      }
+    },
+    "azalea": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:azalea"
+            ]
+          }
+        ]
+      }
+    },
+    "birch_sapling": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:birch_sapling"
+            ]
+          }
+        ]
+      }
+    },
+    "dark_oak_sapling": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:dark_oak_sapling"
+            ]
+          }
+        ]
+      }
+    },
+    "flowering_azalea": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:flowering_azalea"
+            ]
+          }
+        ]
+      }
+    },
+    "oak_sapling": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:oak_sapling"
+            ]
+          }
+        ]
+      }
+    },
+    "jungle_sapling": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:jungle_sapling"
+            ]
+          }
+        ]
+      }
+    },
+    "spruce_sapling": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:spruce_sapling"
+            ]
+          }
+        ]
+      }
+    },
+    "mangrove_propagule": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:mangrove_propagule"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "acacia_sapling"
+    ],
+    [
+      "Apple Tree Sapling"
+    ],
+    [
+      "azalea",
+      "flowering_azalea"
+    ],
+    [
+      "birch_sapling"
+    ],
+    [
+      "dark_oak_sapling"
+    ],
+    [
+      "jungle_sapling"
+    ],
+    [
+      "oak_sapling"
+    ],
+    [
+      "spruce_sapling"
+    ],
+    [
+      "mangrove_propagule"
+    ]
+  ]
+}

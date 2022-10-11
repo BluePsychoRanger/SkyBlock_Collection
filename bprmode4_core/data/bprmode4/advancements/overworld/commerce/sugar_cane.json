@@ -1,0 +1,43 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:sugar_cane"
+    },
+    "title": {
+      "translate": "%1$s%3427655$s",
+      "with": [
+        "Tasty Sticks",
+        {
+          "translate": "advancement.bprmode4.overworld.commerce.sugar_cane.title"
+        }
+      ]
+    },
+    "description": {
+      "translate": "%1$s%3427655$s",
+      "with": [
+        "Purchase Sugar Cane from the Wandering Trader",
+        {
+          "translate": "advancement.bprmode4.overworld.commerce.sugar_cane.description"
+        }
+      ],
+      "color": "gray"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "parent": "bprmode4:",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:sugar_cane"
+          ]
+        }
+      }
+    }
+  }
+}

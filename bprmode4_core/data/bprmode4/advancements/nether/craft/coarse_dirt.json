@@ -1,0 +1,55 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:dirt"
+    },
+    "title": {
+      "translate": "%1$s%3427655$s",
+      "with": [
+        "Craft, ???, Profit!",
+        {
+          "translate": "advancement.bprmode4.nether.craft.coarse_dirt.title"
+        }
+      ]
+    },
+    "description": {
+      "translate": "%1$s%3427655$s",
+      "with": [
+        "Craft Coarse Dirt with Dirt and Gravel, till the Coarse Dirt back into Dirt, then you get infinite dirt!",
+        {
+          "translate": "advancement.bprmode4.nether.craft.coarse_dirt.description"
+        }
+      ],
+      "color": "gray"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "parent": "bprmode4:nether/obtain/gravel",
+  "criteria": {
+    "Till Coarse Dirt": {
+      "trigger": "minecraft:item_used_on_block",
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:wooden_hoe",
+            "minecraft:stone_hoe",
+            "minecraft:iron_hoe",
+            "minecraft:golden_hoe",
+            "minecraft:diamond_hoe",
+            "minecraft:netherite_hoe"
+          ]
+        },
+        "location": {
+          "block": {
+            "blocks": [
+              "minecraft:dirt"
+            ]
+          }
+        }
+      }
+    }
+  }
+}

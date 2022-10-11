@@ -1,0 +1,72 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:wooden_hoe"
+      },
+      "title": {
+        "translate": "%1$s%3427655$s",
+        "with": [
+          "Time to Farm!",
+          {
+            "translate": "advancement.bprmode4.overworld.task.farm.title"
+          }
+        ]
+      },
+      "description": {
+        "translate": "%1$s%3427655$s",
+        "with": [
+          "Plant a farm",
+          {
+            "translate": "advancement.bprmode4.overworld.task.farm.description"
+          }
+        ]
+      },
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": false,
+      "hidden": false
+    },
+    "parent": "bprmode4:overworld/get/sapling",
+    "criteria": {
+      "beetroots": {
+        "trigger": "minecraft:placed_block",
+        "conditions": {
+          "block": "minecraft:beetroots"
+        }
+      },
+      "melon_stem": {
+        "trigger": "minecraft:placed_block",
+        "conditions": {
+          "block": "minecraft:melon_stem"
+        }
+      },
+      "nether_wart": {
+        "trigger": "minecraft:placed_block",
+        "conditions": {
+          "block": "minecraft:nether_wart"
+        }
+      },
+      "pumpkin_stem": {
+        "trigger": "minecraft:placed_block",
+        "conditions": {
+          "block": "minecraft:pumpkin_stem"
+        }
+      },
+      "wheat": {
+        "trigger": "minecraft:placed_block",
+        "conditions": {
+          "block": "minecraft:wheat"
+        }
+      }
+    },
+    "requirements": [
+      [
+        "wheat",
+        "pumpkin_stem",
+        "melon_stem",
+        "beetroots",
+        "nether_wart"
+      ]
+    ]
+  }
+  

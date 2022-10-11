@@ -1,0 +1,39 @@
+{
+  "display": {
+    "icon": {
+      "item": "music_disc_13",
+      "nbt": "{CustomModelData:3420003}"
+    },
+    "title": {
+      "translate": "%1$s%3427655$s",
+      "with": [
+        "Record Crafting",
+        {
+          "translate": "advancement.bprmode4.custom_crafters.title"
+        }
+      ]
+    },
+    "description": [
+      {
+        "translate": "%1$s%3427655$s",
+        "with": [
+          "Craft Music Discs in a Custom Crafter by surrounding Dyes, an Eye of Ender, or Coal with Flint",
+          {
+            "translate": "advancement.bprmode4.custom_crafters.description"
+          }
+        ],
+        "color": "gray"
+      }
+    ],
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "gm4:custom_crafters",
+  "criteria": {
+    "Craft Music Disc": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}
