@@ -1,0 +1,24 @@
+{
+  "processors": [
+    {
+      "processor_type": "minecraft:rule",
+      "rules": [
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "output_state": {
+            "Name": "minecraft:air"
+          }
+        }
+      ]
+    },
+    {
+      "processor_type": "minecraft:protected_blocks",
+      "value": "#bprmode4:non_purgeable"
+    }
+  ]
+}
