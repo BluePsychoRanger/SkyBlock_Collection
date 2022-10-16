@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:random_patch",
+  "config": {
+    "tries": 1,
+    "xz_spread": 3,
+    "y_spread": 3,
+    "feature": {
+      "feature": {
+        "type": "minecraft:simple_block",
+        "config": {
+          "to_place": {
+            "type": "minecraft:simple_state_provider",
+            "state": {
+              "Name": "minecraft:sculk_shrieker",
+              "Properties": {
+                "can_summon": "true",
+                "shrieking": "false",
+                "waterlogged": "false"
+              }
+            }
+          }
+        }
+      },
+      "placement": [
+        {
+          "type": "minecraft:count",
+          "count": {
+            "type": "minecraft:biased_to_bottom",
+            "value": {
+              "min_inclusive": 0,
+              "max_inclusive": 3
+            }
+          }
+        }
+      ]
+    }
+  }
+}

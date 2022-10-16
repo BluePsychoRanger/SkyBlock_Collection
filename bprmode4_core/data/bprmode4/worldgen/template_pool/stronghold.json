@@ -1,0 +1,15 @@
+{
+  "name": "bprmode4:stronghold",
+  "fallback": "bprmode4:stronghold",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "bprmode4:worldgen/stronghold",
+        "processors": "bprmode4:fill_end_portal_frames"
+      }
+    }
+  ]
+}
