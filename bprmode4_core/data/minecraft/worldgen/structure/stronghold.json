@@ -1,7 +1,7 @@
 {
   "type": "minecraft:jigsaw",
   "biomes": "#minecraft:has_structure/stronghold",
-  "step": "surface_structures",
+  "step": "top_layer_modification",
   "spawn_overrides": {},
   "start_pool": "bprmode4:stronghold",
   "size": 1,

@@ -1,9 +1,9 @@
 {
   "type": "minecraft:random_patch",
   "config": {
-    "tries": 1,
-    "xz_spread": 3,
-    "y_spread": 3,
+    "tries": 6,
+    "xz_spread": 2,
+    "y_spread": 1,
     "feature": {
       "feature": {
         "type": "minecraft:simple_block",
@@ -24,13 +24,11 @@
       "placement": [
         {
           "type": "minecraft:count",
-          "count": {
-            "type": "minecraft:biased_to_bottom",
-            "value": {
-              "min_inclusive": 0,
-              "max_inclusive": 3
-            }
-          }
+          "count": 3
+        },
+        {
+          "type": "minecraft:rarity_filter",
+          "chance": 90
         }
       ]
     }
