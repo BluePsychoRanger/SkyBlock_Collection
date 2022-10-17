@@ -19,7 +19,21 @@
     "water_color": 4159204,
     "water_fog_color": 329011
   },
-  "features": [],
+  "features": [
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [
+      "bprmode4:purge/overworld_second_layer"
+    ]
+  ],
   "precipitation": "snow",
   "spawn_costs": {},
   "spawners": {

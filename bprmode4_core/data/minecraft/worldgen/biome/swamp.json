@@ -21,7 +21,21 @@
     "water_color": 6388580,
     "water_fog_color": 2302743
   },
-  "features": [],
+  "features": [
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [
+      "bprmode4:purge/overworld_second_layer"
+    ]
+  ],
   "precipitation": "rain",
   "spawn_costs": {},
   "spawners": {

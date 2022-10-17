@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:jigsaw",
+  "biomes": "#minecraft:is_nether",
+  "step": "top_layer_modification",
+  "spawn_overrides": {},
+  "start_pool": "bprmode4:purge/nether_bottom_layers",
+  "size": 1,
+  "start_height": {
+    "absolute": 33
+  },
+  "start_jigsaw_name": "bprmode4:purge",
+  "max_distance_from_center": 80,
+  "use_expansion_hack": false
+}

@@ -3,7 +3,7 @@
   "biomes": "#minecraft:is_overworld",
   "step": "vegetal_decoration",
   "spawn_overrides": {},
-  "start_pool": "bprmode4:purge",
+  "start_pool": "bprmode4:purge/overworld_top_layer",
   "size": 1,
   "start_height": {
     "absolute": -1

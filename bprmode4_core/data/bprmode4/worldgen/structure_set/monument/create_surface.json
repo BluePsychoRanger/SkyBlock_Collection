@@ -1,7 +1,7 @@
 {
   "structures": [
     {
-      "structure": "bprmode4:monument",
+      "structure": "bprmode4:monument/create_surface",
       "weight": 1
     }
   ],

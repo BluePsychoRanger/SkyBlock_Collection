@@ -30,7 +30,28 @@
     "water_color": 4159204,
     "water_fog_color": 329011
   },
-  "features": [],
+  "features": [
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [
+      "bprmode4:purge/nether_fortress_nether_wart",
+      "bprmode4:purge/nether_fortress_lava",
+      "bprmode4:purge/nether_fortress_soul_sand",
+      "bprmode4:purge/nether_fortress_chest",
+      "bprmode4:purge/nether_fortress_spawner",
+      "bprmode4:purge/nether_fortress_nether_bricks",
+      "bprmode4:purge/nether_fortress_nether_brick_stairs",
+      "bprmode4:purge/nether_fortress_nether_brick_fence"
+    ]
+  ],
   "precipitation": "none",
   "spawn_costs": {
     "minecraft:enderman": {

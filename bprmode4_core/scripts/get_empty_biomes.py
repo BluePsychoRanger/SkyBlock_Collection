@@ -12,12 +12,64 @@ DIR = f"{NAME}/data"
 TEMP_PATH = f"{NAME}/temp_files"
 BIOME_FOLDER = f"minecraft/worldgen/biome"
 
+NETHER_BIOMES = [
+    "nether_wastes",
+    "soul_sand_valley",
+    "crimson_forest",
+    "warped_forest",
+    "basalt_deltas"
+]
+
+END_BIOMES = [
+    "the_end",
+    "end_highlands",
+    "end_midlands",
+    "small_end_islands",
+    "end_barrens"
+]
+
 
 def main() -> None:
     # clear old contents
     shutil.rmtree(f"{DIR}/{BIOME_FOLDER}", True)
     # get the json of the biomes
     get_biomes(VERSION, True)
+
+
+
+def purge_biome(path) -> bool:
+    """
+    clear the carvers and features of biomes
+    """
+    with open(path, "r") as f:
+        biome = json.load(f)
+
+    biome["carvers"] = {}
+    if any(s in str(path) for s in NETHER_BIOMES):
+        biome["features"] = [[],[],[],[],[],[],[],[],[],[],[
+                "bprmode4:purge/nether_fortress_nether_wart",
+                "bprmode4:purge/nether_fortress_lava",
+                "bprmode4:purge/nether_fortress_soul_sand",
+                "bprmode4:purge/nether_fortress_chest",
+                "bprmode4:purge/nether_fortress_spawner",
+                "bprmode4:purge/nether_fortress_nether_bricks",
+                "bprmode4:purge/nether_fortress_nether_brick_stairs",
+                "bprmode4:purge/nether_fortress_nether_brick_fence",
+
+            ]
+        ]
+    elif any(s in str(path) for s in END_BIOMES):
+        biome["features"] = [[],[],[],[],[],[],[],[],[],[],["bprmode4:purge/end_second_layer"]]
+        if "end_highlands" in path:
+            biome["features"][4] = ["minecraft:end_gateway_return"]
+        elif "the_end" in path:
+            biome["features"][4] = ["minecraft:end_spike"]
+    else:
+        biome["features"] = [[],[],[],[],[],[],[],[],[],[],["bprmode4:purge/overworld_second_layer"]]
+
+    with open(path, "w") as f:
+        json.dump(biome, f, indent=2)
+
 
 
 
@@ -93,22 +145,6 @@ def download_files(version: str) -> None:
     with zipfile.ZipFile(f"{TEMP_PATH}.zip", 'r') as zip_ref:
         zip_ref.extractall(TEMP_PATH)
     print("Files extracted")
-
-
-
-
-def purge_biome(path) -> bool:
-    """
-    clear the carvers and features of biomes
-    """
-    with open(path, "r") as f:
-        biome = json.load(f)
-
-    biome["carvers"] = {}
-    biome["features"] = []
-
-    with open(path, "w") as f:
-        json.dump(biome, f, indent=2)
 
 
 
