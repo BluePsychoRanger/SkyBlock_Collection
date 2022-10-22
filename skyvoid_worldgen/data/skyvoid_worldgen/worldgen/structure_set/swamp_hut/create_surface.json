@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "skyvoid_worldgen:swamp_hut/create_surface",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 14357620,
+    "separation": 8,
+    "spacing": 32
+  }
+}
