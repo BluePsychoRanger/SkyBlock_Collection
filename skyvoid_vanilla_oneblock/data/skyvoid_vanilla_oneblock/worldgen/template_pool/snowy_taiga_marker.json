@@ -1,0 +1,15 @@
+{
+  "name": "skyvoid_vanilla_oneblock:snowy_taiga_marker",
+  "fallback": "skyvoid_vanilla_oneblock:snowy_taiga_marker",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "skyvoid_vanilla_oneblock:blank",
+        "processors": "minecraft:empty"
+      }
+    }
+  ]
+}

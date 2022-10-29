@@ -1,7 +1,7 @@
 {
   "type": "minecraft:jigsaw",
   "biomes": "#minecraft:is_nether",
-  "step": "top_layer_modification",
+  "step": "vegetal_decoration",
   "spawn_overrides": {},
   "start_pool": "skyvoid_worldgen:purge/nether_bottom_layers",
   "size": 1,

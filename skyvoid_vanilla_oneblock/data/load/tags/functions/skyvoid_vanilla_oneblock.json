@@ -1,0 +1,6 @@
+{
+    "values": [
+        {"id": "#load:skyvoid_worldgen", "required": false},
+        "skyvoid_vanilla_oneblock:versioning/resolve_load"
+    ]
+}
