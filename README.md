@@ -1,14 +1,10 @@
 # SkyBlock Data Packs
 This is a collection of data packs to generate and play SkyBlock
+## [Worldgen](https://github.com/BluePsychoRanger/SkyBlock_Collection/blob/main/worldgen)
+The worldgen data packs are used to infinitely generate a void world. These should be installed upon creating the world. Only one of these should be installed at a time.
 
-## Sky Void Worldgen
-The `skyvoid_worldgen` data pack generates an infinite void world with properties akin to the original SkyBlock. For more information, view the [README](https://github.com/BluePsychoRanger/SkyBlock_Collection/blob/main/skyvoid_worldgen/README.md) in the data pack.
+## [Starter Islands](https://github.com/BluePsychoRanger/SkyBlock_Collection/blob/main/starter_islands)
+The starter island data packs are used to create an island upon world load. These should be installed upon creating the world. If they are added after one of the worldgen data packs generates the world, an island will not generate. Only one of these should be installed at a time.
 
-## Standard SkyBlock
-The `skyvoid_standard_skyblock` data pack generates a standard skyblock island at the world spawn point upon initial world load. For more information, view the [README](https://github.com/BluePsychoRanger/SkyBlock_Collection/blob/main/skyvoid_standard_skyblock/README.md) in the data pack.
-
-## Vanilla One Block
-There will soon be a `skyvoid_oneblock` data pack that will generate a single grass block in a snowy taiga biome upon initial world load.
-
-## BPRMode4
-This is a WIP "modded" skyblock experience and should not be downloaded. It relies on [Gamemode 4](https://gm4.co) and custom mechanics.
+## [Extras](https://github.com/BluePsychoRanger/SkyBlock_Collection/blob/main/extras)
+The extra data packs are custom packs that make more things possible or easier. Any of these can be installed alongside each other.

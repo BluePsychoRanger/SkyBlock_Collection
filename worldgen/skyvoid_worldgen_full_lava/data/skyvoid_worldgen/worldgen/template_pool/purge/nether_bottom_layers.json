@@ -1,0 +1,15 @@
+{
+  "name": "skyvoid_worldgen:purge/nether_bottom_layers",
+  "fallback": "skyvoid_worldgen:purge/nether_bottom_layers",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "skyvoid_worldgen:purge/nether_bottom_layers",
+        "processors": "minecraft:empty"
+      }
+    }
+  ]
+}

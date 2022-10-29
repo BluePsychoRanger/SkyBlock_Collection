@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:netherrack_replace_blobs",
+  "config": {
+    "state": {
+      "Name": "minecraft:air"
+    },
+    "target": {
+      "Name": "minecraft:light",
+      "Properties": {
+        "level": "0",
+        "waterlogged": "false"
+      }
+    },
+    "radius": 12
+  }
+}

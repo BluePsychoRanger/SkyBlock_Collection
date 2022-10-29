@@ -1,0 +1,15 @@
+{
+  "name": "skyvoid_worldgen:swamp_hut/clear_surface",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "terrain_matching",
+        "location": "skyvoid_worldgen:swamp_hut/clear_surface",
+        "processors": "minecraft:empty"
+      }
+    }
+  ]
+}
