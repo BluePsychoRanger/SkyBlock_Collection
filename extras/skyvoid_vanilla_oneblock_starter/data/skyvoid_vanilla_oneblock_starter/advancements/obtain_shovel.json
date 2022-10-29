@@ -1,0 +1,33 @@
+{
+  "criteria": {
+    "iron_shovel": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:value_check",
+            "value": {
+              "type": "minecraft:score",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "skyvoid_vanilla_oneblock_starter"
+              },
+              "score": "load.status"
+            },
+            "range": 1
+          }
+        ],
+        "items": [
+          {
+            "items": [
+              "minecraft:iron_shovel"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "skyvoid_vanilla_oneblock_starter:end_loop"
+  }
+}

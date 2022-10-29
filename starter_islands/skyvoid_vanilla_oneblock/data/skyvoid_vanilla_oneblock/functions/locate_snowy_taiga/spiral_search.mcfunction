@@ -32,15 +32,7 @@ execute store result entity @s Pos[2] double 1 run scoreboard players get $z sky
 execute at @s run forceload add ~ ~
 execute at @s run forceload remove ~ ~
 scoreboard players add $search_count skyvoid_vanilla_oneblock 1
-execute unless score $search_count skyvoid_vanilla_oneblock matches 500.. if score $generated skyvoid_vanilla_oneblock matches 0 at @s run function skyvoid_vanilla_oneblock:locate_snowy_taiga/spiral_search
-
-# scoreboard players add $search_count skyvoid_vanilla_oneblock 1
-# scoreboard players set $moved skyvoid_vanilla_oneblock 0
-# execute if score $moved skyvoid_vanilla_oneblock matches 0 unless score $search_count skyvoid_vanilla_oneblock matches 2500.. if score $generated skyvoid_vanilla_oneblock matches 0 if score $search_dir skyvoid_vanilla_oneblock matches 1 positioned ~1 ~ ~ run function skyvoid_vanilla_oneblock:locate_snowy_taiga/spiral_search
-# execute if score $moved skyvoid_vanilla_oneblock matches 0 unless score $search_count skyvoid_vanilla_oneblock matches 2500.. if score $generated skyvoid_vanilla_oneblock matches 0 if score $search_dir skyvoid_vanilla_oneblock matches 2 positioned ~ ~ ~-1 run function skyvoid_vanilla_oneblock:locate_snowy_taiga/spiral_search
-# execute if score $moved skyvoid_vanilla_oneblock matches 0 unless score $search_count skyvoid_vanilla_oneblock matches 2500.. if score $generated skyvoid_vanilla_oneblock matches 0 if score $search_dir skyvoid_vanilla_oneblock matches 3 positioned ~-1 ~ ~ run function skyvoid_vanilla_oneblock:locate_snowy_taiga/spiral_search
-# execute if score $moved skyvoid_vanilla_oneblock matches 0 unless score $search_count skyvoid_vanilla_oneblock matches 2500.. if score $generated skyvoid_vanilla_oneblock matches 0 if score $search_dir skyvoid_vanilla_oneblock matches 4 positioned ~ ~ ~1 run function skyvoid_vanilla_oneblock:locate_snowy_taiga/spiral_search
-# scoreboard players set $moved skyvoid_vanilla_oneblock 1
+execute unless score $search_count skyvoid_vanilla_oneblock matches 300.. if score $generated skyvoid_vanilla_oneblock matches 0 at @s run function skyvoid_vanilla_oneblock:locate_snowy_taiga/spiral_search
 
 # send error if it was too far
-execute if score $search_count skyvoid_vanilla_oneblock matches 500.. run schedule function skyvoid_vanilla_oneblock:locate_snowy_taiga/send_error 1t
+execute if score $search_count skyvoid_vanilla_oneblock matches 300.. run schedule function skyvoid_vanilla_oneblock:locate_snowy_taiga/send_error 1t

@@ -1,0 +1,4 @@
+scoreboard objectives add skyvoid_vanilla_oneblock_death deathCount
+scoreboard objectives add skyvoid_vanilla_oneblock_food food
+scoreboard objectives add skyvoid_vanilla_oneblock_jump minecraft.custom:minecraft.jump
+execute unless score $starter_done skyvoid_vanilla_oneblock matches 1 run schedule function skyvoid_vanilla_oneblock_starter:tick 1t
