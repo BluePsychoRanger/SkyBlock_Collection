@@ -1,4 +1,7 @@
-
+# calculates the intersection of the two distance checks
+# @s = none
+# located at world spawn
+# run from locate_snowy_taiga/start
 
 # flag
 scoreboard players set $nearby skyvoid_vanilla_oneblock 1

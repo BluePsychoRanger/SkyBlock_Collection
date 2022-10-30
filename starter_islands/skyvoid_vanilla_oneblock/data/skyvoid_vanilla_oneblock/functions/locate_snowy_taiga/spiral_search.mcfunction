@@ -1,6 +1,7 @@
-
-
-
+# moves marker in a spiral to test for the biome
+# @s = island placer marker
+# located at @s
+# run from locate_snowy_taiga/move_marker
 
 # check biome
 execute if predicate skyvoid_vanilla_oneblock:in_snowy_taiga run function skyvoid_vanilla_oneblock:locate_snowy_taiga/place_island

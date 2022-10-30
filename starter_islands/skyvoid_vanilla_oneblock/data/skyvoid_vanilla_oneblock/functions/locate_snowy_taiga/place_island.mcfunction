@@ -1,7 +1,7 @@
 # places the starter skyblock island
-# @s = none
-# located at world spawn
-# run from locate_snowy_taiga/step/16/...
+# @s = island placer marker
+# located at @s
+# run from locate_snowy_taiga/spiral_search
 
 setblock ~ -61 ~ grass_block
 setworldspawn ~ -60 ~

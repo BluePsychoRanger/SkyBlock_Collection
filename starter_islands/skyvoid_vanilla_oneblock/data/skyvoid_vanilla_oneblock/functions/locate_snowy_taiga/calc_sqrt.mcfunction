@@ -1,6 +1,7 @@
-
-
-
+# calculates the approximate square root to get z
+# @s = none
+# located at world spawn
+# run from locate_snowy_taiga/calc_coords
 
 # z = 0.5(last_z + z^2/last_z)
 ## z = z^2/last_z
