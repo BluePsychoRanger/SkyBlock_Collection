@@ -15,7 +15,7 @@ scoreboard players operation $t skyvoid_vanilla_oneblock = $r2 skyvoid_vanilla_o
 scoreboard players operation $t skyvoid_vanilla_oneblock *= $r2 skyvoid_vanilla_oneblock
 ## x = r1^2 - r2^2
 scoreboard players operation $x skyvoid_vanilla_oneblock -= $t skyvoid_vanilla_oneblock
-## x = r1^2 - r2^2 + 1000
+## x = r1^2 - r2^2 + 10000
 scoreboard players add $x skyvoid_vanilla_oneblock 10000
 ## x = (r1^2 - r2^2 + 1000)/(200)
 scoreboard players operation $x skyvoid_vanilla_oneblock /= #200 skyvoid_vanilla_oneblock
