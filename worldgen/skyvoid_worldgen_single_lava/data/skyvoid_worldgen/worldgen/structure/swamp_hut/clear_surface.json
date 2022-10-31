@@ -6,7 +6,7 @@
   "start_pool": "skyvoid_worldgen:swamp_hut/clear_surface",
   "size": 1,
   "start_height": {
-    "absolute": -2
+    "absolute": -1
   },
   "start_jigsaw_name": "skyvoid_worldgen:swamp_hut/clear_surface",
   "project_start_to_heightmap": "WORLD_SURFACE_WG",
