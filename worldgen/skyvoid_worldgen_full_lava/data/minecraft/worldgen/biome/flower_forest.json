@@ -29,7 +29,11 @@
     [],
     [],
     [],
-    [],
+    [
+      "minecraft:flower_forest_flowers",
+      "minecraft:trees_flower_forest",
+      "minecraft:flower_flower_forest"
+    ],
     [
       "skyvoid_worldgen:purge/overworld_second_layer"
     ]

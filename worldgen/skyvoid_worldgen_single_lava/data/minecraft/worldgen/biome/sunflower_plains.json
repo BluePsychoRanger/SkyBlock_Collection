@@ -23,7 +23,10 @@
     [],
     [],
     [],
-    [],
+    [
+      "minecraft:patch_sunflower",
+      "minecraft:flower_plains"
+    ],
     [
       "skyvoid_worldgen:purge/overworld_second_layer"
     ]

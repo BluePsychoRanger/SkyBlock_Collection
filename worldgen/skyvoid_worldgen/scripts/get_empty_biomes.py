@@ -7,9 +7,8 @@ VERSION = "1.19.2"              # version to extract biomes from
 SHA = "e05088f787992ecd7558eb1378307d9871f79927" # <- sha for 1.19.2 --- change to empty string if generating for a new version
 
 NAME = "skyvoid_worldgen"      # name of the module
-PACK_VERSION = "1.0"
-DIR = f"{NAME}/data"
-TEMP_PATH = f"{NAME}/temp_files"
+DIR = f"worldgen/{NAME}/data"
+TEMP_PATH = f"worldgen/{NAME}/temp_files"
 BIOME_FOLDER = f"minecraft/worldgen/biome"
 
 NETHER_BIOMES = [
@@ -47,25 +46,29 @@ def purge_biome(path) -> bool:
     biome["carvers"] = {}
     if any(s in str(path) for s in NETHER_BIOMES):
         biome["features"] = [[],[],[],[],[],[],[],[],[],[],[
-                f"{NAME}-{PACK_VERSION}:purge/nether_fortress_nether_wart",
-                f"{NAME}-{PACK_VERSION}:purge/nether_fortress_lava",
-                f"{NAME}-{PACK_VERSION}:purge/nether_fortress_soul_sand",
-                f"{NAME}-{PACK_VERSION}:purge/nether_fortress_chest",
-                f"{NAME}-{PACK_VERSION}:purge/nether_fortress_spawner",
-                f"{NAME}-{PACK_VERSION}:purge/nether_fortress_nether_bricks",
-                f"{NAME}-{PACK_VERSION}:purge/nether_fortress_nether_brick_stairs",
-                f"{NAME}-{PACK_VERSION}:purge/nether_fortress_nether_brick_fence",
-
+                f"{NAME}:purge/nether_fortress_nether_wart",
+                f"{NAME}:purge/nether_fortress_lava",
+                f"{NAME}:purge/nether_fortress_soul_sand",
+                f"{NAME}:purge/nether_fortress_chest",
+                f"{NAME}:purge/nether_fortress_spawner",
+                f"{NAME}:purge/nether_fortress_nether_bricks",
+                f"{NAME}:purge/nether_fortress_nether_brick_stairs",
+                f"{NAME}:purge/nether_fortress_nether_brick_fence",
             ]
         ]
     elif any(s in str(path) for s in END_BIOMES):
-        biome["features"] = [[],[],[],[],[],[],[],[],[],[],[f"{NAME}-{PACK_VERSION}:purge/end_second_layer"]]
+        biome["features"] = [[],[],[],[],[],[],[],[],[],[],[f"{NAME}:purge/end_second_layer"]]
         if "end_highlands" in path:
             biome["features"][4] = ["minecraft:end_gateway_return"]
         elif "the_end" in path:
             biome["features"][4] = ["minecraft:end_spike"]
     else:
-        biome["features"] = [[],[],[],[],[],[],[],[],[],[],[f"{NAME}-{PACK_VERSION}:purge/overworld_second_layer"]]
+        flowers = []
+        step_9 = biome["features"][9]
+        for feature in step_9:
+            if "flower" in feature:
+                flowers.append(feature)
+        biome["features"] = [[],[],[],[],[],[],[],[],[],flowers,[f"{NAME}:purge/overworld_second_layer"]]
 
     with open(path, "w") as f:
         json.dump(biome, f, indent=2)

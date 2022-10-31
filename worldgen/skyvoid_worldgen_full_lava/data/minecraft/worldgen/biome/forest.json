@@ -29,7 +29,10 @@
     [],
     [],
     [],
-    [],
+    [
+      "minecraft:forest_flowers",
+      "minecraft:flower_default"
+    ],
     [
       "skyvoid_worldgen:purge/overworld_second_layer"
     ]
