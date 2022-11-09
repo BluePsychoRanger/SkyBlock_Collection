@@ -1,7 +1,7 @@
 {
   "structures": [
     {
-      "structure": "skyvoid_worldgen:purge/nether_bottom_layers",
+      "structure": "skyvoid_worldgen:purge/nether_top_layer",
       "weight": 1
     }
   ],
