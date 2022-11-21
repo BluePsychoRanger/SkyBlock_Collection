@@ -5,7 +5,7 @@
 
 # create island
 setblock ~ -61 ~ grass_block
-setworldspawn ~ -60 ~
+setworldspawn ~ 0 ~
 
 # update player
 effect give @a resistance 2 4 true
