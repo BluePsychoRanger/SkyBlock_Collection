@@ -4,12 +4,12 @@
 # run from locate_snowy_taiga/radial_search/check
 
 # create island
-setblock ~ -61 ~ grass_block
+setblock ~ -64 ~ grass_block
 setworldspawn ~ 0 ~
 
 # update player
 effect give @a resistance 2 4 true
-tp @a ~0.5 -60 ~0.5
+tp @a ~0.5 -63 ~0.5
 gamemode survival @a
 
 # send message
