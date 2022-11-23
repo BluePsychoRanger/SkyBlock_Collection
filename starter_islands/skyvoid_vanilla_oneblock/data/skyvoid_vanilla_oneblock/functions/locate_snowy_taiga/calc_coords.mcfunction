@@ -36,10 +36,11 @@ scoreboard players set $last_z skyvoid_vanilla_oneblock 500
 function skyvoid_vanilla_oneblock:locate_snowy_taiga/calc_sqrt
 
 ## remove ambiguity of z
-execute store result score $pos_z skyvoid_vanilla_oneblock positioned 50 -61 10 run locate structure skyvoid_vanilla_oneblock:snowy_taiga_marker
-execute store result score $neg_z skyvoid_vanilla_oneblock positioned 50 -61 -10 run locate structure skyvoid_vanilla_oneblock:snowy_taiga_marker
+execute store result score $pos_z skyvoid_vanilla_oneblock positioned 50 -64 10 run locate structure skyvoid_vanilla_oneblock:snowy_taiga_marker
+execute store result score $neg_z skyvoid_vanilla_oneblock positioned 50 -64 -10 run locate structure skyvoid_vanilla_oneblock:snowy_taiga_marker
 execute if score $neg_z skyvoid_vanilla_oneblock < $pos_z skyvoid_vanilla_oneblock run scoreboard players operation $z skyvoid_vanilla_oneblock *= #-1 skyvoid_vanilla_oneblock
 
 # go to calculated position
-summon marker ~ -61 ~ {CustomName:'"skyvoid_vanilla_oneblock_placer"',Tags:["skyvoid_vanilla_oneblock_placer"]}
+forceload add ~ ~
+summon marker ~ -64 ~ {CustomName:'"skyvoid_vanilla_oneblock_placer"',Tags:["skyvoid_vanilla_oneblock_placer"]}
 function skyvoid_vanilla_oneblock:locate_snowy_taiga/wait_for_marker

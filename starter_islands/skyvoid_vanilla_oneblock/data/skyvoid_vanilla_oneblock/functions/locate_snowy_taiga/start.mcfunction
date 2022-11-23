@@ -7,8 +7,8 @@ tellraw @a [{"text":"Locating Snowy Taiga...","color":"aqua"}]
 gamemode spectator @a
 
 # distance check from 2 points
-execute store result score $r1 skyvoid_vanilla_oneblock positioned 0 -61 0 run locate structure skyvoid_vanilla_oneblock:snowy_taiga_marker
-execute store result score $r2 skyvoid_vanilla_oneblock positioned 100 -61 0 run locate structure skyvoid_vanilla_oneblock:snowy_taiga_marker
+execute store result score $r1 skyvoid_vanilla_oneblock positioned 0 -64 0 run locate structure skyvoid_vanilla_oneblock:snowy_taiga_marker
+execute store result score $r2 skyvoid_vanilla_oneblock positioned 100 -64 0 run locate structure skyvoid_vanilla_oneblock:snowy_taiga_marker
 
 # if search failed (r1 or r2 are zero), send error
 scoreboard players set $nearby skyvoid_vanilla_oneblock 0
