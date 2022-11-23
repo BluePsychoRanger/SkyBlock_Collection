@@ -7,3 +7,5 @@ The `skyvoid_worldgen` data pack generates an infinite void world with propertie
 The `skyvoid_worldgen_full_lava` data pack generates an infinite void world with properties akin to the original SkyBlock. Every end portal will have a 3x3 pit of lava beneath it. 
 ## [Single Lava under End Portal](https://github.com/BluePsychoRanger/SkyBlock_Collection/blob/main/worldgen/skyvoid_worldgen_single_lava)
 The `skyvoid_worldgen_single_lava` data pack generates an infinite void world with properties akin to the original SkyBlock. Every end portal will have a single block of lava beneath it. 
+## [Stronghold Portal Room](https://github.com/BluePsychoRanger/SkyBlock_Collection/blob/main/worldgen/skyvoid_worldgen_portal_room)
+The `skyvoid_worldgen_portal_room` data pack generates an infinite void world with properties akin to the original SkyBlock. Strongholds will generate with only the portal room. 

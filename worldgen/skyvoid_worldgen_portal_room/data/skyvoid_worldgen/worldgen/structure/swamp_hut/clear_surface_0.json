@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:jigsaw",
+  "biomes": "#minecraft:has_structure/swamp_hut",
+  "step": "top_layer_modification",
+  "spawn_overrides": {},
+  "start_pool": "skyvoid_worldgen:swamp_hut/clear_surface_0",
+  "size": 1,
+  "start_height": {
+    "absolute": 62
+  },
+  "start_jigsaw_name": "skyvoid_worldgen:swamp_hut/clear_surface",
+  "max_distance_from_center": 20,
+  "use_expansion_hack": false
+}

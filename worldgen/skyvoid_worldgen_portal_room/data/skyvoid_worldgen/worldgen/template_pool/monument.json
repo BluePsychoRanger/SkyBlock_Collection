@@ -1,0 +1,15 @@
+{
+  "name": "skyvoid_worldgen:monument",
+  "fallback": "skyvoid_worldgen:monument",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "skyvoid_worldgen:monument",
+        "processors": "minecraft:empty"
+      }
+    }
+  ]
+}
