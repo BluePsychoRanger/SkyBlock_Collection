@@ -13,4 +13,4 @@ All structures that are important in SkyBlock will generate at the same coordina
 - **End Cities** will generate any shulkers or elytra item frames that normally generate
 
 ### The End Dimension
-In the end dimension, the obsidian pillars and the exit end portal generate as normal. When a player goes through an end gateway, a small end island will still generate.
+In the end dimension, the obsidian pillars and the exit end portal generate as normal. When a player goes through an end gateway, a small end island will still generate, but the rest of the outer end islands will not.
