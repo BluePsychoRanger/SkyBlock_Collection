@@ -6,6 +6,7 @@ The `skyvoid_vanilla_oneblock_starter` data pack facilitates the initial grind a
 - All zombies will spawn with iron shovels, which will have a 80% chance of dropping with at least 25% durability left (63/250)
 - Jumping will cause the player to gain the Hunger effect
 - Players will be reduced to 4 hearts when starving (initial starving damage deals 6 hearts instead of half a heart of damage)
+- Once the shovel is obtained, it will start raining for a random duration of time
 
 ### Dependencies
 [Vanilla One Block](https://github.com/BluePsychoRanger/SkyBlock_Collection/blob/main/starter_islands/skyvoid_vanilla_oneblock) must be installed alongside this data pack. 
