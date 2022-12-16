@@ -1,4 +1,5 @@
 ## Standard SkyBlock
+For more information, visit the [wiki](https://github.com/BluePsychoRanger/SkyBlock_Collection/wiki).
 ### Starter Island
 This island will generate with 54 dirt, 26 grass blocks, 1 bedrock (at world spawn), an oak tree, and a chest with an ice block and bucket of lava. 
 
