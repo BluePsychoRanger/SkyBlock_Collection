@@ -1,0 +1,27 @@
+{
+  "criteria": {
+    "iron_shovel": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:value_check",
+            "value": {
+              "type": "minecraft:score",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "skyvoid_vanilla_oneblock_starter"
+              },
+              "score": "load.status"
+            },
+            "range": 1
+          }
+        ],
+        "block": "minecraft:snow_block"
+      }
+    }
+  },
+  "rewards": {
+    "function": "skyvoid_vanilla_oneblock_starter:end_rain"
+  }
+}

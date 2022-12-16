@@ -1,6 +1,5 @@
 {
     "values": [
-        {"id": "#load:skyvoid_vanilla_oneblock", "required": false},
-        "skyvoid_vanilla_oneblock_starter:versioning/resolve_load"
+        "skyvoid_vanilla_oneblock_starter:load"
     ]
 }
