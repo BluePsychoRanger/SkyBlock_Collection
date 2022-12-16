@@ -4,14 +4,12 @@
 # run from locate_snowy_taiga/radial_search/check
 
 # create island
+scoreboard players set $generated skyvoid_vanilla_oneblock 1
 setblock ~ -64 ~ grass_block
 setworldspawn ~ 0 ~
 
 # update player
-effect give @a resistance 2 4 true
 tp @a ~0.5 -63 ~0.5
-gamemode survival @a
+tellraw @a [{"text":"Found snowy taiga! Generating island...","color":"yellow"}]
 
-# send message
-tellraw @a [{"text":"Generated Island!","color":"green"}]
-scoreboard players set $generated skyvoid_vanilla_oneblock 1
+schedule function skyvoid_vanilla_oneblock:locate_snowy_taiga/finalize 1t

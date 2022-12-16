@@ -3,7 +3,7 @@
 # located at world spawn
 # run from skyvoid_worldgen:load via #skyvoid_worldgen:initialize
 
-tellraw @a [{"text":"Locating Snowy Taiga...","color":"aqua"}]
+tellraw @a [{"text":"Locating snowy taiga...","color":"aqua"}]
 gamemode spectator @a
 
 # distance check from 2 points
