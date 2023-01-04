@@ -34,16 +34,8 @@
     [],
     [],
     [],
-    [],
     [
-      "skyvoid_worldgen:purge/nether_fortress_nether_wart",
-      "skyvoid_worldgen:purge/nether_fortress_lava",
-      "skyvoid_worldgen:purge/nether_fortress_soul_sand",
-      "skyvoid_worldgen:purge/nether_fortress_chest",
-      "skyvoid_worldgen:purge/nether_fortress_spawner",
-      "skyvoid_worldgen:purge/nether_fortress_nether_bricks",
-      "skyvoid_worldgen:purge/nether_fortress_nether_brick_stairs",
-      "skyvoid_worldgen:purge/nether_fortress_nether_brick_fence"
+      "skyvoid_worldgen:purge/nether_fortress"
     ]
   ],
   "precipitation": "none",

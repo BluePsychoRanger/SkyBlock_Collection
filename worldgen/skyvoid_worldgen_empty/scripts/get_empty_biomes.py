@@ -46,17 +46,7 @@ def purge_biome(path) -> bool:
 
     biome["carvers"] = {}
     if any(s in str(path) for s in NETHER_BIOMES):
-        biome["features"] = [[],[],[],[],[],[],[],[],[],[],[
-                f"{NAME}:purge/nether_fortress_nether_wart",
-                f"{NAME}:purge/nether_fortress_lava",
-                f"{NAME}:purge/nether_fortress_soul_sand",
-                f"{NAME}:purge/nether_fortress_chest",
-                f"{NAME}:purge/nether_fortress_spawner",
-                f"{NAME}:purge/nether_fortress_nether_bricks",
-                f"{NAME}:purge/nether_fortress_nether_brick_stairs",
-                f"{NAME}:purge/nether_fortress_nether_brick_fence",
-            ]
-        ]
+        biome["features"] = [[],[],[],[],[],[],[],[],[],[f"{NAME}:purge/nether_fortress"]]
     elif any(s in str(path) for s in END_BIOMES):
         biome["features"] = [[],[],[],[],[],[],[],[],[],[],[f"{NAME}:purge/end_second_layer"]]
     else:
