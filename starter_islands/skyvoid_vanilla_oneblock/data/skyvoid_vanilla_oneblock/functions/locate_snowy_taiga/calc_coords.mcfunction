@@ -3,9 +3,6 @@
 # located at world spawn
 # run from locate_snowy_taiga/start
 
-# flag
-scoreboard players set $nearby skyvoid_vanilla_oneblock 1
-
 # calculate x = (r1^2 - r2^2 + U^2)/(2 * U) , U = 100 [Trilateration]
 ## x = r1^2
 scoreboard players operation $x skyvoid_vanilla_oneblock = $r1 skyvoid_vanilla_oneblock
