@@ -1,13 +1,13 @@
 {
-  "feature": "skyvoid_worldgen:purge/nether_fortress_spawner",
+  "feature": "skyvoid_worldgen:purge/nether_fortress",
   "placement": [
     {
       "type": "minecraft:count",
-      "count": 128
+      "count": 256
     },
     {
       "type": "minecraft:count",
-      "count": 18
+      "count": 100
     },
     {
       "type": "minecraft:in_square"
