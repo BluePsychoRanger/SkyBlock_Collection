@@ -1,0 +1,15 @@
+{
+  "name": "skyvoid_worldgen:purge/overworld_top_layer",
+  "fallback": "skyvoid_worldgen:purge/overworld_top_layer",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "terrain_matching",
+        "location": "skyvoid_worldgen:purge_top_layer",
+        "processors": "minecraft:empty"
+      }
+    }
+  ]
+}

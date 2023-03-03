@@ -1,0 +1,15 @@
+{
+  "name": "minecraft:village/savanna/town_centers",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "skyvoid_worldgen:blank",
+        "processors": "minecraft:empty"
+      }
+    }
+  ]
+}
