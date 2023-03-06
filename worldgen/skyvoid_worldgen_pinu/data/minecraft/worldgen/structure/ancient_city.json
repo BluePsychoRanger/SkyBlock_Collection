@@ -42,7 +42,7 @@
   },
   "start_jigsaw_name": "minecraft:city_anchor",
   "start_pool": "minecraft:ancient_city/city_center",
-  "step": "vegetal_decoration",
+  "step": "fluid_springs",
   "terrain_adaptation": "beard_box",
   "use_expansion_hack": false
 }

@@ -1,7 +1,7 @@
 {
   "type": "minecraft:jigsaw",
   "biomes": "#minecraft:has_structure/swamp_hut",
-  "step": "top_layer_modification",
+  "step": "underground_ores",
   "spawn_overrides": {},
   "start_pool": "skyvoid_worldgen:swamp_hut/clear_surface_0",
   "size": 1,

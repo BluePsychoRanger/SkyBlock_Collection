@@ -30,7 +30,10 @@
     [],
     [],
     [
-      "minecraft:flower_plains"
+      "minecraft:flower_plains",
+      "minecraft:sculk_vein",
+      "minecraft:sculk_patch_deep_dark"
+    
     ],
     [
       "skyvoid_worldgen:purge/overworld_second_layer"
