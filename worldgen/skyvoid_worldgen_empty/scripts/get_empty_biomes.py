@@ -3,8 +3,8 @@ from github import Github, Repository
 from urllib import request
 
 GITHUB_REPO = "misode/mcmeta"   # github repo to extract biomes from
-VERSION = "1.19.2"              # version to extract biomes from
-SHA = "e05088f787992ecd7558eb1378307d9871f79927" # <- sha for 1.19.2 --- change to empty string if generating for a new version
+VERSION = "1.19.4"              # version to extract biomes from
+SHA = "6a723499f434f0f100427cfe93520e19efdf5899" # <- sha for 1.19.2 --- change to empty string if generating for a new version
 
 FOLDER = "skyvoid_worldgen_empty"
 NAME = "skyvoid_worldgen"
@@ -73,7 +73,7 @@ def get_biomes(version: str, remove_files: bool = True) -> list[dict]:
     path = TEMP_PATH
     for root, subfolders, files in os.walk(path):
         # find the biomes folder
-        if BIOME_FOLDER in root:
+        if BIOME_FOLDER in root and "datapacks" not in root:
             path = root
             # get all file contents in the biome folder
             for file in files:

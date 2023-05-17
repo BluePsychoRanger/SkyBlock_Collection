@@ -28,7 +28,7 @@
       "skyvoid_worldgen:purge/overworld_second_layer"
     ]
   ],
-  "precipitation": "none",
+  "has_precipitation": false,
   "spawn_costs": {},
   "spawners": {
     "ambient": [],

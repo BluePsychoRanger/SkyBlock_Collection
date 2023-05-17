@@ -30,7 +30,7 @@
       "skyvoid_worldgen:purge/overworld_second_layer"
     ]
   ],
-  "precipitation": "snow",
+  "has_precipitation": true,
   "spawn_costs": {},
   "spawners": {
     "ambient": [
