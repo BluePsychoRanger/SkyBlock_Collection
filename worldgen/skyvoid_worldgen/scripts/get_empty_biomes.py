@@ -3,8 +3,8 @@ from github import Github, Repository
 from urllib import request
 
 GITHUB_REPO = "misode/mcmeta"   # github repo to extract biomes from
-VERSION = "1.19.4"              # version to extract biomes from
-SHA = "6a723499f434f0f100427cfe93520e19efdf5899" # <- sha for 1.19.4 --- change to empty string if generating for a new version
+VERSION = "1.20.1"              # version to extract biomes from
+SHA = "5382b4905bb05e47c3e8acd110e06b5b9c32d077" # <- sha for 1.20.1 --- change to empty string if generating for a new version
 
 NAME = "skyvoid_worldgen"      # name of the module
 DIR = f"worldgen/{NAME}/data"

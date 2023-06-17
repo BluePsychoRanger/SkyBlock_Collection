@@ -1,10 +1,10 @@
 {
   "carvers": {},
-  "downfall": 0.0,
+  "downfall": 0.8,
   "effects": {
     "fog_color": 12638463,
-    "foliage_color": 10387789,
-    "grass_color": 9470285,
+    "foliage_color": 11983713,
+    "grass_color": 11983713,
     "mood_sound": {
       "block_search_extent": 8,
       "offset": 2.0,
@@ -15,11 +15,11 @@
       "max_delay": 24000,
       "min_delay": 12000,
       "replace_current_music": false,
-      "sound": "minecraft:music.overworld.badlands"
+      "sound": "minecraft:music.overworld.cherry_grove"
     },
-    "sky_color": 7254527,
-    "water_color": 4159204,
-    "water_fog_color": 329011
+    "sky_color": 8103167,
+    "water_color": 6141935,
+    "water_fog_color": 6141935
   },
   "features": [
     [],
@@ -31,12 +31,14 @@
     [],
     [],
     [],
-    [],
+    [
+      "minecraft:flower_cherry"
+    ],
     [
       "skyvoid_worldgen:purge/overworld_second_layer"
     ]
   ],
-  "has_precipitation": false,
+  "has_precipitation": true,
   "spawn_costs": {},
   "spawners": {
     "ambient": [
@@ -48,7 +50,26 @@
       }
     ],
     "axolotls": [],
-    "creature": [],
+    "creature": [
+      {
+        "type": "minecraft:pig",
+        "maxCount": 2,
+        "minCount": 1,
+        "weight": 1
+      },
+      {
+        "type": "minecraft:rabbit",
+        "maxCount": 6,
+        "minCount": 2,
+        "weight": 2
+      },
+      {
+        "type": "minecraft:sheep",
+        "maxCount": 4,
+        "minCount": 2,
+        "weight": 2
+      }
+    ],
     "misc": [],
     "monster": [
       {
@@ -111,5 +132,5 @@
     "water_ambient": [],
     "water_creature": []
   },
-  "temperature": 2.0
+  "temperature": 0.5
 }
