@@ -1,0 +1,3 @@
+execute store result score $feedback skyvoid_additions run gamerule sendCommandFeedback
+gamerule sendCommandFeedback false
+function skyvoid_additions:customize/update_config/page_1

@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:command",
+  "pools": [
+    {
+      "rolls": {
+        "min": 0,
+        "max": 24
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:stick",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

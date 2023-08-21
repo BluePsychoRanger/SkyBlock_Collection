@@ -1,0 +1,56 @@
+# check if the note matches
+# @s = vex that played a note block
+# located at the note block played by the player
+# run from skyvoid_additions:mechanics/allay_conversion/ray
+
+execute align xyz if entity @s[dy=-1] run return -1
+execute if score @s skyvoid_note matches 0 if block ~ ~ ~ note_block[note=0] at @s run function skyvoid_additions:mechanics/allay_conversion/update_status
+execute if block ~ ~ ~ note_block[note=0] run return 0
+execute if score @s skyvoid_note matches 1 if block ~ ~ ~ note_block[note=1] at @s run function skyvoid_additions:mechanics/allay_conversion/update_status
+execute if block ~ ~ ~ note_block[note=1] run return 1
+execute if score @s skyvoid_note matches 2 if block ~ ~ ~ note_block[note=2] at @s run function skyvoid_additions:mechanics/allay_conversion/update_status
+execute if block ~ ~ ~ note_block[note=2] run return 2
+execute if score @s skyvoid_note matches 3 if block ~ ~ ~ note_block[note=3] at @s run function skyvoid_additions:mechanics/allay_conversion/update_status
+execute if block ~ ~ ~ note_block[note=3] run return 3
+execute if score @s skyvoid_note matches 4 if block ~ ~ ~ note_block[note=4] at @s run function skyvoid_additions:mechanics/allay_conversion/update_status
+execute if block ~ ~ ~ note_block[note=4] run return 4
+execute if score @s skyvoid_note matches 5 if block ~ ~ ~ note_block[note=5] at @s run function skyvoid_additions:mechanics/allay_conversion/update_status
+execute if block ~ ~ ~ note_block[note=5] run return 5
+execute if score @s skyvoid_note matches 6 if block ~ ~ ~ note_block[note=6] at @s run function skyvoid_additions:mechanics/allay_conversion/update_status
+execute if block ~ ~ ~ note_block[note=6] run return 6
+execute if score @s skyvoid_note matches 7 if block ~ ~ ~ note_block[note=7] at @s run function skyvoid_additions:mechanics/allay_conversion/update_status
+execute if block ~ ~ ~ note_block[note=7] run return 7
+execute if score @s skyvoid_note matches 8 if block ~ ~ ~ note_block[note=8] at @s run function skyvoid_additions:mechanics/allay_conversion/update_status
+execute if block ~ ~ ~ note_block[note=8] run return 8
+execute if score @s skyvoid_note matches 9 if block ~ ~ ~ note_block[note=9] at @s run function skyvoid_additions:mechanics/allay_conversion/update_status
+execute if block ~ ~ ~ note_block[note=9] run return 9
+execute if score @s skyvoid_note matches 10 if block ~ ~ ~ note_block[note=10] at @s run function skyvoid_additions:mechanics/allay_conversion/update_status
+execute if block ~ ~ ~ note_block[note=10] run return 10
+execute if score @s skyvoid_note matches 11 if block ~ ~ ~ note_block[note=11] at @s run function skyvoid_additions:mechanics/allay_conversion/update_status
+execute if block ~ ~ ~ note_block[note=11] run return 11
+execute if score @s skyvoid_note matches 12 if block ~ ~ ~ note_block[note=12] at @s run function skyvoid_additions:mechanics/allay_conversion/update_status
+execute if block ~ ~ ~ note_block[note=12] run return 12
+execute if score @s skyvoid_note matches 13 if block ~ ~ ~ note_block[note=13] at @s run function skyvoid_additions:mechanics/allay_conversion/update_status
+execute if block ~ ~ ~ note_block[note=13] run return 13
+execute if score @s skyvoid_note matches 14 if block ~ ~ ~ note_block[note=14] at @s run function skyvoid_additions:mechanics/allay_conversion/update_status
+execute if block ~ ~ ~ note_block[note=14] run return 14
+execute if score @s skyvoid_note matches 15 if block ~ ~ ~ note_block[note=15] at @s run function skyvoid_additions:mechanics/allay_conversion/update_status
+execute if block ~ ~ ~ note_block[note=15] run return 15
+execute if score @s skyvoid_note matches 16 if block ~ ~ ~ note_block[note=16] at @s run function skyvoid_additions:mechanics/allay_conversion/update_status
+execute if block ~ ~ ~ note_block[note=16] run return 16
+execute if score @s skyvoid_note matches 17 if block ~ ~ ~ note_block[note=17] at @s run function skyvoid_additions:mechanics/allay_conversion/update_status
+execute if block ~ ~ ~ note_block[note=17] run return 17
+execute if score @s skyvoid_note matches 18 if block ~ ~ ~ note_block[note=18] at @s run function skyvoid_additions:mechanics/allay_conversion/update_status
+execute if block ~ ~ ~ note_block[note=18] run return 18
+execute if score @s skyvoid_note matches 19 if block ~ ~ ~ note_block[note=19] at @s run function skyvoid_additions:mechanics/allay_conversion/update_status
+execute if block ~ ~ ~ note_block[note=19] run return 19
+execute if score @s skyvoid_note matches 20 if block ~ ~ ~ note_block[note=20] at @s run function skyvoid_additions:mechanics/allay_conversion/update_status
+execute if block ~ ~ ~ note_block[note=20] run return 20
+execute if score @s skyvoid_note matches 21 if block ~ ~ ~ note_block[note=21] at @s run function skyvoid_additions:mechanics/allay_conversion/update_status
+execute if block ~ ~ ~ note_block[note=21] run return 21
+execute if score @s skyvoid_note matches 22 if block ~ ~ ~ note_block[note=22] at @s run function skyvoid_additions:mechanics/allay_conversion/update_status
+execute if block ~ ~ ~ note_block[note=22] run return 22
+execute if score @s skyvoid_note matches 23 if block ~ ~ ~ note_block[note=23] at @s run function skyvoid_additions:mechanics/allay_conversion/update_status
+execute if block ~ ~ ~ note_block[note=23] run return 23
+execute if score @s skyvoid_note matches 24 if block ~ ~ ~ note_block[note=24] at @s run function skyvoid_additions:mechanics/allay_conversion/update_status
+execute if block ~ ~ ~ note_block[note=24] run return 24

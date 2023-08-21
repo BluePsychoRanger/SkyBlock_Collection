@@ -1,0 +1,40 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:value_check",
+            "value": {
+              "type": "minecraft:score",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "skyvoid_additions"
+              },
+              "score": "load.status"
+            },
+            "range": 1
+          },
+          {
+            "condition": "minecraft:value_check",
+            "value": {
+              "type": "minecraft:score",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "netherrack_portals"
+              },
+              "score": "skyvoid_config"
+            },
+            "range": 1
+          }
+        ],
+        "from": "minecraft:overworld",
+        "to": "minecraft:the_nether"
+      }
+    }
+  },
+  "rewards": {
+    "function": "skyvoid_additions:mechanics/netherrack_portals/check_blocks"
+  }
+}

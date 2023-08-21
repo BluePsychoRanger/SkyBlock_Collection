@@ -1,0 +1,19 @@
+[
+  {
+    "condition": "minecraft:random_chance",
+    "chance": 0.05
+  },
+  {
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+      "stepping_on": {
+        "block": {
+          "blocks": [
+            "minecraft:deepslate_tiles"
+          ]
+        }
+      }
+    }
+  }
+]

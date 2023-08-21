@@ -1,0 +1,38 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:kill_mob_near_sculk_catalyst",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:value_check",
+            "value": {
+              "type": "minecraft:score",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "skyvoid_additions"
+              },
+              "score": "load.status"
+            },
+            "range": 1
+          },
+          {
+            "condition": "minecraft:value_check",
+            "value": {
+              "type": "minecraft:score",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "echo_shards_from_amethyst"
+              },
+              "score": "skyvoid_config"
+            },
+            "range": 1
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "skyvoid_additions:mechanics/echo_shards_from_amethyst/killed_mob"
+  }
+}

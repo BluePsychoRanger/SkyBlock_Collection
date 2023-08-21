@@ -1,0 +1,19 @@
+[
+  {
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+      "equipment": {
+        "mainhand": {
+          "count": {
+            "min": 1
+          }
+        }
+      }
+    }
+  },
+  {
+    "condition": "minecraft:random_chance",
+    "chance": 0.2
+  }
+]

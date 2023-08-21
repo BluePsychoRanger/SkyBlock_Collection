@@ -1,0 +1,141 @@
+[
+  {
+    "condition": "minecraft:random_chance",
+    "chance": 0.6
+  },
+  {
+    "condition": "minecraft:location_check",
+    "offsetX": -1,
+    "offsetZ": -1,
+    "predicate": {
+      "light": {
+        "light": 0
+      },
+      "block": {
+        "blocks": [
+          "minecraft:cobweb"
+        ]
+      }
+    }
+  },
+  {
+    "condition": "minecraft:location_check",
+    "offsetX": -1,
+    "offsetZ": 0,
+    "predicate": {
+      "light": {
+        "light": 0
+      },
+      "block": {
+        "blocks": [
+          "minecraft:cobweb"
+        ]
+      }
+    }
+  },
+  {
+    "condition": "minecraft:location_check",
+    "offsetX": -1,
+    "offsetZ": 1,
+    "predicate": {
+      "light": {
+        "light": 0
+      },
+      "block": {
+        "blocks": [
+          "minecraft:cobweb"
+        ]
+      }
+    }
+  },
+  {
+    "condition": "minecraft:location_check",
+    "offsetX": 0,
+    "offsetZ": -1,
+    "predicate": {
+      "light": {
+        "light": 0
+      },
+      "block": {
+        "blocks": [
+          "minecraft:cobweb"
+        ]
+      }
+    }
+  },
+  {
+    "condition": "minecraft:location_check",
+    "offsetX": 0,
+    "offsetZ": 0,
+    "predicate": {
+      "light": {
+        "light": 0
+      },
+      "block": {
+        "blocks": [
+          "minecraft:cobweb"
+        ]
+      }
+    }
+  },
+  {
+    "condition": "minecraft:location_check",
+    "offsetX": 0,
+    "offsetZ": 1,
+    "predicate": {
+      "light": {
+        "light": 0
+      },
+      "block": {
+        "blocks": [
+          "minecraft:cobweb"
+        ]
+      }
+    }
+  },
+  {
+    "condition": "minecraft:location_check",
+    "offsetX": 1,
+    "offsetZ": -1,
+    "predicate": {
+      "light": {
+        "light": 0
+      },
+      "block": {
+        "blocks": [
+          "minecraft:cobweb"
+        ]
+      }
+    }
+  },
+  {
+    "condition": "minecraft:location_check",
+    "offsetX": 1,
+    "offsetZ": 0,
+    "predicate": {
+      "light": {
+        "light": 0
+      },
+      "block": {
+        "blocks": [
+          "minecraft:cobweb"
+        ]
+      }
+    }
+  },
+  {
+    "condition": "minecraft:location_check",
+    "offsetX": 1,
+    "offsetZ": 1,
+    "predicate": {
+      "light": {
+        "light": 0
+      },
+      "block": {
+        "blocks": [
+          "minecraft:cobweb"
+        ]
+      }
+    }
+  }
+]

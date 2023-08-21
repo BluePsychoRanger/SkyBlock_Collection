@@ -1,0 +1,49 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:rose_bush"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:lilac"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:peony"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:sunflower"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:glowstone"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:sea_pickle"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:emerald",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 2
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

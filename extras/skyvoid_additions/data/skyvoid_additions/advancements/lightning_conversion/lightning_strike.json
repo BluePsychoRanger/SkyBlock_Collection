@@ -1,0 +1,63 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:lightning_strike",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:value_check",
+            "value": {
+              "type": "minecraft:score",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "skyvoid_additions"
+              },
+              "score": "load.status"
+            },
+            "range": 1
+          },
+          {
+            "condition": "minecraft:any_of",
+            "terms": [
+              {
+                "condition": "minecraft:value_check",
+                "value": {
+                  "type": "minecraft:score",
+                  "target": {
+                    "type": "minecraft:fixed",
+                    "name": "elder_guardians_from_lightning"
+                  },
+                  "score": "skyvoid_config"
+                },
+                "range": 1
+              },
+              {
+                "condition": "minecraft:value_check",
+                "value": {
+                  "type": "minecraft:score",
+                  "target": {
+                    "type": "minecraft:fixed",
+                    "name": "shulkers_from_lightning"
+                  },
+                  "score": "skyvoid_config"
+                },
+                "range": 1
+              }
+            ]
+          }
+        ],
+        "lightning": {
+          "distance": {
+            "absolute": {
+              "min": 0,
+              "max": 128
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "skyvoid_additions:mechanics/lightning_conversion/find_bolt"
+  }
+}
