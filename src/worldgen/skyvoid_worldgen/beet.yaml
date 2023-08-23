@@ -5,3 +5,5 @@ version: 1.0.2
 data_pack:
   load: .
 
+pipeline:
+  - beet_plugins.worldgen.get_empty_biomes
