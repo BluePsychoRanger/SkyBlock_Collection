@@ -1,0 +1,30 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:value_check",
+            "value": {
+              "type": "minecraft:score",
+              "target": "this",
+              "score": "bpr_vf_death"
+            },
+            "range": {
+              "min": 1
+            }
+          }
+        ],
+        "damage": {
+          "type": {
+            "bypasses_invulnerability": true
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "bpr_void_fishing:void_items/player_death"
+  }
+}

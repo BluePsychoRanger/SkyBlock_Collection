@@ -1,0 +1,19 @@
+{
+    "criteria": {
+        "reel_in": {
+            "trigger": "minecraft:fishing_rod_hooked",
+            "conditions": {
+                "entity": {
+                    "type": "minecraft:armor_stand",
+                    "nbt": "{Tags:[\"bpr_vf_bait\"]}",
+                    "location": {
+                        "dimension": "overworld"
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "bpr_void_fishing:reel_in/reel_rod"
+    }
+}
