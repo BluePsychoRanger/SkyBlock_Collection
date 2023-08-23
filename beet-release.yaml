@@ -1,0 +1,9 @@
+
+pipeline:
+  - broadcast: 'src/*/*'
+    extend: 'beet.yaml'
+    pipeline:
+      - 'beet.contrib.minify_json'
+      - require: [beet.contrib.copy_files]
+        meta: {copy_files: {data_pack: {LICENSE: "../../../LICENSE", README.md: "README.md"}}}
+      - 'beet_plugins.output.release'

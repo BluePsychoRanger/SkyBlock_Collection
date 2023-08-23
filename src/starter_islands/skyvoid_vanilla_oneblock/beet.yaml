@@ -1,0 +1,7 @@
+id: 'skyvoid_vanilla_oneblock'
+name: 'One Block Island'
+version: 1.0.2
+
+data_pack:
+  load: .
+

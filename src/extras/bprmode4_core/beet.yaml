@@ -1,0 +1,7 @@
+id: 'bprmode4'
+name: 'BPRMode4 Core'
+version: 0.0.1
+
+data_pack:
+  load: .
+
