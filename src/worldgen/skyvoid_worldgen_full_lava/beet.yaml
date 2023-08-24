@@ -2,8 +2,7 @@ id: 'skyvoid_worldgen_full_lava'
 name: 'Full Lava Sky Void'
 version: 1.0.2
 
-data_pack:
-  load: .
-
 pipeline:
-  - beet_plugins.worldgen.get_empty_biomes
+  - beet_plugins.worldgen.generate
+  - data_pack:
+      load: .

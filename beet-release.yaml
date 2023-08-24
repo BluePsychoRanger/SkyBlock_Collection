@@ -1,6 +1,6 @@
 
 pipeline:
-  - broadcast: 'src/*/*'
+  - broadcast: 'src/*/skyvoid_*'
     extend: 'beet.yaml'
     pipeline:
       - 'beet.contrib.minify_json'

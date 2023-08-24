@@ -29,13 +29,8 @@ def beet_default(ctx: Context):
 
 	ctx.data.save(
 		path=out_dir + f"/{ctx.project_id}_{version.replace('.', '_')}",
-		overwrite=True,
+		overwrite=True
 	)
-
-from beet import Context
-from pathlib import Path
-from bolt import Module
-import os
 
 def release(ctx: Context):
 	"""Saves the datapack to the ./build folder."""
@@ -65,5 +60,5 @@ def release(ctx: Context):
 	ctx.data.save(
 		path=out_dir + f"/{ctx.project_id}_{version.replace('.', '_')}",
 		overwrite=True,
-		zipped=True,
+		zipped=True
 	)

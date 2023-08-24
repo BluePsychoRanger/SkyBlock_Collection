@@ -1,0 +1,7 @@
+id: 'skyvoid_worldgen_base'
+name: 'Sky Void Base'
+version: 1.0.0
+
+data_pack:
+  load: .
+
