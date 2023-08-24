@@ -1,0 +1,103 @@
+{
+  "type": "minecraft:fishing",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "weight": 30,
+          "name": "minecraft:obsidian",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 3
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 5,
+          "name": "minecraft:saddle"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 10,
+          "name": "minecraft:name_tag"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 20,
+          "name": "minecraft:paper",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "translate": "%1$s%3427655$s",
+                  "with": [
+                    "Enchanted Page",
+                    {
+                      "translate": "item.gm4.enchanted_page"
+                    }
+                  ],
+                  "italic": false
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{gm4_book_binders:{item:\"enchanted_page\"}}"
+            },
+            {
+              "function": "minecraft:enchant_randomly",
+              "enchantments": [
+                "minecraft:unbreaking",
+                "minecraft:thorns",
+                "minecraft:sweeping",
+                "minecraft:smite",
+                "minecraft:silk_touch",
+                "minecraft:sharpness",
+                "minecraft:riptide",
+                "minecraft:respiration",
+                "minecraft:quick_charge",
+                "minecraft:punch",
+                "minecraft:protection",
+                "minecraft:projectile_protection",
+                "minecraft:power",
+                "minecraft:piercing",
+                "minecraft:multishot",
+                "minecraft:lure",
+                "minecraft:luck_of_the_sea",
+                "minecraft:loyalty",
+                "minecraft:looting",
+                "minecraft:knockback",
+                "minecraft:infinity",
+                "minecraft:impaling",
+                "minecraft:fortune",
+                "minecraft:flame",
+                "minecraft:fire_protection",
+                "minecraft:fire_aspect",
+                "minecraft:feather_falling",
+                "minecraft:efficiency",
+                "minecraft:depth_strider",
+                "minecraft:channeling",
+                "minecraft:blast_protection",
+                "minecraft:bane_of_arthropods",
+                "minecraft:aqua_affinity"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 1,
+          "name": "bpr_void_fishing:gameplay/fish/misc/rare_banner_pattern"
+        }
+      ]
+    }
+  ]
+}

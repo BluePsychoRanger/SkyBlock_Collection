@@ -1,0 +1,10 @@
+{
+  "criteria":{
+    "join_world":{
+      "trigger":"tick"
+    }
+  },
+  "rewards": {
+    "function":"bpr_void_fishing:set_id"
+  }
+}
