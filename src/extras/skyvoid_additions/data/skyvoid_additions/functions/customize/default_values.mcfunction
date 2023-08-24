@@ -29,6 +29,7 @@ execute unless score netherrack_portals skyvoid_config matches 0..1 run scoreboa
 execute unless score nylium_portals skyvoid_config matches 0..1 run scoreboard players set nylium_portals skyvoid_config 1
 execute unless score ores_from_magma_cubes skyvoid_config matches 0..1 run scoreboard players set ores_from_magma_cubes skyvoid_config 1
 execute unless score sand_from_burnt_husks skyvoid_config matches 0..1 run scoreboard players set sand_from_burnt_husks skyvoid_config 1
+execute unless score silverfish_from_lightning skyvoid_config matches 0..1 run scoreboard players set silverfish_from_lightning skyvoid_config 1
 execute unless score small_dripleaf_sheared skyvoid_config matches 0..1 run scoreboard players set small_dripleaf_sheared skyvoid_config 1
 execute unless score sniffer_eggs_from_drowneds skyvoid_config matches 0..1 run scoreboard players set sniffer_eggs_from_drowneds skyvoid_config 1
 execute unless score spore_blossom_moss skyvoid_config matches 0..1 run scoreboard players set spore_blossom_moss skyvoid_config 1

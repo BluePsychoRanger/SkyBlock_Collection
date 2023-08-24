@@ -1,10 +1,24 @@
 execute if score gm4_trades load.status matches 1 if score gm4_trades_minor load.status matches 3.. run scoreboard players set skyvoid_additions load.status 1
 execute unless score skyvoid_additions load.status matches 1.. run schedule function skyvoid_additions:versioning/send_error 2t
 
-schedule clear skyvoid_additions:mechanics/netherite_brutes/clock
+schedule clear skyvoid_additions:mechanics/diamonds_from_coal_blocks/clock
+schedule clear skyvoid_additions:mechanics/sand_from_burnt_husks/clock
+schedule clear skyvoid_additions:mechanics/suspicious_sniffers/clock
+schedule clear skyvoid_additions:mechanics/allay_conversion/clock_1t
+schedule clear skyvoid_additions:mechanics/allay_conversion/clock_1s
+schedule clear skyvoid_additions:mechanics/netherite_piglins/clock
+schedule clear skyvoid_additions:mechanics/sweet_berries_from_foxes/clock
+schedule clear skyvoid_additions:mechanics/sniffer_eggs_from_drowneds/clock
+schedule clear skyvoid_additions:mechanics/cave_spiders_in_cobwebs/clock
 schedule clear skyvoid_additions:mechanics/gold_block_bartering/clock
-schedule clear skyvoid_additions:mechanics/sand_from_husk_walk/clock
-schedule clear skyvoid_additions:mechanics/red_sand_from_husk_walk/clock
+schedule clear skyvoid_additions:mechanics/gold_block_bartering/start_admiring
+schedule clear skyvoid_additions:mechanics/ores_from_magma_cubes/clock
+schedule clear skyvoid_additions:mechanics/traders_with_camels/clock
+schedule clear skyvoid_additions:mechanics/shriekers_from_enderman/clock
 schedule clear skyvoid_additions:mechanics/cobwebs_from_spiders/clock
+schedule clear skyvoid_additions:mechanics/chorus_from_endermites/clock
+schedule clear skyvoid_additions:mechanics/end_stone_from_endermites/clock
+schedule clear skyvoid_additions:mechanics/amethyst_geode_creation/clock
+schedule clear skyvoid_additions:mechanics/end_phantoms/clock
 
 execute if score skyvoid_additions load.status matches 1 run function skyvoid_additions:technical/load

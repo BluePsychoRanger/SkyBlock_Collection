@@ -42,6 +42,18 @@
                   "score": "skyvoid_config"
                 },
                 "range": 1
+              },
+              {
+                "condition": "minecraft:value_check",
+                "value": {
+                  "type": "minecraft:score",
+                  "target": {
+                    "type": "minecraft:fixed",
+                    "name": "silverfish_from_lightning"
+                  },
+                  "score": "skyvoid_config"
+                },
+                "range": 1
               }
             ]
           }
