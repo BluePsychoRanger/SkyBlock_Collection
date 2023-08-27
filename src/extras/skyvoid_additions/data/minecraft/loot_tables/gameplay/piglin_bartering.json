@@ -395,5 +395,41 @@
       ]
     }
   ],
-  "random_sequence": "minecraft:gameplay/piglin_bartering"
+  "random_sequence": "minecraft:gameplay/piglin_bartering",
+  "__smithed__": {
+    "rules": [
+      {
+        "type": "smithed:append",
+        "target": "pools[0].entries",
+        "source": {
+          "type": "smithed:reference",
+          "path": "pools[0].entries[18]"
+        }
+      },
+      {
+        "type": "smithed:append",
+        "target": "pools[0].entries[0].entries",
+        "source": {
+          "type": "smithed:reference",
+          "path": "pools[0].entries[19]"
+        }
+      },
+      {
+        "type": "smithed:append",
+        "target": "pools[0].entries",
+        "source": {
+          "type": "smithed:reference",
+          "path": "pools[0].entries[20]"
+        }
+      },
+      {
+        "type": "smithed:append",
+        "target": "pools[0].entries",
+        "source": {
+          "type": "smithed:reference",
+          "path": "pools[0].entries[21]"
+        }
+      }
+    ]
+  }
 }

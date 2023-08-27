@@ -4,7 +4,8 @@
 # run from skyvoid_additions:mechanics/coral_growth/find_block
 
 # check block
-execute store success score $found skyvoid_additions align xyz positioned ~0.5 ~0.5 ~0.5 if block ~ ~ ~ #minecraft:coral_blocks unless entity @e[tag=smithed.block,distance=..0.5,limit=1] run function skyvoid_additions:mechanics/coral_growth/check_block
+execute store success score $found skyvoid_additions align xyz positioned ~0.5 ~0.5 ~0.5 if block ~ ~ ~ #minecraft:coral_blocks
+execute if score $found skyvoid_additions matches 1 align xyz positioned ~0.5 ~0.5 ~0.5 unless entity @e[tag=smithed.block,distance=..0.5,limit=1] run function skyvoid_additions:mechanics/coral_growth/check_block
 
 # runs the loop again
 scoreboard players remove $ray skyvoid_additions 1

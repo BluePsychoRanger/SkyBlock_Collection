@@ -7,22 +7,18 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "weight": 7,
           "name": "minecraft:stone_pickaxe"
         },
         {
           "type": "minecraft:item",
-          "weight": 7,
           "name": "minecraft:stone_axe"
         },
         {
           "type": "minecraft:item",
-          "weight": 7,
           "name": "minecraft:stone_hoe"
         },
         {
           "type": "minecraft:item",
-          "weight": 7,
           "name": "minecraft:stone_shovel"
         },
         {
@@ -30,6 +26,10 @@
           "weight": 1,
           "name": "minecraft:lava_bucket",
           "conditions": [
+            {
+              "condition": "minecraft:random_chance",
+              "chance": 0.05
+            },
             {
               "condition": "minecraft:value_check",
               "value": {
@@ -59,5 +59,17 @@
       ]
     }
   ],
-  "random_sequence": "minecraft:gameplay/hero_of_the_village/toolsmith_gift"
+  "random_sequence": "minecraft:gameplay/hero_of_the_village/toolsmith_gift",
+  "__smithed__": {
+    "rules": [
+      {
+        "type": "smithed:append",
+        "target": "pools[0].entries",
+        "source": {
+          "type": "smithed:reference",
+          "path": "pools[0].entries[4]"
+        }
+      }
+    ]
+  }
 }

@@ -271,5 +271,33 @@
       ]
     }
   ],
-  "random_sequence": "minecraft:gameplay/fishing/junk"
+  "random_sequence": "minecraft:gameplay/fishing/junk",
+  "__smithed__": {
+    "rules": [
+      {
+        "type": "smithed:append",
+        "target": "pools[0].entries",
+        "source": {
+          "type": "smithed:reference",
+          "path": "pools[0].entries[13]"
+        }
+      },
+      {
+        "type": "smithed:append",
+        "target": "pools[0].entries",
+        "source": {
+          "type": "smithed:reference",
+          "path": "pools[0].entries[14]"
+        }
+      },
+      {
+        "type": "smithed:append",
+        "target": "pools[0].entries",
+        "source": {
+          "type": "smithed:reference",
+          "path": "pools[0].entries[15]"
+        }
+      }
+    ]
+  }
 }

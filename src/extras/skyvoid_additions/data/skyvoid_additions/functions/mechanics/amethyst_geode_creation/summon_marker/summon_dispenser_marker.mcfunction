@@ -4,6 +4,8 @@
 # run from skyvoid_additions:mechanics/amethyst_geode_creation/summon_marker/dispenser_ray
 #          skyvoid_additions:mechanics/amethyst_geode_creation/summon_marker/dispenser_ray_fuzzy
 
+execute if entity @e[tag=smithed.block,distance=..0.5,limit=1] run return 0
+
 execute if block ~ ~ ~ dispenser[facing=down] run summon marker ~ ~ ~ {Rotation:[0.0f,90.0f],CustomName:'"skyvoid_additions_dispenser"',Tags:["skyvoid_additions_dispenser","skyvoid_additions_geode_creation"]}
 execute if block ~ ~ ~ dispenser[facing=up] run summon marker ~ ~ ~ {Rotation:[0.0f,-90.0f],CustomName:'"skyvoid_additions_dispenser"',Tags:["skyvoid_additions_dispenser","skyvoid_additions_geode_creation"]}
 execute if block ~ ~ ~ dispenser[facing=north] run summon marker ~ ~ ~ {Rotation:[180.0f,0.0f],CustomName:'"skyvoid_additions_dispenser"',Tags:["skyvoid_additions_dispenser","skyvoid_additions_geode_creation"]}

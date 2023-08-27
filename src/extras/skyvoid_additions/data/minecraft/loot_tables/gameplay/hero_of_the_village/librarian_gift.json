@@ -7,7 +7,6 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "weight": 9,
           "name": "minecraft:book"
         },
         {
@@ -23,6 +22,10 @@
             }
           ],
           "conditions": [
+            {
+              "condition": "minecraft:random_chance",
+              "chance": 0.1
+            },
             {
               "condition": "minecraft:location_check",
               "predicate": {
@@ -58,6 +61,18 @@
       ]
     }
   ],
-  "random_sequence": "minecraft:gameplay/hero_of_the_village/librarian_gift"
+  "random_sequence": "minecraft:gameplay/hero_of_the_village/librarian_gift",
+  "__smithed__": {
+    "rules": [
+      {
+        "type": "smithed:append",
+        "target": "pools[0].entries",
+        "source": {
+          "type": "smithed:reference",
+          "path": "pools[0].entries[1]"
+        }
+      }
+    ]
+  }
 }
 

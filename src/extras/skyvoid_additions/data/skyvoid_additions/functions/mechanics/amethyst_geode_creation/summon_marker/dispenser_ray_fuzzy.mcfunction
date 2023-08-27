@@ -4,12 +4,12 @@
 # run from skyvoid_additions:mechanics/amethyst_geode_creation/summon_marker/placed_dispenser
 
 # check adjacent blocks
-execute if score $found skyvoid_additions matches 0 store success score $found skyvoid_additions align xyz positioned ~0.5 ~1.5 ~0.5 if block ~ ~ ~ dispenser unless entity @e[tag=smithed.block,distance=..0.5,limit=1] run function skyvoid_additions:mechanics/amethyst_geode_creation/summon_marker/summon_dispenser_marker
-execute if score $found skyvoid_additions matches 0 store success score $found skyvoid_additions align xyz positioned ~0.5 ~-0.5 ~0.5 if block ~ ~ ~ dispenser unless entity @e[tag=smithed.block,distance=..0.5,limit=1] run function skyvoid_additions:mechanics/amethyst_geode_creation/summon_marker/summon_dispenser_marker
-execute if score $found skyvoid_additions matches 0 store success score $found skyvoid_additions align xyz positioned ~1.5 ~0.5 ~0.5 if block ~ ~ ~ dispenser unless entity @e[tag=smithed.block,distance=..0.5,limit=1] run function skyvoid_additions:mechanics/amethyst_geode_creation/summon_marker/summon_dispenser_marker
-execute if score $found skyvoid_additions matches 0 store success score $found skyvoid_additions align xyz positioned ~-0.5 ~0.5 ~0.5 if block ~ ~ ~ dispenser unless entity @e[tag=smithed.block,distance=..0.5,limit=1] run function skyvoid_additions:mechanics/amethyst_geode_creation/summon_marker/summon_dispenser_marker
-execute if score $found skyvoid_additions matches 0 store success score $found skyvoid_additions align xyz positioned ~0.5 ~0.5 ~1.5 if block ~ ~ ~ dispenser unless entity @e[tag=smithed.block,distance=..0.5,limit=1] run function skyvoid_additions:mechanics/amethyst_geode_creation/summon_marker/summon_dispenser_marker
-execute if score $found skyvoid_additions matches 0 store success score $found skyvoid_additions align xyz positioned ~0.5 ~0.5 ~-0.5 if block ~ ~ ~ dispenser unless entity @e[tag=smithed.block,distance=..0.5,limit=1] run function skyvoid_additions:mechanics/amethyst_geode_creation/summon_marker/summon_dispenser_marker
+execute if score $found skyvoid_additions matches 0 store success score $found skyvoid_additions align xyz positioned ~0.5 ~1.5 ~0.5 if block ~ ~ ~ dispenser run function skyvoid_additions:mechanics/amethyst_geode_creation/summon_marker/summon_dispenser_marker
+execute if score $found skyvoid_additions matches 0 store success score $found skyvoid_additions align xyz positioned ~0.5 ~-0.5 ~0.5 if block ~ ~ ~ dispenser run function skyvoid_additions:mechanics/amethyst_geode_creation/summon_marker/summon_dispenser_marker
+execute if score $found skyvoid_additions matches 0 store success score $found skyvoid_additions align xyz positioned ~1.5 ~0.5 ~0.5 if block ~ ~ ~ dispenser run function skyvoid_additions:mechanics/amethyst_geode_creation/summon_marker/summon_dispenser_marker
+execute if score $found skyvoid_additions matches 0 store success score $found skyvoid_additions align xyz positioned ~-0.5 ~0.5 ~0.5 if block ~ ~ ~ dispenser run function skyvoid_additions:mechanics/amethyst_geode_creation/summon_marker/summon_dispenser_marker
+execute if score $found skyvoid_additions matches 0 store success score $found skyvoid_additions align xyz positioned ~0.5 ~0.5 ~1.5 if block ~ ~ ~ dispenser run function skyvoid_additions:mechanics/amethyst_geode_creation/summon_marker/summon_dispenser_marker
+execute if score $found skyvoid_additions matches 0 store success score $found skyvoid_additions align xyz positioned ~0.5 ~0.5 ~-0.5 if block ~ ~ ~ dispenser run function skyvoid_additions:mechanics/amethyst_geode_creation/summon_marker/summon_dispenser_marker
 
 # runs the loop again
 scoreboard players remove $ray skyvoid_additions 1

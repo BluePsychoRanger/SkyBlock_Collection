@@ -7,7 +7,6 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "weight": 3,
           "name": "minecraft:big_dripleaf"
         },
         {
@@ -20,41 +19,45 @@
               "count": {
                 "min": 1,
                 "max": 2
+              }
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:random_chance",
+              "chance": 0.25
+            },
+            {
+              "condition": "minecraft:match_tool",
+              "predicate": {
+                "items": [
+                  "minecraft:shears"
+                ]
+              }
+            },
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "skyvoid_additions"
+                },
+                "score": "load.status"
               },
-              "conditions": [
-                {
-                  "condition": "minecraft:match_tool",
-                  "predicate": {
-                    "items": [
-                      "minecraft:shears"
-                    ]
-                  }
+              "range": 1
+            },
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "small_dripleaf_sheared"
                 },
-                {
-                  "condition": "minecraft:value_check",
-                  "value": {
-                    "type": "minecraft:score",
-                    "target": {
-                      "type": "minecraft:fixed",
-                      "name": "skyvoid_additions"
-                    },
-                    "score": "load.status"
-                  },
-                  "range": 1
-                },
-                {
-                  "condition": "minecraft:value_check",
-                  "value": {
-                    "type": "minecraft:score",
-                    "target": {
-                      "type": "minecraft:fixed",
-                      "name": "small_dripleaf_sheared"
-                    },
-                    "score": "skyvoid_config"
-                  },
-                  "range": 1
-                }
-              ]
+                "score": "skyvoid_config"
+              },
+              "range": 1
             }
           ]
         }
@@ -66,5 +69,17 @@
       ]
     }
   ],
-  "random_sequence": "minecraft:blocks/big_dripleaf"
+  "random_sequence": "minecraft:blocks/big_dripleaf",
+  "__smithed__": {
+    "rules": [
+      {
+        "type": "smithed:append",
+        "target": "pools[0].entries",
+        "source": {
+          "type": "smithed:reference",
+          "path": "pools[0].entries[1]"
+        }
+      }
+    ]
+  }
 }

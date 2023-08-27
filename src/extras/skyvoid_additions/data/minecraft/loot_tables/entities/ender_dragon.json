@@ -141,5 +141,33 @@
       ]
     }
   ],
-  "random_sequence": "minecraft:entities/ender_dragon"
+  "random_sequence": "minecraft:entities/ender_dragon",
+  "__smithed__": {
+    "rules": [
+      {
+        "type": "smithed:append",
+        "target": "pools",
+        "source": {
+          "type": "smithed:reference",
+          "path": "pools[0]"
+        }
+      },
+      {
+        "type": "smithed:append",
+        "target": "pools",
+        "source": {
+          "type": "smithed:reference",
+          "path": "pools[1]"
+        }
+      },
+      {
+        "type": "smithed:append",
+        "target": "pools",
+        "source": {
+          "type": "smithed:reference",
+          "path": "pools[2]"
+        }
+      }
+    ]
+  }
 }

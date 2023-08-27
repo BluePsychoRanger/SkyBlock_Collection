@@ -258,5 +258,33 @@
       ]
     }
   ],
-  "random_sequence": "minecraft:entities/husk"
+  "random_sequence": "minecraft:entities/husk",
+  "__smithed__": {
+    "rules": [
+      {
+        "type": "smithed:append",
+        "target": "pools",
+        "source": {
+          "type": "smithed:reference",
+          "path": "pools[2]"
+        }
+      },
+      {
+        "type": "smithed:append",
+        "target": "pools",
+        "source": {
+          "type": "smithed:reference",
+          "path": "pools[3]"
+        }
+      },
+      {
+        "type": "smithed:append",
+        "target": "pools",
+        "source": {
+          "type": "smithed:reference",
+          "path": "pools[4]"
+        }
+      }
+    ]
+  }
 }

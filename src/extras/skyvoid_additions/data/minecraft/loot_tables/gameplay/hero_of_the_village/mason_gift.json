@@ -6,7 +6,6 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "weight": 30,
           "name": "minecraft:clay"
         },
         {
@@ -14,6 +13,10 @@
           "weight": 1,
           "name": "skyvoid_additions:gameplay/pottery_sherd_mason_gift/gift_by_biome",
           "conditions": [
+            {
+              "condition": "minecraft:random_chance",
+              "chance": 0.03
+            },
             {
               "condition": "minecraft:value_check",
               "value": {
@@ -44,5 +47,17 @@
       "rolls": 1.0
     }
   ],
-  "random_sequence": "minecraft:gameplay/hero_of_the_village/mason_gift"
+  "random_sequence": "minecraft:gameplay/hero_of_the_village/mason_gift",
+  "__smithed__": {
+    "rules": [
+      {
+        "type": "smithed:append",
+        "target": "pools[0].entries",
+        "source": {
+          "type": "smithed:reference",
+          "path": "pools[0].entries[1]"
+        }
+      }
+    ]
+  }
 }

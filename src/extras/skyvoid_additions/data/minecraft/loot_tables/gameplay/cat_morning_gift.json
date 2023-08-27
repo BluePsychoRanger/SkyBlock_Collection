@@ -7,43 +7,47 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:rabbit_hide",
-          "weight": 20
+          "weight": 10
         },
         {
           "type": "minecraft:item",
           "name": "minecraft:rabbit_foot",
-          "weight": 20
+          "weight": 10
         },
         {
           "type": "minecraft:item",
           "name": "minecraft:chicken",
-          "weight": 20
+          "weight": 10
         },
         {
           "type": "minecraft:item",
           "name": "minecraft:feather",
-          "weight": 20
+          "weight": 10
         },
         {
           "type": "minecraft:item",
           "name": "minecraft:rotten_flesh",
-          "weight": 20
+          "weight": 10
         },
         {
           "type": "minecraft:item",
           "name": "minecraft:string",
-          "weight": 20
+          "weight": 10
         },
         {
           "type": "minecraft:item",
           "name": "minecraft:phantom_membrane",
-          "weight": 4
+          "weight": 2
         },
         {
           "type": "minecraft:item",
           "name": "minecraft:enchanted_golden_apple",
           "weight": 1,
           "conditions": [
+            {
+              "condition": "minecraft:random_chance",
+              "chance": 0.5
+            },
             {
               "condition": "minecraft:value_check",
               "value": {
@@ -74,5 +78,17 @@
       "rolls": 1.0
     }
   ],
-  "random_sequence": "minecraft:gameplay/cat_morning_gift"
+  "random_sequence": "minecraft:gameplay/cat_morning_gift",
+  "__smithed__": {
+    "rules": [
+      {
+        "type": "smithed:append",
+        "target": "pools[0].entries",
+        "source": {
+          "type": "smithed:reference",
+          "path": "pools[0].entries[7]"
+        }
+      }
+    ]
+  }
 }

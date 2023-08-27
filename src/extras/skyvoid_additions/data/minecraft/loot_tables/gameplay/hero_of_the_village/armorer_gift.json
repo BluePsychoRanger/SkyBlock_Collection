@@ -6,22 +6,18 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "weight": 5,
           "name": "minecraft:chainmail_helmet"
         },
         {
           "type": "minecraft:item",
-          "weight": 5,
           "name": "minecraft:chainmail_chestplate"
         },
         {
           "type": "minecraft:item",
-          "weight": 5,
           "name": "minecraft:chainmail_leggings"
         },
         {
           "type": "minecraft:item",
-          "weight": 5,
           "name": "minecraft:chainmail_boots"
         },
         {
@@ -29,6 +25,10 @@
           "weight": 1,
           "name": "skyvoid_additions:gameplay/armor_trim_armorer_gift/gift_by_biome",
           "conditions": [
+            {
+              "condition": "minecraft:random_chance",
+              "chance": 0.25
+            },
             {
               "condition": "minecraft:value_check",
               "value": {
@@ -59,5 +59,17 @@
       "rolls": 1.0
     }
   ],
-  "random_sequence": "minecraft:gameplay/hero_of_the_village/armorer_gift"
+  "random_sequence": "minecraft:gameplay/hero_of_the_village/armorer_gift",
+  "__smithed__": {
+    "rules": [
+      {
+        "type": "smithed:append",
+        "target": "pools[0].entries",
+        "source": {
+          "type": "smithed:reference",
+          "path": "pools[0].entries[4]"
+        }
+      }
+    ]
+  }
 }
