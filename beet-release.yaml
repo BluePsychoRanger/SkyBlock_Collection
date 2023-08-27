@@ -1,9 +1,17 @@
 
 pipeline:
-  - broadcast: 'src/*/skyvoid_*'
+  - 'src.plugins.output.clean'
+  - broadcast: 'src/packs/*/skyvoid_*'
     extend: 'beet.yaml'
     pipeline:
       - 'beet.contrib.minify_json'
       - require: [beet.contrib.copy_files]
         meta: {copy_files: {data_pack: {LICENSE: "../../../LICENSE", README.md: "README.md"}}}
-      - 'beet_plugins.output.release'
+      - 'src.plugins.output.release'
+  - broadcast: 'src/bundles/*'
+    extend: 'beet.yaml'
+    pipeline:
+      - 'beet.contrib.minify_json'
+      - require: [beet.contrib.copy_files]
+        meta: {copy_files: {data_pack: {LICENSE: "../../../LICENSE", README.md: "README.md"}}}
+      - 'src.plugins.output.bundle'

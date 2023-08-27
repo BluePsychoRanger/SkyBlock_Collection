@@ -3,4 +3,4 @@ pipeline:
   - broadcast: 'src/*/skyvoid_*'
     extend: 'beet.yaml'
     pipeline:
-      - 'beet_plugins.output'
+      - 'src.plugins.output'
