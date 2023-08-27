@@ -1,0 +1,12 @@
+id: 'skyvoid_worldgen_empty'
+name: 'Empty Sky Void'
+version: 1.0.2
+
+require: 
+  - src.plugins.worldgen.generate.base
+
+data_pack:
+  load: .
+  
+pipeline:
+  - src.plugins.worldgen.get_empty_biomes.empty

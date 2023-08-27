@@ -1,0 +1,9 @@
+id: 'skyvoid_worldgen_single_lava'
+name: 'Single Lava Sky Void'
+version: 1.0.2
+
+require: 
+  - src.plugins.worldgen.generate
+
+data_pack:
+  load: .
