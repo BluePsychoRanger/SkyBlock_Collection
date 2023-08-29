@@ -1,5 +1,5 @@
 # Sky Void Additions
-This data pack adds vanilla-like mechanics to the game which makes all items, mobs, and advancements obtainable in SkyBlock. Some mechanics require structure bounding boxes, so make sure your SkyBlock map or data pack generates those bounding boxes, such as [Standard SkyBlock](https://modrinth.com/datapack/standard-skyblock).
+This data pack adds vanilla-like mechanics to the game which makes all items, mobs, and advancements obtainable in SkyBlock. Some mechanics require structure bounding boxes, so make sure your SkyBlock map or data pack generates those bounding boxes, such as [Standard SkyBlock](https://beta.smithed.dev/packs/1KnCdaf1S1Mf7HzftmEu).
 
 Every setting is toggleable via an in-game menu. Using the following command will allow users to modify the settings: `/function skyvoid_additions:customize/update_config/open_menu`. Below is a list of all mechanics.
 
