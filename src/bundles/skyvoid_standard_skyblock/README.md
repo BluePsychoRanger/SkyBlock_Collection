@@ -28,7 +28,7 @@ Structures that are important in SkyBlock will generate at the same coordinates 
 In the end dimension, the obsidian pillars and the exit end portal generate as normal. When a player goes through an end gateway, a small end island will still generate, but the rest of the outer end islands will not.
 
 ## Unobtainable Items
-Some items are unobtainable with just this simple world generation. I made an expansion pack that adds mechanics that allow all items, mobs, and advancements to be obtained. Download [Sky Void Additions](https://modrinth.com/datapack/sky-void-additions) to expand the possibilities.
+Some items are unobtainable with just this simple world generation. I made an expansion pack that adds mechanics that allow all items, mobs, and advancements to be obtained. Download [Sky Void Additions](https://beta.smithed.dev/packs/TTYznbt8KOY4qbHgMsIl) to expand the possibilities.
 
 ## Other Void Worldgen Packs
 My [SkyBlock Collection](https://github.com/BluePsychoRanger/SkyBlock_Collection) has additional options for how the void world generates. Most notably there are other presets that have the stronghold generate with the pit of lava beneath the end portal, or the entire portal room. There is also a preset that removes all blocks and entities, leaving only a biome map with structure bounding boxes. 
