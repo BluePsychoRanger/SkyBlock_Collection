@@ -1,0 +1,20 @@
+{
+  "criteria": {
+    "lava_bucket": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:lava_bucket"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "sends_telemetry_event": true,
+  "rewards": {
+    "function": "skyvoid_advancements:overworld/lava_bucket_check"
+  }
+}

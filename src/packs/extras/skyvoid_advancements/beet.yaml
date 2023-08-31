@@ -1,0 +1,6 @@
+id: 'skyvoid_advancements'
+name: 'SkyBlock Advancements'
+version: 0.0.1
+
+data_pack:
+  load: .
