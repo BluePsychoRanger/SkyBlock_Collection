@@ -4,94 +4,33 @@
       "item": "minecraft:cobblestone"
     },
     "title": {
-      "translate": "%1$s%3427655$s",
-      "with": [
-        "Build a Cobblestone Generator",
-        {
-          "translate": "advancement.bprmode4.overworld.task.cobblestone_generator.title"
-        }
-      ]
+      "translate": "advancements.skyvoid.overworld.cobblestone_generator.title",
+      "fallback": "Build a Cobblestone Generator"
     },
     "description": [
       {
-        "translate": "%1$s%3427655$s",
-        "with": [
-          "Place Water and Lava 2 spaces\n",
-          {
-            "translate": "advancement.bprmode4.overworld.task.cobblestone_generator.description.1"
-          }
-        ],
-        "color": "gray"
+        "translate": "advancements.skyvoid.overworld.cobblestone_generator.description",
+        "fallback": "Place Water and Lava 2 spaces\napart and allow them to flow\ninto each other.\n\nExample:\n"
       },
       {
-        "translate": "%1$s%3427655$s",
-        "with": [
-          "apart and allow them to flow\n",
-          {
-            "translate": "advancement.bprmode4.overworld.task.cobblestone_generator.description.2"
-          }
-        ],
-        "color": "gray"
-      },
-      {
-        "translate": "%1$s%3427655$s",
-        "with": [
-          "into each other.\n\n",
-          {
-            "translate": "advancement.bprmode4.overworld.task.cobblestone_generator.description.3"
-          }
-        ],
-        "color": "gray"
-      },
-      {
-        "translate": "%1$s%3427655$s",
-        "with": [
-          "Example:\n",
-          {
-            "translate": "advancement.bprmode4.overworld.task.cobblestone_generator.description.4"
-          }
-        ],
-        "color": "gray"
-      },
-      {
-        "translate": "%1$s%3427657$s",
+        "translate": "skyvoid.second",
+        "fallback": "%1$s",
         "with": [
           {
             "text": " W _ _ L\n D _ D D",
-            "font": "minecraft:default",
             "color": "gray"
           },
           {
-            "translate": "gui.advancements.cobblestone_generator",
-            "font": "bprmode4:skyblock",
+            "translate": "gui.skyvoid.advancement.cobblestone_generator",
+            "font": "skyvoid:advancements",
             "color": "white"
           }
         ]
-      },
-      {
-        "translate": "%1$s%3427655$s",
-        "with": [
-          "\n\n",
-          {
-            "translate": "advancement.bprmode4.overworld.task.cobblestone_generator.description.5"
-          }
-        ],
-        "color": "gray"
-      },
-      {
-        "translate": "%1$s%3427655$s",
-        "with": [
-          "Then mine 64 Cobblestone.",
-          {
-            "translate": "advancement.bprmode4.overworld.task.cobblestone_generator.description.6"
-          }
-        ],
-        "color": "gray"
       }
     ],
     "frame": "task",
     "show_toast": true,
-    "announce_to_chat": false,
+    "announce_to_chat": true,
     "hidden": false
   },
   "parent": "minecraft:story/mine_stone",
