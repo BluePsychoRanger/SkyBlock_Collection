@@ -1,6 +1,6 @@
 id: 'skyvoid_standard_skyblock'
 name: 'Standard SkyBlock'
-version: 1.0.3
+version: 1.0.2
 
 pipeline:
   - src.plugins.bundle.standard_skyblock
