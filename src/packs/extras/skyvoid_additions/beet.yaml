@@ -1,6 +1,6 @@
 id: 'skyvoid_additions'
 name: 'Sky Void Additions'
-version: 1.1.1
+version: 1.1.2
 
 require:
   - bolt
