@@ -6,7 +6,7 @@ import os
 def beet_default(ctx: Context):
 	"""Saves the datapack to the ./out folder."""
 	version = os.getenv("VERSION", "1.20")
-	out_dir = str(ctx.directory.parent).replace('src/packs','out')
+	out_dir = str(ctx.directory.parent).replace('src','out')
 
 	ctx.data.pack_format = 15 # manually set as beet's `latest` is not available for 1.20 at this time.
 	ctx.data.description = [
