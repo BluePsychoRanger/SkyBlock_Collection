@@ -17,7 +17,7 @@ def beet_default(ctx: Context):
 		},
 		f"\nby ",
 		{
-			"text": "BluePsychoRanger",
+			"text": f"{ctx.project_author}",
 			"color": "blue"
 		}
 	]
@@ -51,7 +51,7 @@ def release(ctx: Context):
 		},
 		f"\nby ",
 		{
-			"text": "BluePsychoRanger",
+			"text": f"{ctx.project_author}",
 			"color": "blue"
 		}
 	]
@@ -83,7 +83,7 @@ def bundle(ctx: Context):
 		},
 		f"\nby ",
 		{
-			"text": "BluePsychoRanger",
+			"text": f"{ctx.project_author}",
 			"color": "blue"
 		}
 	]
