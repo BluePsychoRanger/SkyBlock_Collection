@@ -5,25 +5,53 @@
     },
     "title": {
       "translate": "advancements.skyvoid.overworld.cobblestone_generator.title",
-      "fallback": "Build a Cobblestone Generator"
+      "fallback": "The Heart of the Grind"
     },
     "description": [
       {
         "translate": "advancements.skyvoid.overworld.cobblestone_generator.description",
-        "fallback": "Place Water and Lava 2 spaces\napart and allow them to flow\ninto each other.\n\nExample:\n"
+        "fallback": "Build a Cobblestone Generator by placing Water and Lava 2 spaces\napart and allow them to flow\ninto each other.\n\nExample:\n"
       },
       {
         "translate": "skyvoid.second",
         "fallback": "%1$s",
         "with": [
-          {
-            "text": " W _ _ L\n D _ D D",
-            "color": "gray"
-          },
+          [
+            {
+              "text": " "
+            },
+            {
+              "text": "W",
+              "color": "#3399FF"
+            },
+            {
+              "text": " _ _ ",
+              "color": "white"
+            },
+            {
+              "text": "L",
+              "color": "#FF7D33"
+            },
+            {
+              "text": "\n "
+            },
+            {
+              "text": "D",
+              "color": "#796052"
+            },
+            {
+              "text": " _ ",
+              "color": "white"
+            },
+            {
+              "text": "D D",
+              "color": "#796052"
+            }
+          ],
           {
             "translate": "gui.skyvoid.advancement.cobblestone_generator",
-            "font": "skyvoid:advancements",
-            "color": "white"
+            "color": "white",
+            "font": "skyvoid:advancements"
           }
         ]
       }
@@ -36,16 +64,8 @@
   "parent": "minecraft:story/mine_stone",
   "criteria": {
     "cobblestone": {
-      "trigger": "minecraft:inventory_changed",
-      "conditions": {
-        "items": [
-          {
-            "items": [
-              "minecraft:cobblestone"
-            ]
-          }
-        ]
-      }
+      "trigger": "minecraft:impossible"
     }
-  }
+  },
+  "sends_telemetry_event": true
 }

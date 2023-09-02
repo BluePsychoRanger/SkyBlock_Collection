@@ -1,0 +1,38 @@
+[
+  {
+    "condition": "minecraft:inverted",
+    "term": {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "targeted_entity": {
+              "type_specific": {
+                "type": "player",
+                "advancements": {
+                  "skyvoid_advancements:overworld/obsidian": true
+                }
+              }
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "targeted_entity": {
+              "type_specific": {
+                "type": "player",
+                "advancements": {
+                  "skyvoid_advancements:overworld/cobble_gen": true
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+]

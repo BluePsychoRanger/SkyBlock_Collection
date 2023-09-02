@@ -8,7 +8,7 @@
       "fallback": "Oops!"
     },
     "description": {
-      "translate": "advancements.skyvoid.overworld.wood.description",
+      "translate": "advancements.skyvoid.overworld.obsidian.description",
       "fallback": "Turn your lava into obsidian"
     },
     "frame": "goal",

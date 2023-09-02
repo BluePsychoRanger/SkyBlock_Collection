@@ -12,8 +12,8 @@
       }
     }
   },
+  "sends_telemetry_event": true,
   "rewards": {
-    "function": "skyvoid_advancements:overworld/cobble_gen_delay"
-  },
-  "sends_telemetry_event": true
+    "function": "skyvoid_advancements:overworld/obsidian_delay"
+  }
 }

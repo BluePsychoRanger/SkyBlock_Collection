@@ -1,0 +1,23 @@
+{
+  "criteria": {
+    "lava_bucket": {
+      "trigger": "minecraft:item_used_on_block",
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "minecraft:bone_meal"
+              ]
+            }
+          }
+        ]
+      }
+    }
+  },
+  "sends_telemetry_event": true,
+  "rewards": {
+    "function": "skyvoid_advancements:overworld/seagrass_check"
+  }
+}
