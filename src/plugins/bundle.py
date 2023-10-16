@@ -26,11 +26,12 @@ all_worldgen = [
   WorldgenPlacedFeatureTag,
 ]
 
-def standard_skyblock(ctx: Context):
-  version = os.getenv("VERSION", "1.20")
+MAJOR_VERSION = "1_20"
 
-  island = DataPack(path=f"build/skyvoid_island_standard_{version.replace('.', '_')}.zip",extend_namespace=all_worldgen)
-  generation = DataPack(path=f"build/skyvoid_worldgen_{version.replace('.', '_')}.zip",extend_namespace=all_worldgen)
+def standard_skyblock(ctx: Context):
+
+  island = DataPack(path=f"build/skyvoid_island_standard_{MAJOR_VERSION}.zip",extend_namespace=all_worldgen)
+  generation = DataPack(path=f"build/skyvoid_worldgen_{MAJOR_VERSION}.zip",extend_namespace=all_worldgen)
 
   ctx.data.merge(generation)
   ctx.data.merge(island)

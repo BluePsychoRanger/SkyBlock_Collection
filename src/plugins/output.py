@@ -3,12 +3,17 @@ from beet import Context
 from bolt import Module
 import os
 
+VERSION = os.getenv("VERSION", "1.20.2")
+MAJOR_VERSION = "1_20"
+FORMAT = 15
+FORMATS = [15,18]
+
 def beet_default(ctx: Context):
 	"""Saves the datapack to the ./out folder."""
-	version = os.getenv("VERSION", "1.20")
 	out_dir = str(ctx.directory.parent).replace('src','out')
 
-	ctx.data.pack_format = 15 # manually set as beet's `latest` is not available for 1.20 at this time.
+	ctx.data.pack_format = FORMAT
+	ctx.data.supported_formats = FORMATS
 	ctx.data.description = [
 		"",
 		{
@@ -30,7 +35,7 @@ def beet_default(ctx: Context):
 	ctx.data[Module].clear() # manually cleanup bolt modules
 
 	ctx.data.save(
-		path=out_dir + f"/{ctx.project_id}_{version.replace('.', '_')}",
+		path=out_dir + f"/{ctx.project_id}_{MAJOR_VERSION}",
 		overwrite=True
 	)
 
@@ -39,10 +44,10 @@ def clean(ctx: Context):
 
 def release(ctx: Context):
 	"""Saves the datapack to the ./build folder."""
-	version = os.getenv("VERSION", "1.20")
 	out_dir = "build"
 
-	ctx.data.pack_format = 15 # manually set as beet's `latest` is not available for 1.20 at this time.
+	ctx.data.pack_format = FORMAT
+	ctx.data.supported_formats = FORMATS
 	ctx.data.description = [
 		"",
 		{
@@ -64,17 +69,17 @@ def release(ctx: Context):
 	ctx.data[Module].clear() # manually cleanup bolt modules
 
 	ctx.data.save(
-		path=out_dir + f"/{ctx.project_id}_{version.replace('.', '_')}",
+		path=out_dir + f"/{ctx.project_id}_{MAJOR_VERSION}",
 		overwrite=True,
 		zipped=True
 	)
 
 def bundle(ctx: Context):
 	"""Saves the datapack to the ./build/bundled folder."""
-	version = os.getenv("VERSION", "1.20")
 	out_dir = "build/bundled"
 
-	ctx.data.pack_format = 15 # manually set as beet's `latest` is not available for 1.20 at this time.
+	ctx.data.pack_format = FORMAT
+	ctx.data.supported_formats = FORMATS
 	ctx.data.description = [
 		"",
 		{
@@ -96,7 +101,7 @@ def bundle(ctx: Context):
 	ctx.data[Module].clear() # manually cleanup bolt modules
 
 	ctx.data.save(
-		path=out_dir + f"/{ctx.project_id}_{version.replace('.', '_')}",
+		path=out_dir + f"/{ctx.project_id}_{MAJOR_VERSION}",
 		overwrite=True,
 		zipped=True
 	)
