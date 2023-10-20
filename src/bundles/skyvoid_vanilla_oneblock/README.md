@@ -22,8 +22,20 @@ Structures that are important in SkyBlock will generate at the same coordinates 
 ### The End Dimension
 In the end dimension, the obsidian pillars and the exit end portal generate as normal. When a player goes through an end gateway, a small end island will still generate, but the rest of the outer end islands will not.
 
+## The Initial Grind
+This pack adds a feature to speed up the initial grind at the beginning of Vanilla One Block. The following features will apply until a player obtains an iron shovel.
+
+### Features
+- Over 80% of hostile mobs that spawn will be zombies
+- All zombies will spawn with iron shovels, which will have a 80% chance of dropping with at least 25% durability left (63/250)
+- Jumping will cause the player to gain the Hunger effect (unless there's a zombie in the world)
+- Players will be reduced to 4 hearts when starving (initial starving damage deals 6 hearts instead of half a heart of damage)
+- Players will have full knockback resistance
+- Daytime will be skipped (unless there's a zombie in the world)
+- Once the shovel is obtained, it will continuously rain until 23 snow blocks are placed down
+
 ## Unobtainable Items
-Some items are unobtainable with just this simple world generation. I made an expansion pack that adds mechanics that allow all items, mobs, and advancements to be obtained. Download [Sky Void Additions](https://beta.smithed.dev/packs/TTYznbt8KOY4qbHgMsIl) to expand the possibilities.
+Some items are unobtainable with just this simple world generation. I made an expansion pack that adds mechanics that allow all items, mobs, and advancements to be obtained. Download [Sky Void Additions](https://smithed.net/packs/skyvoid_additions) to expand the possibilities.
 
 ## Other Void Worldgen Packs
 My [SkyBlock Collection](https://github.com/BluePsychoRanger/SkyBlock_Collection) has additional options for how the void world generates. Most notably there are other presets that have the stronghold generate with the pit of lava beneath the end portal, or the entire portal room. There is also a preset that removes all blocks and entities, leaving only a biome map with structure bounding boxes. 
