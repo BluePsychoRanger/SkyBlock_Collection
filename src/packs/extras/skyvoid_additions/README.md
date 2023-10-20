@@ -1,10 +1,10 @@
 Interact:	[![Static Badge](https://img.shields.io/badge/_-Discord-black?logo=discord&logoColor=%235865F2&labelColor=black&color=%235865F2)](https://discord.gg/mzWSZuGatd)
 [![Github Badge](https://img.shields.io/badge/_-GitHub-black?logo=github&logoColor=white&labelColor=%23181717&color=white&)](https://github.com/BluePsychoRanger/SkyBlock_Collection)  
-Download: [![Smithed Badge](https://img.shields.io/badge/_-Smithed-black?logo=hackthebox&logoColor=%231b48c4&labelColor=black&color=%231b48c4)](https://beta.smithed.dev/packs/TTYznbt8KOY4qbHgMsIl)
+Download: [![Smithed Badge](https://img.shields.io/badge/_-Smithed-black?logo=hackthebox&logoColor=%231b48c4&labelColor=black&color=%231b48c4)](https://smithed.net/packs/skyvoid_additions)
 [![Modrinth Badge](https://img.shields.io/badge/_-Modrinth-black?logo=modrinth&logoColor=%2300AF5C&labelColor=black&color=%2300AF5C)](https://modrinth.com/datapack/sky-void-additions)  
 Donate: [![BMC Badge](https://img.shields.io/badge/_%20-Buy%20Me%20a%20Coffee-black?logo=buymeacoffee&logoColor=%23FFDD00&labelColor=black&color=%23FFDD00)](https://bmc.link/bluepsychoranger)
 # Sky Void Additions
-This data pack adds vanilla-like mechanics to the game which makes all items, mobs, and advancements obtainable in SkyBlock. Some mechanics require structure bounding boxes, so make sure your SkyBlock map or data pack generates those bounding boxes, such as [Standard SkyBlock](https://beta.smithed.dev/packs/1KnCdaf1S1Mf7HzftmEu).
+This data pack adds vanilla-like mechanics to the game which makes all items, mobs, and advancements obtainable in SkyBlock. Some mechanics require structure bounding boxes, so make sure your SkyBlock map or data pack generates those bounding boxes, such as [Standard SkyBlock](https://smithed.dev/packs/standard-skyblock).
 
 Every setting is toggleable via an in-game menu. Using the following command will allow users to modify the settings: `/function skyvoid_additions:customize/update_config/open_menu`. Below is a list of all mechanics.
 
