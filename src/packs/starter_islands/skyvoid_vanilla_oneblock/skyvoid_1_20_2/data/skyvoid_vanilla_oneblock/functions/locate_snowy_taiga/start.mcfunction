@@ -13,4 +13,4 @@ kill @e[type=item,limit=1,nbt={Item:{tag:{skyvoid_vanilla_oneblock:{item:"snowy_
 
 # generate island if there's one found
 execute if score $located skyvoid_vanilla_oneblock matches 0 run schedule function skyvoid_vanilla_oneblock:locate_snowy_taiga/send_error 1t
-execute if score $located skyvoid_vanilla_oneblock matches 1 summon marker run function skyvoid_vanilla_oneblock:locate_snowy_taiga/get_coords
+execute if score $located skyvoid_vanilla_oneblock matches 1 run function skyvoid_vanilla_oneblock:locate_snowy_taiga/get_coords with storage skyvoid_vanilla_oneblock:temp decorations[0]
