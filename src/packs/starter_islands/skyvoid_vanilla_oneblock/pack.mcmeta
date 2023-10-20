@@ -1,0 +1,10 @@
+{
+  "overlays": {
+    "entries": [
+      {
+        "formats": 18,
+        "directory": "skyvoid_1_20_2"
+      }
+    ]
+  }
+}
