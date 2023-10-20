@@ -3,14 +3,14 @@
 # located at world spawn
 # run from skyvoid_worldgen:load via #skyvoid_worldgen:initialize
 
-tellraw @a [{"text":"Locating snowy taiga...","color":"aqua"}]
 gamemode spectator @a
+fill ~-3 -64 ~-3 ~3 -64 ~3 air
 
-# distance check from 2 points
-scoreboard players set $nearby skyvoid_vanilla_oneblock 0
-execute store success score $nearby skyvoid_vanilla_oneblock store result score $r1 skyvoid_vanilla_oneblock positioned 0 -64 0 run locate structure skyvoid_vanilla_oneblock:snowy_taiga_marker
-execute if score $nearby skyvoid_vanilla_oneblock matches 1 store success score $nearby skyvoid_vanilla_oneblock store result score $r2 skyvoid_vanilla_oneblock positioned 100 -64 0 run locate structure skyvoid_vanilla_oneblock:snowy_taiga_marker
+# get coords
+loot spawn ~ -64 ~ loot skyvoid_vanilla_oneblock:locate_snowy_taiga
+execute store success score $located skyvoid_vanilla_oneblock run data modify storage skyvoid_vanilla_oneblock:temp decorations set from entity @e[type=item,limit=1,nbt={Item:{tag:{skyvoid_vanilla_oneblock:{item:"snowy_taiga_locator"}}}}] Item.tag.Decorations
+kill @e[type=item,limit=1,nbt={Item:{tag:{skyvoid_vanilla_oneblock:{item:"snowy_taiga_locator"}}}}]
 
-# if found run calculations, else send error
-execute if score $nearby skyvoid_vanilla_oneblock matches 1 run function skyvoid_vanilla_oneblock:locate_snowy_taiga/calc_coords
-execute if score $nearby skyvoid_vanilla_oneblock matches 0 run schedule function skyvoid_vanilla_oneblock:locate_snowy_taiga/send_error 1t
+# generate island if there's one found
+execute if score $located skyvoid_vanilla_oneblock matches 0 run schedule function skyvoid_vanilla_oneblock:locate_snowy_taiga/send_error 1t
+execute if score $located skyvoid_vanilla_oneblock matches 1 summon marker run function skyvoid_vanilla_oneblock:locate_snowy_taiga/get_coords
