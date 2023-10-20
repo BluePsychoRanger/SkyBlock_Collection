@@ -40,6 +40,8 @@ def vanilla_oneblock(ctx: Context):
 
   island = DataPack(path=f"build/skyvoid_island_oneblock_{MAJOR_VERSION}.zip",extend_namespace=all_worldgen)
   generation = DataPack(path=f"build/skyvoid_worldgen_single_lava_{MAJOR_VERSION}.zip",extend_namespace=all_worldgen)
+  extra = DataPack(path=f"build/skyvoid_vanilla_oneblock_starter_{MAJOR_VERSION}.zip",extend_namespace=all_worldgen)
 
   ctx.data.merge(generation)
+  ctx.data.merge(extra)
   ctx.data.merge(island)
