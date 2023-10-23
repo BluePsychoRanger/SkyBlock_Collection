@@ -1,24 +1,24 @@
 {
   "display": {
     "icon": {
-      "item": "minecraft:rotten_flesh"
+      "item": "minecraft:string"
     },
     "title": {
-      "translate": "advancements.skyvoid.overworld.zombie_hunter.title",
-      "fallback": "Zombie Hunter"
+      "translate": "advancements.skyvoid.overworld.spider.title",
+      "fallback": "Spider Hunter"
     },
     "description": {
-      "translate": "advancements.skyvoid.overworld.zombie_hunter.description",
-      "fallback": "Kill a Zombie"
+      "translate": "advancements.skyvoid.overworld.spider.description",
+      "fallback": "Kill a Spider"
     },
     "frame": "task",
-    "show_toast": false,
-    "announce_to_chat": false,
+    "show_toast": true,
+    "announce_to_chat": true,
     "hidden": false
   },
   "parent": "skyvoid_advancements:overworld/mob_farm",
   "criteria": {
-    "zombie": {
+    "spider": {
       "trigger": "minecraft:player_killed_entity",
       "conditions": {
         "entity": [
@@ -26,7 +26,7 @@
             "condition": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
-              "type": "minecraft:zombie"
+              "type": "minecraft:spider"
             }
           }
         ]

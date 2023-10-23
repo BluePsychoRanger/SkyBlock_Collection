@@ -1,29 +1,30 @@
 {
   "display": {
     "icon": {
-      "item": "minecraft:iron_ingot"
+      "item": "minecraft:oak_sapling"
     },
     "title": {
-      "translate": "advancements.story.smelt_iron.title"
+      "translate": "advancements.skyvoid.overworld.sapling.title",
+      "fallback": "Please Drop..."
     },
     "description": {
-      "translate": "advancements.skyvoid.overworld.smelt_iron.description",
-      "fallback": "Obtain an Iron Ingot from a Zombie"
+      "translate": "advancements.skyvoid.overworld.sapling.description",
+      "fallback": "Obtain another Sapling"
     },
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": true,
     "hidden": false
   },
-  "parent": "skyvoid_advancements:overworld/zombie_hunter",
+  "parent": "skyvoid_advancements:overworld/wood",
   "criteria": {
-    "iron": {
+    "oak_sapling": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:iron_ingot"
+              "minecraft:oak_sapling"
             ]
           }
         ]

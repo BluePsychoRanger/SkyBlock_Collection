@@ -1,0 +1,59 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:flint_and_steel"
+    },
+    "title": {
+      "translate": "advancements.story.enter_the_nether.title"
+    },
+    "description": [
+      {
+        "translate": "advancements.story.enter_the_nether.description"
+      },
+      {
+        "translate": "advancements.skyvoid.overworld.enter_the_nether.description.1",
+        "fallback": "\n\nPlace lava next to the base of the nether portal and a burnable block on top of the lava in front of the entrance of the portal\n\n"
+      },
+      {
+        "translate": "skyvoid.second",
+        "fallback": "%1$s",
+        "with": [
+          [
+            {
+              "text": " "
+            }
+          ],
+          [
+            {
+              "translate": "advancements.skyvoid.overworld.enter_the_nether.description.image_heading",
+              "fallback": "  Front    |   Side\n"
+            },
+            {
+              "translate": "advancements.skyvoid.overworld.enter_the_nether.description.ascii.front.1",
+              "fallback": " _ O O _   |   _ O \n O _ _ O   |   _ O \n O B _ O   |   B F \n _ L L _   |   L O \n"
+            }
+          ]
+        ]
+      }
+    ],
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "minecraft:story/form_obsidian",
+  "criteria": {
+    "entered_nether": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "minecraft:the_nether"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "entered_nether"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

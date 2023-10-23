@@ -1,0 +1,44 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:polished_blackstone_bricks"
+      },
+      "title": {
+        "translate": "advancements.nether.find_bastion.title"
+      },
+      "description": {
+        "translate": "advancements.skyvoid.nether.find_bastion.description",
+        "fallback": "Build your way to a Bastion Remnant"
+      },
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "parent": "minecraft:nether/root",
+    "criteria": {
+      "bastion": {
+        "trigger": "minecraft:location",
+        "conditions": {
+          "player": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "location": {
+                  "structure": "minecraft:bastion_remnant"
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    "requirements": [
+      [
+        "bastion"
+      ]
+    ],
+    "sends_telemetry_event": true
+  }
+  

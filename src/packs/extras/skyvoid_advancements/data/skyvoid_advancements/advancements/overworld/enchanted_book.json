@@ -1,29 +1,30 @@
 {
   "display": {
     "icon": {
-      "item": "minecraft:iron_ingot"
+      "item": "minecraft:enchanted_book"
     },
     "title": {
-      "translate": "advancements.story.smelt_iron.title"
+      "translate": "advancements.skyvoid.overworld.enchanted_book.title",
+      "fallback": "Fancy Reading"
     },
     "description": {
-      "translate": "advancements.skyvoid.overworld.smelt_iron.description",
-      "fallback": "Obtain an Iron Ingot from a Zombie"
+      "translate": "advancements.skyvoid.overworld.enchanted_book.description",
+      "fallback": "Purchase an Enchanted Book"
     },
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": true,
     "hidden": false
   },
-  "parent": "skyvoid_advancements:overworld/zombie_hunter",
+  "parent": "skyvoid_advancements:overworld/emerald",
   "criteria": {
-    "iron": {
+    "enchanted_book": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:iron_ingot"
+              "minecraft:enchanted_book"
             ]
           }
         ]

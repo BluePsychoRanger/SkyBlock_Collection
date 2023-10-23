@@ -10,7 +10,7 @@
     "description": [
       {
         "translate": "advancements.skyvoid.overworld.cobblestone_generator.description",
-        "fallback": "Build a Cobblestone Generator by placing Water and Lava 2 spaces\napart and allow them to flow\ninto each other.\n\nExample:\n"
+        "fallback": "Build a Cobblestone Generator by placing Water and Lava 2 spaces apart and allow them to flow into each other\n\nExample:\n"
       },
       {
         "translate": "skyvoid.second",
@@ -25,7 +25,8 @@
               "color": "#3399FF"
             },
             {
-              "text": " _ _ ",
+              "translate": "advancements.skyvoid.overworld.cobblestone_generator.ascii.air",
+              "fallback": " _ _ ",
               "color": "white"
             },
             {
@@ -56,7 +57,7 @@
         ]
       }
     ],
-    "frame": "task",
+    "frame": "goal",
     "show_toast": true,
     "announce_to_chat": true,
     "hidden": false

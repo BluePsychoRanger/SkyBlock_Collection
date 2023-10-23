@@ -15,7 +15,7 @@
     "announce_to_chat": true,
     "hidden": false
   },
-  "parent": "minecraft:story/smelt_iron",
+  "parent": "skyvoid_advancements:overworld/cauldron",
   "criteria": {
     "lava_bucket": {
       "trigger": "minecraft:impossible"
