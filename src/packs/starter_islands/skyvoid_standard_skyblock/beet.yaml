@@ -1,6 +1,7 @@
 id: 'skyvoid_island_standard'
 name: 'Standard SkyBlock Island'
-version: 1.0.3
+author: 'BluePsychoRanger'
+version: 1.0.4
 
 data_pack:
   load: .

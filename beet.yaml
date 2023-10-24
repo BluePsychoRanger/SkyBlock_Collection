@@ -1,5 +1,9 @@
 
 pipeline:
+  - broadcast: 'src/packs/*/skyvoid_*'
+    extend: 'beet.yaml'
+    pipeline:
+      - 'src.plugins.output'
   - broadcast: 'src/*/skyvoid_*'
     extend: 'beet.yaml'
     pipeline:

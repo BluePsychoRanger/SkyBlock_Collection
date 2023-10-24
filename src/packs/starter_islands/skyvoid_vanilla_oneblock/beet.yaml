@@ -1,6 +1,7 @@
 id: 'skyvoid_island_oneblock'
 name: 'One Block Island'
-version: 1.0.3
+author: 'BluePsychoRanger'
+version: 1.0.5
 
 data_pack:
   load: .

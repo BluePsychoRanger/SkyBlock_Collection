@@ -1,6 +1,7 @@
 id: 'skyvoid_vanilla_oneblock_starter'
 name: 'Vanilla One Block Starter'
-version: 1.0.1
+author: 'BluePsychoRanger'
+version: 1.1.0
 
 data_pack:
   load: .

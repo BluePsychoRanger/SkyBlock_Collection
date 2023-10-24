@@ -2,7 +2,7 @@
 # @s = lightning bolt
 # located at @s align xyz positioned ~-2 ~-4 ~-2
 # run from skyvoid_additions:mechanics/lightning_conversion/strike
-say convert stone
+
 # mark blocks that shouldn't change
 execute at @e[tag=smithed.block,dx=4,dy=6,dz=4] if block ~ ~ ~ stone run setblock ~ ~ ~ command_block{CustomName:'"skyvoid_keep_stone"'}
 execute at @e[tag=smithed.block,dx=4,dy=6,dz=4] if block ~ ~ ~ cobblestone run setblock ~ ~ ~ command_block{CustomName:'"skyvoid_keep_cobblestone"'}
