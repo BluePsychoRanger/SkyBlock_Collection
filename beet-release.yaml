@@ -5,7 +5,7 @@ pipeline:
     extend: 'beet.yaml'
     pipeline:
       - require: [beet.contrib.copy_files]
-        meta: {copy_files: {data_pack: {LICENSE: "../../../LICENSE", README.md: "README.md"}}}
+        meta: {copy_files: {data_pack: {LICENSE: "../../../../LICENSE", README.md: "README.md"}}}
       - 'src.plugins.output.release'
   - broadcast: 'src/bundles/*'
     extend: 'beet.yaml'
