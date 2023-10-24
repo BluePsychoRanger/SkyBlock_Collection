@@ -1,0 +1,35 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:torch"
+    },
+    "title": {
+      "translate": "advancements.skyvoid.overworld.torch.title",
+      "fallback": "Let There Be Light"
+    },
+    "description": {
+      "translate": "advancements.skyvoid.overworld.furance.description",
+      "fallback": "Craft Torches"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "skyvoid_advancements:overworld/charcoal",
+  "criteria": {
+    "torch": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:torch"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "sends_telemetry_event": true
+}

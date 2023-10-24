@@ -1,0 +1,41 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:birch_sapling"
+    },
+    "title": {
+      "translate": "advancements.skyvoid.overworld.second_sapling.title",
+      "fallback": "Garden Variety"
+    },
+    "description": {
+      "translate": "advancements.skyvoid.overworld.second_sapling.description",
+      "fallback": "Obtain a second Sapling type"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "skyvoid_advancements:overworld/emerald",
+  "criteria": {
+    "sapling": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:acacia_sapling",
+              "minecraft:birch_sapling",
+              "minecraft:dark_oak_sapling",
+              "minecraft:jungle_sapling",
+              "minecraft:spruce_sapling",
+              "minecraft:mangrove_propagule",
+              "minecraft:cherry_sapling"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "sends_telemetry_event": true
+}

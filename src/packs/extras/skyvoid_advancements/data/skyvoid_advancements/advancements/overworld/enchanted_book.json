@@ -1,0 +1,35 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:enchanted_book"
+    },
+    "title": {
+      "translate": "advancements.skyvoid.overworld.enchanted_book.title",
+      "fallback": "Fancy Reading"
+    },
+    "description": {
+      "translate": "advancements.skyvoid.overworld.enchanted_book.description",
+      "fallback": "Purchase an Enchanted Book"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "skyvoid_advancements:overworld/emerald",
+  "criteria": {
+    "enchanted_book": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:enchanted_book"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "sends_telemetry_event": true
+}

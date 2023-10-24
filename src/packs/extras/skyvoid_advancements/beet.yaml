@@ -1,0 +1,9 @@
+id: 'skyvoid_advancements'
+name: 'SkyBlock Advancements'
+author: 'EpyonProjects'
+version: 1.0.0
+
+data_pack:
+  load: .
+resource_pack:
+  load: .

@@ -1,0 +1,35 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:clay"
+    },
+    "title": {
+      "translate": "advancements.skyvoid.overworld.clay.title",
+      "fallback": "Dried Wet Dirt"
+    },
+    "description": {
+      "translate": "advancements.skyvoid.overworld.clay.description",
+      "fallback": "Place a Pointed Dripstone underneath Mud to drip out its moisture and create Clay"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "skyvoid_advancements:overworld/pointed_dripstone",
+  "criteria": {
+    "clay_ball": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:clay_ball"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "sends_telemetry_event": true
+}

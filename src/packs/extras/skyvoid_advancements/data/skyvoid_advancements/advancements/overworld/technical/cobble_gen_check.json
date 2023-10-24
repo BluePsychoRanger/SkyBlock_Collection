@@ -1,0 +1,19 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:item_durability_changed",
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:wooden_pickaxe",
+            "minecraft:stone_pickaxe"
+          ]
+        }
+      }
+    }
+  },
+  "sends_telemetry_event": true,
+  "rewards": {
+    "function": "skyvoid_advancements:overworld/obsidian_delay"
+  }
+}
