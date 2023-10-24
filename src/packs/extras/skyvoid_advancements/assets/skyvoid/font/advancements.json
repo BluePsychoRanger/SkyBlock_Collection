@@ -8,6 +8,15 @@
             "chars": [
                 "\u9000"
             ]
+        },
+        {
+            "type": "bitmap",
+            "file": "skyvoid:gui/advancements/nether_portal.png",
+            "ascent": 6,
+            "height": 50,
+            "chars": [
+                "\u9001"
+            ]
         }
     ]
 }

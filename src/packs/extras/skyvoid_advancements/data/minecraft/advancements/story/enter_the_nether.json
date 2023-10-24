@@ -19,20 +19,103 @@
         "fallback": "%1$s",
         "with": [
           [
-            {
-              "text": " "
-            }
-          ],
-          [
-            {
-              "translate": "advancements.skyvoid.overworld.enter_the_nether.description.image_heading",
-              "fallback": "  Front    |   Side\n"
+            {  
+              "text": "  Front    |   Side\n"
             },
             {
-              "translate": "advancements.skyvoid.overworld.enter_the_nether.description.ascii.front.1",
-              "fallback": " _ O O _   |   _ O \n O _ _ O   |   _ O \n O B _ O   |   B F \n _ L L _   |   L O \n"
+              "text": " _ ",
+              "color": "white"
+            },
+            {
+              "text": "O O",
+              "color": "#4605a8"
+            },
+            {
+              "text": " _ ",
+              "color": "white"
+            },
+            {
+              "text": "  |  "
+            },
+            {
+              "text": " _ ",
+              "color": "white"
+            },
+            {
+              "text": "O \n O",
+              "color": "#4605a8"
+            },
+            {
+              "text": " _ _ ",
+              "color": "white"
+            },
+            {
+              "text": "O",
+              "color": "#4605a8"
+            },
+            {
+              "text": "   |   "
+            },
+            {
+              "text": "_ ",
+              "color": "white"
+            },
+            {
+              "text": "O \n O",
+              "color": "#4605a8"
+            },
+            {
+              "text": " B ",
+              "color": "#80452a"
+            },
+            {
+              "text": "_ ",
+              "color": "white"
+            },
+            {
+              "text": "O",
+              "color": "#4605a8"
+            },
+            {
+              "text": "   |   "
+            },
+            {
+              "text": "B ",
+              "color": "#80452a"
+            },
+            {
+              "text": "O \n",
+              "color": "#4605a8"
+            },
+            {
+              "text": " _ ",
+              "color": "white"
+            },
+            {
+              "text": "L L",
+              "color": "#FF7D33"
+            },
+            {
+              "text": " _",
+              "color": "white"
+            },
+            {
+              "text": "   |   "
+            },
+            {
+              "text": "L ",
+              "color": "#FF7D33"
+            },
+            {
+              "text": "O \n",
+              "color": "#4605a8"
             }
-          ]
+          ],
+          {
+            "translate": "gui.skyvoid.advancement.nether_portal",
+            "color": "white",
+            "font": "skyvoid:advancements"
+          }
         ]
       }
     ],

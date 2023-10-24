@@ -1,6 +1,2 @@
-This is a WIP integration of SkyBlock progression alongside a recreation of the original SkyBlock v2.1 challenges in the style of 1.13+ advancements.
-
-If [Sky Void Additions](https://beta.smithed.dev/packs/TTYznbt8KOY4qbHgMsIl) is present, additional advancements will explain each of the additions.
-
-Modifications to original challenges:
-- "Build a House" has been removed
+## Advancements Pack
+The `skyvoid_advancements` data pack modifies the story and nether advancements to better guide the progression in a skyblock world. It rearranges vanilla advancements and adds extra advancements. For more information, visit the [wiki](https://github.com/BluePsychoRanger/SkyBlock_Collection/wiki).
