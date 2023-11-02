@@ -4,7 +4,7 @@ Download: [![Smithed Badge](https://img.shields.io/badge/_-Smithed-black?logo=ha
 [![Modrinth Badge](https://img.shields.io/badge/_-Modrinth-black?logo=modrinth&logoColor=%2300AF5C&labelColor=black&color=%2300AF5C)](https://modrinth.com/datapack/skyblock-advancements)  
 
 # SkyBlock Advancements
-This data pack modifies the story and nether advancements to better guide the progression in a skyblock world. It rearranges vanilla advancements and adds extra advancements, It's perfect for skyblock maps such as [Standard SkyBlock](https://smithed.dev/packs/standard-skyblock)!
+This data pack modifies the story and nether advancements to better guide the progression in a skyblock world. It rearranges vanilla advancements and adds extra advancements, It's perfect for skyblock maps such as [Standard SkyBlock](https://smithed.net/packs/standard-skyblock)!
 
 ## Rearranged for SkyBlock Progression
 The advancements in the story tab are rearranged and rewritten to support the skyblock progression instead of the vanilla progression. Some examples include moving the iron ingot advancement after a new advancement to kill a zombie since the first iron doesn't come from iron ore, but instead from killing zombies.
