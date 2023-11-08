@@ -1,0 +1,7 @@
+id: 'skyvoid_oneblock_normal_end'
+name: 'Sky Void One Block Normal End'
+author: 'BluePsychoRanger'
+version: 1.0.0
+
+pipeline:
+  - src.plugins.bundle.oneblock_normal_end
