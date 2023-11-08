@@ -3,6 +3,9 @@ name: 'Sky Void Base'
 author: 'BluePsychoRanger'
 version: 1.0.2
 
+require: 
+  - src.plugins.worldgen.generate.base_with_end
+
 data_pack:
   load: .
 

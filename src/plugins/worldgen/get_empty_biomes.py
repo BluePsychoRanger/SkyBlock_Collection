@@ -84,3 +84,32 @@ def empty(ctx: Context):
       data["features"] = [[], [], [], [], [], [], [], [], [], flowers, [f"{NAME}:purge/overworld_second_layer"]]
 
     ctx.data[f"minecraft:{name}"] = WorldgenBiome(data)
+
+def normal_end(ctx: Context):
+  vanilla = ctx.inject(Vanilla)
+  biomes = vanilla.mount("data/minecraft/worldgen").data[WorldgenBiome]
+
+  for biome in biomes.keys():
+    data = biomes[biome].data
+    name = biome.removeprefix("minecraft:")
+
+    if (name in END_BIOMES):
+      continue
+
+    # clear carvers
+    data["carvers"] = {}
+
+    # clear features
+    if (name in NETHER_BIOMES):
+      data["features"] = [[], [], [], [], [], [], [],
+                [], [], [f"{NAME}:purge/nether_fortress"]]
+    else:
+      flowers = []
+      step_9 = data["features"][9]
+      for feature in step_9:
+        if "flowers" in feature or "minecraft:flower" in feature:
+          flowers.append(feature)
+      data["features"] = [[], [], [], [], [], [], [], [], [],
+                flowers, [f"{NAME}:purge/overworld_second_layer"]]
+
+    ctx.data[f"minecraft:{name}"] = WorldgenBiome(data)
