@@ -32,6 +32,9 @@ Structures that are important in SkyBlock will generate at the same coordinates 
 ### The End Dimension
 In the end dimension, the obsidian pillars and the exit end portal generate as normal. When a player goes through an end gateway, a small end island will still generate, but the rest of the outer end islands will not.
 
+## Advancements
+It's highly recommended to download the companion [SkyBlock Advancements](https://smithed.net/packs/skyblock-advancements) data pack to improve the advancement interface. This pack rearranges the main advancement tab to be better suited for SkyBlock instead of vanilla Minecraft.
+
 ## Unobtainable Items
 Some items are unobtainable with just this simple world generation. I made an expansion pack that adds mechanics that allow all items, mobs, and advancements to be obtained. Download [Sky Void Additions](https://smithed.net/packs/skyvoid_additions) to expand the possibilities.
 
