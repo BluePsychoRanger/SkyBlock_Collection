@@ -4,7 +4,10 @@ author: 'BluePsychoRanger'
 version: 1.0.0
 
 require: 
-  - src.plugins.worldgen.generate
+  - src.plugins.worldgen.generate.base_with_end
 
 data_pack:
   load: .
+
+pipeline:
+  - src.plugins.worldgen.get_empty_biomes.normal_end
