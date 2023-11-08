@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:scattered_ore",
+  "config": {
+    "size": 32,
+    "discard_chance_on_air_exposure": 0,
+    "targets": [
+      {
+        "target": {
+          "predicate_type": "minecraft:tag_match",
+          "tag": "skyvoid_worldgen:nether_fortress_blocks"
+        },
+        "state": {
+          "Name": "minecraft:light",
+          "Properties": {
+            "level": "0",
+            "waterlogged": "false"
+          }
+        }
+      }
+    ]
+  }
+}
