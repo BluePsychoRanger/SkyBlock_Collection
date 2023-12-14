@@ -1,7 +1,7 @@
 id: 'skyvoid_no_end_ship'
 name: 'Sky Void No End Ship'
 author: 'BluePsychoRanger'
-version: 1.0.1
+version: 1.0.2
 
 data_pack:
   load: .

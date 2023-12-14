@@ -3,10 +3,10 @@ from beet import Context
 from bolt import Module
 import os
 
-VERSION = os.getenv("VERSION", "1.20.2")
+VERSION = os.getenv("VERSION", "1.20.4")
 MAJOR_VERSION = "1_20"
 FORMAT = 15
-FORMATS = [15,18]
+FORMATS = [15,26]
 
 def beet_default(ctx: Context):
 	"""Saves the datapack to the ./out folder."""
@@ -35,7 +35,7 @@ def beet_default(ctx: Context):
 	ctx.data[Module].clear() # manually cleanup bolt modules
 
 	ctx.data.save(
-		path=out_dir + f"/{ctx.project_id}_{MAJOR_VERSION}",
+		path=out_dir + f"/{ctx.project_id}_v{ctx.project_version.replace('.','_')}-MC_{MAJOR_VERSION}",
 		overwrite=True
 	)
 
@@ -66,7 +66,7 @@ def build_rp(ctx: Context):
 	})
 
 	ctx.assets.save(
-		path=out_dir + f"/rp_{ctx.project_id}_{MAJOR_VERSION}",
+		path=out_dir + f"/rp_{ctx.project_id}_v{ctx.project_version.replace('.','_')}-MC_{MAJOR_VERSION}",
 		overwrite=True
 	)
 
@@ -100,7 +100,7 @@ def release(ctx: Context):
 	ctx.data[Module].clear() # manually cleanup bolt modules
 
 	ctx.data.save(
-		path=out_dir + f"/{ctx.project_id}_{MAJOR_VERSION}",
+		path=out_dir + f"/{ctx.project_id}_v{ctx.project_version.replace('.','_')}-MC_{MAJOR_VERSION}",
 		overwrite=True,
 		zipped=True
 	)
@@ -133,7 +133,7 @@ def release_rp(ctx: Context):
 	})
 
 	ctx.assets.save(
-		path=out_dir + f"/rp_{ctx.project_id}_{MAJOR_VERSION}",
+		path=out_dir + f"/rp_{ctx.project_id}_v{ctx.project_version.replace('.','_')}-MC_{MAJOR_VERSION}",
 		overwrite=True,
 		zipped=True
 	)
@@ -166,7 +166,7 @@ def bundle(ctx: Context):
 	ctx.data[Module].clear() # manually cleanup bolt modules
 
 	ctx.data.save(
-		path=out_dir + f"/{ctx.project_id}_{MAJOR_VERSION}",
+		path=out_dir + f"/{ctx.project_id}_v{ctx.project_version.replace('.','_')}-MC_{MAJOR_VERSION}",
 		overwrite=True,
 		zipped=True
 	)
