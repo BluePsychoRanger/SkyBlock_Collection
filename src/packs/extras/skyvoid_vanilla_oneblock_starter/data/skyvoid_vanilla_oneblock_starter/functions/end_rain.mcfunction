@@ -5,5 +5,5 @@
 
 scoreboard players add $snow_blocks skyvoid_vanilla_oneblock 1
 
-execute if score $snow_blocks skyvoid_vanilla_oneblock matches ..22 run advancement revoke @s only skyvoid_vanilla_oneblock_starter:place_snow
-execute if score $snow_blocks skyvoid_vanilla_oneblock matches 23 run gamerule doWeatherCycle true
+execute if score $snow_blocks skyvoid_vanilla_oneblock matches ..23 run advancement revoke @s only skyvoid_vanilla_oneblock_starter:place_snow
+execute if score $snow_blocks skyvoid_vanilla_oneblock matches 23.. run gamerule doWeatherCycle true

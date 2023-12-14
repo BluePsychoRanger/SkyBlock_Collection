@@ -1,7 +1,7 @@
 id: 'skyvoid_vanilla_oneblock'
 name: 'Vanilla One Block'
 author: 'BluePsychoRanger'
-version: 1.1.1
+version: 1.1.2
 
 pipeline:
   - src.plugins.bundle.vanilla_oneblock
