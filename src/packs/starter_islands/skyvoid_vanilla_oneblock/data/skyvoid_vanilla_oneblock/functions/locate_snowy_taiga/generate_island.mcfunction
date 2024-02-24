@@ -4,13 +4,14 @@
 # run from skyvoid_worldgen:locate_snowy_taiga/get_coords
 
 # place island
+scoreboard players set $generated skyvoid_vanilla_oneblock 1
 setworldspawn ~ 0 ~
 forceload add ~ ~
 setblock ~ -64 ~ grass_block
 forceload remove ~ ~
 
 # move players
-tp @a ~ -63 ~
+tp @a ~0.5 -63 ~0.5
 gamemode survival @a
 
 # send warning
