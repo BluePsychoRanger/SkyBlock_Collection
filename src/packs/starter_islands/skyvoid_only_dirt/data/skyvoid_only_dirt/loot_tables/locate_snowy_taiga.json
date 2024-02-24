@@ -1,0 +1,25 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:map",
+          "functions": [
+            {
+              "function": "minecraft:exploration_map",
+              "destination": "skyvoid_only_dirt:snowy_taiga",
+              "decoration": "red_x",
+              "skip_existing_chunks": true
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{skyvoid_only_dirt:{item:\"snowy_taiga_locator\"}}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
