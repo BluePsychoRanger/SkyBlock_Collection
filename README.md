@@ -8,4 +8,4 @@ If you enjoy these data packs and wish to support me, feel free to use the links
 
 If you make content with these data packs, it'd be appreciated to give credit in the description, so others can play with these packs!
 > Skyblock Data Pack created by BluePsychoRanger<br>
-> Download: https://github.com/BluePsychoRanger/SkyBlock_Collection/releases
+> Download: https://github.com/BluePsychoRanger/SkyBlock_Collection/releases/latest
