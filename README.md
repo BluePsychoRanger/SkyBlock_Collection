@@ -5,3 +5,7 @@ This is a collection of data packs to generate and play SkyBlock. For full docum
 If you enjoy these data packs and wish to support me, feel free to use the links below.  
 [Buy Me a Coffee](https://bmc.link/bluepsychoranger)  
 [PayPal](https://paypal.me/bluepsychoranger)  
+
+If you make content with these data packs, it'd be appreciated to give credit in the description, so others can play with these packs!
+> Skyblock Data Pack created by BluePsychoRanger<br>
+> Download: https://github.com/BluePsychoRanger/SkyBlock_Collection/releases
