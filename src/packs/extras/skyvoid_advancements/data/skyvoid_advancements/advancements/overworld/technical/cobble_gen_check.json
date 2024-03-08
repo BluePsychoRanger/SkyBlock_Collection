@@ -3,6 +3,25 @@
     "requirement": {
       "trigger": "minecraft:item_durability_changed",
       "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type_specific": {
+                  "type": "player",
+                  "advancements": {
+                    "skyvoid_advancements:overworld/obsidian": true,
+                    "skyvoid_advancements:overworld/cobble_gen": true
+                  }
+                },
+                "nbt": "{Tags:[\"sva_lava_source_delay_check\"]}"
+              }
+            }
+          }
+        ],
         "item": {
           "items": [
             "minecraft:wooden_pickaxe",
