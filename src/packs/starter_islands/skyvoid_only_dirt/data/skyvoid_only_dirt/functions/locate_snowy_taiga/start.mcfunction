@@ -4,7 +4,8 @@
 # run from skyvoid_worldgen:load via #skyvoid_worldgen:initialize
 
 gamemode spectator @a
-fill ~-3 -64 ~-3 ~3 -64 ~3 air
+fill ~-10 -64 ~-10 ~10 -60 ~10 air replace grass_block
+fill ~-10 -64 ~-10 ~10 -60 ~10 air replace dirt
 
 # get coords
 loot spawn ~ -64 ~ loot skyvoid_only_dirt:locate_snowy_taiga

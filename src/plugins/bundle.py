@@ -61,3 +61,19 @@ def vanilla_oneblock(ctx: Context):
   ctx.data.merge(generation)
   ctx.data.merge(extra)
   ctx.data.merge(island)
+
+
+def skyblock_dirt(ctx: Context):
+  for filename in os.listdir("build"):
+    f = os.path.join("build", filename)
+    # checking if it is a file
+    if "skyvoid_island_only_dirt_v" in f:
+      island_path = f
+    elif "skyvoid_worldgen_normal_end_v" in f:
+      generation_path = f
+
+  island = DataPack(path=island_path,extend_namespace=all_worldgen)
+  generation = DataPack(path=generation_path,extend_namespace=all_worldgen)
+
+  ctx.data.merge(generation)
+  ctx.data.merge(island)
