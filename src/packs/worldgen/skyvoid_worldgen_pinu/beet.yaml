@@ -1,0 +1,13 @@
+id: 'skyvoid_worldgen_pinu'
+name: 'Sky Void (Pinu Custom)'
+author: 'BluePsychoRanger'
+version: 1.1.0
+
+require: 
+  - src.plugins.worldgen.generate.base_with_end
+
+data_pack:
+  load: .
+
+pipeline:
+  - src.plugins.worldgen.get_empty_biomes.normal_end
