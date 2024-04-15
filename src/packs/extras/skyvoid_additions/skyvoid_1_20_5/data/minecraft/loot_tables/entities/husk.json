@@ -155,8 +155,16 @@
           "name": "minecraft:sand",
           "functions": [
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{skyvoid_additions:{place_sand:{type:'normal'}}}"
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_data": {
+                  "skyvoid_additions": {
+                    "place_sand": {
+                      "type": "normal"
+                    }
+                  }
+                }
+              }
             }
           ],
           "conditions": [
@@ -210,8 +218,16 @@
           "name": "minecraft:red_sand",
           "functions": [
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{skyvoid_additions:{place_sand:{type:'red'}}}"
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_data": {
+                  "skyvoid_additions": {
+                    "place_sand": {
+                      "type": "red"
+                    }
+                  }
+                }
+              }
             }
           ],
           "conditions": [

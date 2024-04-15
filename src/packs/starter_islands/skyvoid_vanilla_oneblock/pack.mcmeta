@@ -2,8 +2,8 @@
   "overlays": {
     "entries": [
       {
-        "formats": [18,26],
-        "directory": "skyvoid_1_20_2"
+        "formats": 40,
+        "directory": "skyvoid_1_20_5"
       }
     ]
   }
