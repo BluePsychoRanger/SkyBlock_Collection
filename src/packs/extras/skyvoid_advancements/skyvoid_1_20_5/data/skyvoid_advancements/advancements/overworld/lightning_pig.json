@@ -1,0 +1,42 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:lightning_rod"
+    },
+    "title": {
+      "translate": "advancements.skyvoid.overworld.lightning_pig.title",
+      "fallback": "Terrifying Lightning"
+    },
+    "description": {
+      "translate": "advancements.skyvoid.overworld.lightning_pig.description",
+      "fallback": "Convert Pigs to Zombified Piglins by striking them with lightning"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "skyvoid_advancements:overworld/copper",
+  "criteria": {
+    "lightning_rod_pigs": {
+      "trigger": "minecraft:lightning_strike",
+      "conditions": {
+        "lightning": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type_specific": {
+                "type": "lightning",
+                "entity_struck": {
+                  "type": "minecraft:pig"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "sends_telemetry_event": true
+}

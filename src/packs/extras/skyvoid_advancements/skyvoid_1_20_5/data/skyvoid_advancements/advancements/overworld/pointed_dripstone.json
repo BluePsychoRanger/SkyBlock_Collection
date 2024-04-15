@@ -1,0 +1,33 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:pointed_dripstone"
+    },
+    "title": {
+      "translate": "advancements.skyvoid.overworld.pointed_dripstone.title",
+      "fallback": "Pointy!"
+    },
+    "description": {
+      "translate": "advancements.skyvoid.overworld.pointed_dripstone.description",
+      "fallback": "Purchase Pointed Dripstone from a Wandering Trader"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "skyvoid_advancements:overworld/emerald",
+  "criteria": {
+    "traded": {
+      "trigger": "minecraft:villager_trade",
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:pointed_dripstone"
+          ]
+        }
+      }
+    }
+  },
+  "sends_telemetry_event": true
+}

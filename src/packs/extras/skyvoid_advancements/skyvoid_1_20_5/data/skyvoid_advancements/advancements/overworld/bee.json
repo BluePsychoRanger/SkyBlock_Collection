@@ -1,0 +1,46 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:honey_bottle"
+    },
+    "title": {
+      "translate": "advancements.skyvoid.overworld.creeper.title",
+      "fallback": "Do You Want To Bee Friends?"
+    },
+    "description": {
+      "translate": "advancements.skyvoid.overworld.creeper.description",
+      "fallback": "Harvest Honey from a Bee Nest from a tree grown near flowers"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "skyvoid_advancements:overworld/sapling",
+  "criteria": {
+    "harvest_honey": {
+      "trigger": "minecraft:item_used_on_block",
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "tag": "minecraft:beehives"
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "minecraft:glass_bottle"
+              ]
+            }
+          }
+        ]
+      }
+    }
+  },
+  "sends_telemetry_event": true
+}
