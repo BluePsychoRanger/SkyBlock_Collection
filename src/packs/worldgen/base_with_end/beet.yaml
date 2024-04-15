@@ -1,7 +1,7 @@
 id: 'skyvoid_worldgen_base_with_end'
 name: 'Sky Void Base (Normal End)'
 author: 'BluePsychoRanger'
-version: 1.0.3
+version: 1.0.4
 
 data_pack:
   load: .
