@@ -1,0 +1,7 @@
+id: 'skyvoid_sand_island'
+name: 'Sky Void Sand Island'
+author: 'BluePsychoRanger'
+version: 1.0.0
+
+data_pack:
+  load: .
