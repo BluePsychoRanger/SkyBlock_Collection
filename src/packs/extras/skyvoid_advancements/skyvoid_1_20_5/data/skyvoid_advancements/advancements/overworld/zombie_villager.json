@@ -2,7 +2,11 @@
   "display": {
     "icon": {
       "id": "minecraft:splash_potion",
-      "nbt": "{Potion:\"weakness\"}"
+      "components": {
+        "minecraft:potion_contents": {
+          "potion": "minecraft:weakness"
+        }
+      }
     },
     "title": {
       "translate": "advancements.skyvoid.overworld.zombie_villager.title",

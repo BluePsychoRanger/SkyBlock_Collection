@@ -8,7 +8,7 @@ setblock ~ ~ ~ suspicious_sand
 # set loot table
 scoreboard players set $loot skyvoid_additions 0
 execute store result score $loot skyvoid_additions run loot spawn ~ ~-3000 ~ loot skyvoid_additions:technical/suspicious_sniffers/biome_based_sand
-execute if score $loot skyvoid_additions matches 1.. positioned ~ ~-3000 ~ run data modify block ~ ~3000 ~ LootTable set from entity @e[type=item,nbt={Age:0s,Item:{tag:{skyvoid_additions:{suspicious_block:{}}}}},distance=..1,limit=1] Item.tag.skyvoid_additions.suspicious_block.LootTable
+execute if score $loot skyvoid_additions matches 1.. positioned ~ ~-3000 ~ run data modify block ~ ~3000 ~ LootTable set from entity @e[type=item,nbt={Age:0s,Item:{components:{"minecraft:custom_data":{skyvoid_additions:{suspicious_block:{}}}}}},distance=..1,limit=1] Item.components."minecraft:custom_data".skyvoid_additions.suspicious_block.LootTable
 
 # visuals
 particle item{item:"brick"} ~ ~ ~ 0.2 -0.4 0.2 0 10

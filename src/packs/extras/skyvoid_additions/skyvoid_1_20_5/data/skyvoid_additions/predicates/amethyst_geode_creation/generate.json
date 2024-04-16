@@ -1,0 +1,374 @@
+[
+  {
+    "condition": "minecraft:random_chance",
+    "chance": 0.02
+  },
+  {
+    "condition": "minecraft:location_check",
+    "offsetX": 0,
+    "offsetY": 0,
+    "offsetZ": 0,
+    "predicate": {
+      "fluid": {
+        "fluids": "minecraft:lava"
+      }
+    }
+  },
+  {
+    "condition": "minecraft:location_check",
+    "offsetX": 1,
+    "offsetY": 0,
+    "offsetZ": 0,
+    "predicate": {
+      "fluid": {
+        "fluids": "minecraft:lava"
+      }
+    }
+  },
+  {
+    "condition": "minecraft:location_check",
+    "offsetX": 0,
+    "offsetY": 0,
+    "offsetZ": 1,
+    "predicate": {
+      "fluid": {
+        "fluids": "minecraft:lava"
+      }
+    }
+  },
+  {
+    "condition": "minecraft:location_check",
+    "offsetX": 1,
+    "offsetY": 0,
+    "offsetZ": 1,
+    "predicate": {
+      "fluid": {
+        "fluids": "minecraft:lava"
+      }
+    }
+  },
+  {
+    "condition": "minecraft:location_check",
+    "offsetX": 0,
+    "offsetY": -1,
+    "offsetZ": 0,
+    "predicate": {
+      "block": {
+        "blocks": [
+          "minecraft:packed_ice"
+        ]
+      }
+    }
+  },
+  {
+    "condition": "minecraft:location_check",
+    "offsetX": 1,
+    "offsetY": -1,
+    "offsetZ": 0,
+    "predicate": {
+      "block": {
+        "blocks": [
+          "minecraft:packed_ice"
+        ]
+      }
+    }
+  },
+  {
+    "condition": "minecraft:location_check",
+    "offsetX": 0,
+    "offsetY": -1,
+    "offsetZ": 1,
+    "predicate": {
+      "block": {
+        "blocks": [
+          "minecraft:packed_ice"
+        ]
+      }
+    }
+  },
+  {
+    "condition": "minecraft:location_check",
+    "offsetX": 1,
+    "offsetY": -1,
+    "offsetZ": 1,
+    "predicate": {
+      "block": {
+        "blocks": [
+          "minecraft:packed_ice"
+        ]
+      }
+    }
+  },
+  {
+    "condition": "minecraft:location_check",
+    "offsetX": 0,
+    "offsetY": -2,
+    "offsetZ": 0,
+    "predicate": {
+      "block": {
+        "blocks": [
+          "minecraft:packed_ice"
+        ]
+      }
+    }
+  },
+  {
+    "condition": "minecraft:location_check",
+    "offsetX": 1,
+    "offsetY": -2,
+    "offsetZ": 0,
+    "predicate": {
+      "block": {
+        "blocks": [
+          "minecraft:packed_ice"
+        ]
+      }
+    }
+  },
+  {
+    "condition": "minecraft:location_check",
+    "offsetX": 0,
+    "offsetY": -2,
+    "offsetZ": 1,
+    "predicate": {
+      "block": {
+        "blocks": [
+          "minecraft:packed_ice"
+        ]
+      }
+    }
+  },
+  {
+    "condition": "minecraft:location_check",
+    "offsetX": 1,
+    "offsetY": -2,
+    "offsetZ": 1,
+    "predicate": {
+      "block": {
+        "blocks": [
+          "minecraft:packed_ice"
+        ]
+      }
+    }
+  },
+  {
+    "condition": "minecraft:location_check",
+    "offsetX": 0,
+    "offsetY": -3,
+    "offsetZ": 0,
+    "predicate": {
+      "fluid": {
+        "tag": "minecraft:lava"
+      }
+    }
+  },
+  {
+    "condition": "minecraft:location_check",
+    "offsetX": 1,
+    "offsetY": -3,
+    "offsetZ": 0,
+    "predicate": {
+      "fluid": {
+        "tag": "minecraft:lava"
+      }
+    }
+  },
+  {
+    "condition": "minecraft:location_check",
+    "offsetX": 0,
+    "offsetY": -3,
+    "offsetZ": 1,
+    "predicate": {
+      "fluid": {
+        "tag": "minecraft:lava"
+      }
+    }
+  },
+  {
+    "condition": "minecraft:location_check",
+    "offsetX": 1,
+    "offsetY": -3,
+    "offsetZ": 1,
+    "predicate": {
+      "fluid": {
+        "tag": "minecraft:lava"
+      }
+    }
+  },
+  {
+    "condition": "minecraft:location_check",
+    "offsetX": -1,
+    "offsetY": -1,
+    "offsetZ": 0,
+    "predicate": {
+      "fluid": {
+        "tag": "minecraft:lava"
+      }
+    }
+  },
+  {
+    "condition": "minecraft:location_check",
+    "offsetX": 0,
+    "offsetY": -1,
+    "offsetZ": -1,
+    "predicate": {
+      "fluid": {
+        "tag": "minecraft:lava"
+      }
+    }
+  },
+  {
+    "condition": "minecraft:location_check",
+    "offsetX": -1,
+    "offsetY": -1,
+    "offsetZ": 1,
+    "predicate": {
+      "fluid": {
+        "tag": "minecraft:lava"
+      }
+    }
+  },
+  {
+    "condition": "minecraft:location_check",
+    "offsetX": 1,
+    "offsetY": -1,
+    "offsetZ": -1,
+    "predicate": {
+      "fluid": {
+        "tag": "minecraft:lava"
+      }
+    }
+  },
+  {
+    "condition": "minecraft:location_check",
+    "offsetX": 2,
+    "offsetY": -1,
+    "offsetZ": 0,
+    "predicate": {
+      "fluid": {
+        "tag": "minecraft:lava"
+      }
+    }
+  },
+  {
+    "condition": "minecraft:location_check",
+    "offsetX": 0,
+    "offsetY": -1,
+    "offsetZ": 2,
+    "predicate": {
+      "fluid": {
+        "tag": "minecraft:lava"
+      }
+    }
+  },
+  {
+    "condition": "minecraft:location_check",
+    "offsetX": 2,
+    "offsetY": -1,
+    "offsetZ": 1,
+    "predicate": {
+      "fluid": {
+        "tag": "minecraft:lava"
+      }
+    }
+  },
+  {
+    "condition": "minecraft:location_check",
+    "offsetX": 1,
+    "offsetY": -1,
+    "offsetZ": 2,
+    "predicate": {
+      "fluid": {
+        "tag": "minecraft:lava"
+      }
+    }
+  },
+  {
+    "condition": "minecraft:location_check",
+    "offsetX": -1,
+    "offsetY": -2,
+    "offsetZ": 0,
+    "predicate": {
+      "fluid": {
+        "tag": "minecraft:lava"
+      }
+    }
+  },
+  {
+    "condition": "minecraft:location_check",
+    "offsetX": 0,
+    "offsetY": -2,
+    "offsetZ": -1,
+    "predicate": {
+      "fluid": {
+        "tag": "minecraft:lava"
+      }
+    }
+  },
+  {
+    "condition": "minecraft:location_check",
+    "offsetX": -1,
+    "offsetY": -2,
+    "offsetZ": 1,
+    "predicate": {
+      "fluid": {
+        "tag": "minecraft:lava"
+      }
+    }
+  },
+  {
+    "condition": "minecraft:location_check",
+    "offsetX": 1,
+    "offsetY": -2,
+    "offsetZ": -1,
+    "predicate": {
+      "fluid": {
+        "tag": "minecraft:lava"
+      }
+    }
+  },
+  {
+    "condition": "minecraft:location_check",
+    "offsetX": 2,
+    "offsetY": -2,
+    "offsetZ": 0,
+    "predicate": {
+      "fluid": {
+        "tag": "minecraft:lava"
+      }
+    }
+  },
+  {
+    "condition": "minecraft:location_check",
+    "offsetX": 0,
+    "offsetY": -2,
+    "offsetZ": 2,
+    "predicate": {
+      "fluid": {
+        "tag": "minecraft:lava"
+      }
+    }
+  },
+  {
+    "condition": "minecraft:location_check",
+    "offsetX": 2,
+    "offsetY": -2,
+    "offsetZ": 1,
+    "predicate": {
+      "fluid": {
+        "tag": "minecraft:lava"
+      }
+    }
+  },
+  {
+    "condition": "minecraft:location_check",
+    "offsetX": 1,
+    "offsetY": -2,
+    "offsetZ": 2,
+    "predicate": {
+      "fluid": {
+        "tag": "minecraft:lava"
+      }
+    }
+  }
+]

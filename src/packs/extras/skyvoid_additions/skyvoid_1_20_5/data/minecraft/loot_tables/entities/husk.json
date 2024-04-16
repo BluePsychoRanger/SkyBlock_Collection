@@ -174,7 +174,7 @@
               "predicate": {
                 "stepping_on": {
                   "block": {
-                    "tag": "skyvoid_additions:sand_from_burnt_husks/converts_to_sand"
+                    "blocks": "#skyvoid_additions:sand_from_burnt_husks/converts_to_sand"
                   }
                 },
                 "flags": {
@@ -237,7 +237,7 @@
               "predicate": {
                 "stepping_on": {
                   "block": {
-                    "tag": "skyvoid_additions:sand_from_burnt_husks/converts_to_red_sand"
+                    "blocks": "#skyvoid_additions:sand_from_burnt_husks/converts_to_red_sand"
                   }
                 },
                 "flags": {

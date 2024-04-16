@@ -5,7 +5,7 @@
 
 tag @s add skyvoid_drowned_check
 
-execute at @s unless predicate skyvoid_additions:sniffer_eggs_from_drowneds/sniffer_egg_chance run return 0
+execute unless predicate skyvoid_additions:sniffer_eggs_from_drowneds/sniffer_egg_chance run return 0
 
 tag @s add skyvoid_sniffer_drowned
 item replace entity @s weapon.offhand with minecraft:sniffer_egg

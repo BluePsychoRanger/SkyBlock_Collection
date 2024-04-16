@@ -2,7 +2,9 @@
   "display": {
     "icon": {
       "id": "minecraft:potion",
-      "nbt": "{Potion:\"healing\"}"
+      "components": {
+        "minecraft:potion_contents": "healing"
+      }
     },
     "title": {
       "translate": "advancements.skyvoid.overworld.witch.title",

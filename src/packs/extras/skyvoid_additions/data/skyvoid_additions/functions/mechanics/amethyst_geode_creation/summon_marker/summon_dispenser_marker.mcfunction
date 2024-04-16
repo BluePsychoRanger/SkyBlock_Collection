@@ -12,3 +12,5 @@ execute if block ~ ~ ~ dispenser[facing=north] run summon marker ~ ~ ~ {Rotation
 execute if block ~ ~ ~ dispenser[facing=south] run summon marker ~ ~ ~ {Rotation:[0.0f,0.0f],CustomName:'"skyvoid_additions_dispenser"',Tags:["skyvoid_additions_dispenser","skyvoid_additions_geode_creation"]}
 execute if block ~ ~ ~ dispenser[facing=east] run summon marker ~ ~ ~ {Rotation:[-90.0f,0.0f],CustomName:'"skyvoid_additions_dispenser"',Tags:["skyvoid_additions_dispenser","skyvoid_additions_geode_creation"]}
 execute if block ~ ~ ~ dispenser[facing=west] run summon marker ~ ~ ~ {Rotation:[90.0f,0.0f],CustomName:'"skyvoid_additions_dispenser"',Tags:["skyvoid_additions_dispenser","skyvoid_additions_geode_creation"]}
+
+return 1

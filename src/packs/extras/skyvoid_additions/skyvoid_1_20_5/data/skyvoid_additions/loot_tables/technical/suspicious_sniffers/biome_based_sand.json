@@ -88,7 +88,7 @@
             {
               "condition": "minecraft:location_check",
               "predicate": {
-                "biome": "minecraft:warm_ocean"
+                "biomes": "minecraft:warm_ocean"
               }
             }
           ]
@@ -115,7 +115,7 @@
             {
               "condition": "minecraft:location_check",
               "predicate": {
-                "biome": "minecraft:desert"
+                "biomes": "minecraft:desert"
               }
             }
           ]
@@ -142,7 +142,7 @@
             {
               "condition": "minecraft:location_check",
               "predicate": {
-                "biome": "minecraft:desert"
+                "biomes": "minecraft:desert"
               }
             }
           ]
