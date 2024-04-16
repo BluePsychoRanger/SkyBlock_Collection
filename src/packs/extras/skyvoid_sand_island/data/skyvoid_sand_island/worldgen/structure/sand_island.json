@@ -6,7 +6,7 @@
   "start_pool": "skyvoid_sand_island:sand_island",
   "size": 1,
   "start_height": {
-    "absolute": 64
+    "absolute": 60
   },
   "start_jigsaw_name": "skyvoid_sand_island:sand_island",
   "max_distance_from_center": 80,
