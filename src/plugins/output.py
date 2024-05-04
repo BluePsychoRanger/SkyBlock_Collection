@@ -3,10 +3,12 @@ from beet import Context
 from bolt import Module
 import os
 
-VERSION = os.getenv("VERSION", "1.20.4")
+VERSION = os.getenv("VERSION", "1.20.6")
 MAJOR_VERSION = "1_20"
 FORMAT = 15
-FORMATS = [15,26]
+FORMATS = [15,41]
+RP_FORMAT = 15
+RP_FORMATS = [15,32]
 
 def beet_default(ctx: Context):
 	"""Saves the datapack to the ./out folder."""
@@ -45,8 +47,8 @@ def beet_default(ctx: Context):
 def build_rp(ctx: Context):
 	"""Saves the resourcepack to the ./out folder."""
 	out_dir = str(ctx.directory.parent).replace('src','out')
-	ctx.assets.pack_format = FORMAT
-	ctx.assets.supported_formats = FORMATS
+	ctx.assets.pack_format = RP_FORMAT
+	ctx.assets.supported_formats = RP_FORMATS
 	ctx.assets.description = [
 		"",
 		{
@@ -112,8 +114,8 @@ def release_rp(ctx: Context):
 	"""Saves the resourcepack to the ./build folder."""
 	out_dir = "build"
 
-	ctx.assets.pack_format = FORMAT
-	ctx.assets.supported_formats = FORMATS
+	ctx.assets.pack_format = RP_FORMAT
+	ctx.assets.supported_formats = RP_FORMATS
 	ctx.assets.description = [
 		"",
 		{

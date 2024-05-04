@@ -262,26 +262,26 @@
   "__smithed__": {
     "rules": [
       {
-        "type": "smithed:append",
+        "type": "append",
         "target": "pools",
         "source": {
-          "type": "smithed:reference",
+          "type": "reference",
           "path": "pools[2]"
         }
       },
       {
-        "type": "smithed:append",
+        "type": "append",
         "target": "pools",
         "source": {
-          "type": "smithed:reference",
+          "type": "reference",
           "path": "pools[3]"
         }
       },
       {
-        "type": "smithed:append",
+        "type": "append",
         "target": "pools",
         "source": {
-          "type": "smithed:reference",
+          "type": "reference",
           "path": "pools[4]"
         }
       }
