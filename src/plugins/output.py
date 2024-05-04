@@ -47,8 +47,8 @@ def beet_default(ctx: Context):
 def build_rp(ctx: Context):
 	"""Saves the resourcepack to the ./out folder."""
 	out_dir = str(ctx.directory.parent).replace('src','out')
-	ctx.assets.pack_format = FORMAT
-	ctx.assets.supported_formats = FORMATS
+	ctx.assets.pack_format = RP_FORMAT
+	ctx.assets.supported_formats = RP_FORMATS
 	ctx.assets.description = [
 		"",
 		{
