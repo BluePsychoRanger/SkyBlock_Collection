@@ -6,9 +6,9 @@ import os
 VERSION = os.getenv("VERSION", "1.20.5")
 MAJOR_VERSION = "1_20"
 FORMAT = 15
-FORMATS = [15,40]
+FORMATS = [15,41]
 RP_FORMAT = 15
-RP_FORMATS = [15,31]
+RP_FORMATS = [15,32]
 
 def beet_default(ctx: Context):
 	"""Saves the datapack to the ./out folder."""
