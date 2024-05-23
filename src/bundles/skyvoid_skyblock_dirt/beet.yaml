@@ -1,7 +1,7 @@
 id: 'skyvoid_skyblock_dirt'
 name: 'SkyBlock Dirt Hardcore'
 author: 'BluePsychoRanger'
-version: 1.0.1
+version: 1.0.2
 
 pipeline:
   - src.plugins.bundle.skyblock_dirt
