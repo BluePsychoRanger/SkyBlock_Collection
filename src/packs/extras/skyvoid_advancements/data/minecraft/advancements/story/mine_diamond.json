@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "minecraft:diamond"
+      "id": "minecraft:diamond"
     },
     "title": {
       "translate": "advancements.story.mine_diamond.title"

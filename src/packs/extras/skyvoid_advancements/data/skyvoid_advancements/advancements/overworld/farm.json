@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "minecraft:wooden_hoe"
+      "id": "minecraft:wooden_hoe"
     },
     "title": {
       "translate": "advancements.skyvoid.overworld.farm.title",

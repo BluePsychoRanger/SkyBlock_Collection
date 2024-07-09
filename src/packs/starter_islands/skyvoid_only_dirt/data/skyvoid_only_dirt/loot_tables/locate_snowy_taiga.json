@@ -14,8 +14,14 @@
               "skip_existing_chunks": true
             },
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{skyvoid_only_dirt:{item:\"snowy_taiga_locator\"}}"
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_data": {
+                  "skyvoid_only_dirt": {
+                    "item": "snowy_taiga_locator"
+                  }
+                }
+              }
             }
           ]
         }

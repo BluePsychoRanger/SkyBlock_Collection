@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "minecraft:bone"
+      "id": "minecraft:bone"
     },
     "title": {
       "translate": "advancements.skyvoid.overworld.skeleton_hunter.title",

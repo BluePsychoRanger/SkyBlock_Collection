@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "minecraft:crafting_table"
+      "id": "minecraft:crafting_table"
     },
     "title": {
       "translate": "advancements.skyvoid.overworld.crafting_table.title",

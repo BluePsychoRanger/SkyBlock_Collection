@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "minecraft:enchanted_book"
+      "id": "minecraft:enchanted_book"
     },
     "title": {
       "translate": "advancements.skyvoid.overworld.enchanted_book.title",

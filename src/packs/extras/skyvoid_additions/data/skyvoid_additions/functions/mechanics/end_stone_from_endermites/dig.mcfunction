@@ -5,7 +5,7 @@
 
 playsound minecraft:entity.endermite.ambient hostile @a
 playsound minecraft:block.stone.place block @a
-particle minecraft:block end_stone ~ ~ ~ 0 0 0 0.05 10
+particle minecraft:block{block_state:{Name:"end_stone"}} ~ ~ ~ 0 0 0 0.05 10
 setblock ~ ~ ~ end_stone
 
 data merge entity @s {Health:0.0f,DeathTime:18s,DeathLootTable:"minecraft:empty"}

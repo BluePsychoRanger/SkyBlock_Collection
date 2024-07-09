@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "minecraft:wooden_pickaxe"
+      "id": "minecraft:wooden_pickaxe"
     },
     "title": {
       "translate": "advancements.skyvoid.overworld.wooden_pickaxe.title",

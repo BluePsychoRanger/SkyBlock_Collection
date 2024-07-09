@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "minecraft:lava_bucket"
+      "id": "minecraft:lava_bucket"
     },
     "title": {
       "translate": "advancements.story.lava_bucket.title"

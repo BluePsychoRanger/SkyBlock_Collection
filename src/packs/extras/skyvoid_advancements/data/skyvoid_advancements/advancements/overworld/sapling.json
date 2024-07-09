@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "minecraft:oak_sapling"
+      "id": "minecraft:oak_sapling"
     },
     "title": {
       "translate": "advancements.skyvoid.overworld.sapling.title",

@@ -34,7 +34,7 @@
             "condition": "minecraft:location_check",
             "predicate": {
               "block": {
-                "tag": "minecraft:coral_blocks"
+                "blocks": "#minecraft:coral_blocks"
               }
             }
           },

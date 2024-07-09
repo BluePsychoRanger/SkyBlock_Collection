@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "minecraft:diamond_chestplate"
+      "id": "minecraft:diamond_chestplate"
     },
     "title": {
       "translate": "advancements.story.shiny_gear.title"

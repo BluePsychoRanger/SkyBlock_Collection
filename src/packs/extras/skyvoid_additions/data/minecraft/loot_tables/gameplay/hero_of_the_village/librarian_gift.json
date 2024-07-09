@@ -29,7 +29,7 @@
             {
               "condition": "minecraft:location_check",
               "predicate": {
-                "structure": "minecraft:ancient_city"
+                "structures": "minecraft:ancient_city"
               }
             },
             {

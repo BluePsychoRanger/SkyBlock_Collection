@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "minecraft:charcoal"
+      "id": "minecraft:charcoal"
     },
     "title": {
       "translate": "advancements.skyvoid.overworld.furnace.title",

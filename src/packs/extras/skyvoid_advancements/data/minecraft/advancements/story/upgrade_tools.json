@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "minecraft:stone_pickaxe"
+      "id": "minecraft:stone_pickaxe"
     },
     "title": {
       "translate": "advancements.story.upgrade_tools.title"

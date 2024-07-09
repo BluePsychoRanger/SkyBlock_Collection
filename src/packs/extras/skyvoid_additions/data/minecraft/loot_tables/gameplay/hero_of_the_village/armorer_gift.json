@@ -23,7 +23,7 @@
         {
           "type": "minecraft:loot_table",
           "weight": 1,
-          "name": "skyvoid_additions:gameplay/armor_trim_armorer_gift/gift_by_biome",
+          "value": "skyvoid_additions:gameplay/armor_trim_armorer_gift/gift_by_biome",
           "conditions": [
             {
               "condition": "minecraft:random_chance",

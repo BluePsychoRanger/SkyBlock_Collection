@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "minecraft:copper_ingot"
+      "id": "minecraft:copper_ingot"
     },
     "title": {
       "translate": "advancements.skyvoid.overworld.copper.title",

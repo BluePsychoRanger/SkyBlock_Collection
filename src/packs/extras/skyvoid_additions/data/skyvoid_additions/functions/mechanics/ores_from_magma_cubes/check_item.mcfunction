@@ -5,7 +5,7 @@
 
 scoreboard players set $found skyvoid_additions 0
 
-tag @s[nbt={Item:{tag:{smithed:{ignore:{functionality:1b}}}}}] add skyvoid_magma_item_check
+tag @s[nbt={Item:{components:{"minecraft:custom_data":{smithed:{ignore:{functionality:1b}}}}}}] add skyvoid_magma_item_check
 execute if entity @s[tag=skyvoid_magma_item_check] run return 1
 
 execute at @s[tag=skyvoid_magma_stone] run function skyvoid_additions:mechanics/ores_from_magma_cubes/convert_stone

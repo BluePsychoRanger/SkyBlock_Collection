@@ -4,7 +4,7 @@
   "predicate": {
     "equipment": {
       "mainhand": {
-        "tag": "skyvoid_additions:trader_additions/use_12"
+        "items": "#skyvoid_additions:trader_additions/use_12"
       }
     }
   }

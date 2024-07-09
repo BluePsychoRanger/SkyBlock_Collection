@@ -10,4 +10,4 @@ execute unless entity @s[tag=skyvoid_additions_falling_anvil] if data entity @s 
 tag @s[tag=!skyvoid_additions_falling_anvil] add skyvoid_additions_anvil_check
 
 # convert coal blocks to diamonds
-execute at @s[tag=skyvoid_additions_falling_anvil] positioned ~ ~-1 ~ as @e[type=item,nbt={Item:{id:"minecraft:coal_block",Count:64b},OnGround:1b},nbt=!{Item:{tag:{smithed:{ignore:{functionality:1b}}}}},distance=..0.5] run data merge entity @s {Item:{id:"minecraft:diamond",Count:1b}}
+execute at @s[tag=skyvoid_additions_falling_anvil] positioned ~ ~-1 ~ as @e[type=item,nbt={Item:{id:"minecraft:coal_block",count:64b},OnGround:1b},nbt=!{Item:{components:{"minecraft:custom_data":{smithed:{ignore:{functionality:1b}}}}}},distance=..0.5] run data merge entity @s {Item:{id:"minecraft:diamond",count:1b}}

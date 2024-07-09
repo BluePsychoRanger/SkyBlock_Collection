@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "minecraft:pointed_dripstone"
+      "id": "minecraft:pointed_dripstone"
     },
     "title": {
       "translate": "advancements.skyvoid.overworld.pointed_dripstone.title",

@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "minecraft:torch"
+      "id": "minecraft:torch"
     },
     "title": {
       "translate": "advancements.skyvoid.overworld.torch.title",

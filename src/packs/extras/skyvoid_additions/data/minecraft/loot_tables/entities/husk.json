@@ -155,8 +155,16 @@
           "name": "minecraft:sand",
           "functions": [
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{skyvoid_additions:{place_sand:{type:'normal'}}}"
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_data": {
+                  "skyvoid_additions": {
+                    "place_sand": {
+                      "type": "normal"
+                    }
+                  }
+                }
+              }
             }
           ],
           "conditions": [
@@ -166,7 +174,7 @@
               "predicate": {
                 "stepping_on": {
                   "block": {
-                    "tag": "skyvoid_additions:sand_from_burnt_husks/converts_to_sand"
+                    "blocks": "#skyvoid_additions:sand_from_burnt_husks/converts_to_sand"
                   }
                 },
                 "flags": {
@@ -210,8 +218,16 @@
           "name": "minecraft:red_sand",
           "functions": [
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{skyvoid_additions:{place_sand:{type:'red'}}}"
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_data": {
+                  "skyvoid_additions": {
+                    "place_sand": {
+                      "type": "red"
+                    }
+                  }
+                }
+              }
             }
           ],
           "conditions": [
@@ -221,7 +237,7 @@
               "predicate": {
                 "stepping_on": {
                   "block": {
-                    "tag": "skyvoid_additions:sand_from_burnt_husks/converts_to_red_sand"
+                    "blocks": "#skyvoid_additions:sand_from_burnt_husks/converts_to_red_sand"
                   }
                 },
                 "flags": {

@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "minecraft:carrot"
+      "id": "minecraft:carrot"
     },
     "title": {
       "translate": "advancements.skyvoid.overworld.breed_pigs.title",

@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "minecraft:cobblestone"
+      "id": "minecraft:cobblestone"
     },
     "title": {
       "translate": "advancements.skyvoid.overworld.cobblestone_generator.title",

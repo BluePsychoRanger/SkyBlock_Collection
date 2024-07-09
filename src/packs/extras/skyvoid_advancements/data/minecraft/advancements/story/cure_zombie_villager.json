@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "minecraft:golden_apple"
+      "id": "minecraft:golden_apple"
     },
     "title": {
       "translate": "advancements.story.cure_zombie_villager.title"

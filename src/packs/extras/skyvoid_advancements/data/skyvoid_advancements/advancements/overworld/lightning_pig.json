@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "minecraft:lightning_rod"
+      "id": "minecraft:lightning_rod"
     },
     "title": {
       "translate": "advancements.skyvoid.overworld.lightning_pig.title",
@@ -23,7 +23,7 @@
       "conditions": {
         "player": {
           "type_specific": {
-            "type": "player",
+            "type": "minecraft:player",
             "looking_at": {
               "type": "minecraft:zombified_piglin"
             }

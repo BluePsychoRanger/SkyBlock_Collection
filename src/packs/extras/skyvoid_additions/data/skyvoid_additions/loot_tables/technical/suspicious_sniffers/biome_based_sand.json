@@ -15,8 +15,16 @@
           "weight": 10,
           "functions": [
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{skyvoid_additions:{suspicious_block:{LootTable:'minecraft:archaeology/ocean_ruin_warm'}}}"
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_data": {
+                  "skyvoid_additions": {
+                    "suspicious_block": {
+                      "LootTable": "minecraft:archaeology/ocean_ruin_warm"
+                    }
+                  }
+                }
+              }
             }
           ]
         },
@@ -26,8 +34,16 @@
           "weight": 8,
           "functions": [
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{skyvoid_additions:{suspicious_block:{LootTable:'minecraft:archaeology/desert_pyramid'}}}"
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_data": {
+                  "skyvoid_additions": {
+                    "suspicious_block": {
+                      "LootTable": "minecraft:archaeology/desert_pyramid"
+                    }
+                  }
+                }
+              }
             }
           ]
         },
@@ -37,8 +53,16 @@
           "weight": 2,
           "functions": [
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{skyvoid_additions:{suspicious_block:{LootTable:'minecraft:archaeology/desert_well'}}}"
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_data": {
+                  "skyvoid_additions": {
+                    "suspicious_block": {
+                      "LootTable": "minecraft:archaeology/desert_well"
+                    }
+                  }
+                }
+              }
             }
           ]
         },
@@ -48,15 +72,23 @@
           "weight": 1000,
           "functions": [
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{skyvoid_additions:{suspicious_block:{LootTable:'minecraft:archaeology/ocean_ruin_warm'}}}"
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_data": {
+                  "skyvoid_additions": {
+                    "suspicious_block": {
+                      "LootTable": "minecraft:archaeology/ocean_ruin_warm"
+                    }
+                  }
+                }
+              }
             }
           ],
           "conditions": [
             {
               "condition": "minecraft:location_check",
               "predicate": {
-                "biome": "minecraft:warm_ocean"
+                "biomes": "minecraft:warm_ocean"
               }
             }
           ]
@@ -67,15 +99,23 @@
           "weight": 800,
           "functions": [
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{skyvoid_additions:{suspicious_block:{LootTable:'minecraft:archaeology/desert_pyramid'}}}"
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_data": {
+                  "skyvoid_additions": {
+                    "suspicious_block": {
+                      "LootTable": "minecraft:archaeology/desert_pyramid"
+                    }
+                  }
+                }
+              }
             }
           ],
           "conditions": [
             {
               "condition": "minecraft:location_check",
               "predicate": {
-                "biome": "minecraft:desert"
+                "biomes": "minecraft:desert"
               }
             }
           ]
@@ -86,15 +126,23 @@
           "weight": 200,
           "functions": [
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{skyvoid_additions:{suspicious_block:{LootTable:'minecraft:archaeology/desert_well'}}}"
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_data": {
+                  "skyvoid_additions": {
+                    "suspicious_block": {
+                      "LootTable": "minecraft:archaeology/desert_well"
+                    }
+                  }
+                }
+              }
             }
           ],
           "conditions": [
             {
               "condition": "minecraft:location_check",
               "predicate": {
-                "biome": "minecraft:desert"
+                "biomes": "minecraft:desert"
               }
             }
           ]

@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "minecraft:seagrass"
+      "id": "minecraft:seagrass"
     },
     "title": {
       "translate": "advancements.skyvoid.overworld.water_gen.title",

@@ -10,7 +10,7 @@
     "offsetZ": 0,
     "predicate": {
       "fluid": {
-        "fluid": "minecraft:lava"
+        "fluids": "minecraft:lava"
       }
     }
   },
@@ -21,7 +21,7 @@
     "offsetZ": 0,
     "predicate": {
       "fluid": {
-        "fluid": "minecraft:lava"
+        "fluids": "minecraft:lava"
       }
     }
   },
@@ -32,7 +32,7 @@
     "offsetZ": 1,
     "predicate": {
       "fluid": {
-        "fluid": "minecraft:lava"
+        "fluids": "minecraft:lava"
       }
     }
   },
@@ -43,7 +43,7 @@
     "offsetZ": 1,
     "predicate": {
       "fluid": {
-        "fluid": "minecraft:lava"
+        "fluids": "minecraft:lava"
       }
     }
   },

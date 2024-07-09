@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "minecraft:honey_bottle"
+      "id": "minecraft:honey_bottle"
     },
     "title": {
       "translate": "advancements.skyvoid.overworld.creeper.title",
@@ -26,7 +26,7 @@
             "condition": "minecraft:location_check",
             "predicate": {
               "block": {
-                "tag": "minecraft:beehives"
+                "blocks": "#minecraft:beehives"
               }
             }
           },

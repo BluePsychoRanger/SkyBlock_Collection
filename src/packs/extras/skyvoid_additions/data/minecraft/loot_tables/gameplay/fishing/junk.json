@@ -105,27 +105,10 @@
           "name": "minecraft:bamboo",
           "conditions": [
             {
-              "condition": "minecraft:any_of",
-              "terms": [
-                {
-                  "condition": "minecraft:location_check",
-                  "predicate": {
-                    "biome": "minecraft:jungle"
-                  }
-                },
-                {
-                  "condition": "minecraft:location_check",
-                  "predicate": {
-                    "biome": "minecraft:sparse_jungle"
-                  }
-                },
-                {
-                  "condition": "minecraft:location_check",
-                  "predicate": {
-                    "biome": "minecraft:bamboo_jungle"
-                  }
-                }
-              ]
+              "condition": "minecraft:location_check",
+              "predicate": {
+                "biomes": "#minecraft:is_jungle"
+              }
             }
           ]
         },
@@ -159,27 +142,10 @@
               "range": 1
             },
             {
-              "condition": "minecraft:any_of",
-              "terms": [
-                {
-                  "condition": "minecraft:location_check",
-                  "predicate": {
-                    "biome": "minecraft:jungle"
-                  }
-                },
-                {
-                  "condition": "minecraft:location_check",
-                  "predicate": {
-                    "biome": "minecraft:sparse_jungle"
-                  }
-                },
-                {
-                  "condition": "minecraft:location_check",
-                  "predicate": {
-                    "biome": "minecraft:bamboo_jungle"
-                  }
-                }
-              ]
+              "condition": "minecraft:location_check",
+              "predicate": {
+                "biomes": "#minecraft:is_jungle"
+              }
             }
           ]
         },
@@ -215,7 +181,7 @@
             {
               "condition": "minecraft:location_check",
               "predicate": {
-                "biome": "minecraft:lush_caves"
+                "biomes": "minecraft:lush_caves"
               }
             }
           ]
@@ -250,21 +216,13 @@
               "range": 1
             },
             {
-              "condition": "minecraft:any_of",
-              "terms": [
-                {
-                  "condition": "minecraft:location_check",
-                  "predicate": {
-                    "biome": "minecraft:desert"
-                  }
-                },
-                {
-                  "condition": "minecraft:location_check",
-                  "predicate": {
-                    "biome": "minecraft:badlands"
-                  }
-                }
-              ]
+              "condition": "minecraft:location_check",
+              "predicate": {
+                "biomes": [
+                  "minecraft:desert",
+                  "minecraft:badlands"
+                ]
+              }
             }
           ]
         }

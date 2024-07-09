@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "minecraft:string"
+      "id": "minecraft:string"
     },
     "title": {
       "translate": "advancements.skyvoid.overworld.spider.title",
