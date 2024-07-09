@@ -32,7 +32,7 @@
             {
               "function": "minecraft:enchant_with_levels",
               "levels": 30,
-              "treasure": true
+              "options": "#minecraft:on_random_loot"
             }
           ]
         },
@@ -53,7 +53,7 @@
             {
               "function": "minecraft:enchant_with_levels",
               "levels": 30,
-              "treasure": true
+              "options": "#minecraft:on_random_loot"
             }
           ]
         },
@@ -65,7 +65,7 @@
             {
               "function": "minecraft:enchant_with_levels",
               "levels": 30,
-              "treasure": true
+              "options": "#minecraft:on_random_loot"
             }
           ]
         },
@@ -114,5 +114,17 @@
       ]
     }
   ],
-  "random_sequence": "minecraft:gameplay/fishing/treasure"
+  "random_sequence": "minecraft:gameplay/fishing/treasure",
+  "__smithed__": {
+    "rules": [
+      {
+        "type": "append",
+        "target": "pools[0].entries",
+        "source": {
+          "type": "reference",
+          "path": "pools[0].entries[6]"
+        }
+      }
+    ]
+  }
 }

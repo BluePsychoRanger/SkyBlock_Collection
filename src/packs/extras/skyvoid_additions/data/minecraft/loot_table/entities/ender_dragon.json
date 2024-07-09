@@ -83,9 +83,14 @@
               "range": 1
             },
             {
-              "condition": "minecraft:random_chance_with_looting",
-              "chance": 0.025,
-              "looting_multiplier": 0.0833
+              "condition": "minecraft:random_chance_with_enchanted_bonus",
+              "enchanted_chance": {
+                "type": "minecraft:linear",
+                "base": 0.1083,
+                "per_level_above_first": 0.0833
+              },
+              "enchantment": "minecraft:looting",
+              "unenchanted_chance": 0.025
             }
           ]
         }
@@ -132,9 +137,14 @@
               "condition": "minecraft:killed_by_player"
             },
             {
-              "condition": "minecraft:random_chance_with_looting",
-              "chance": 0.1,
-              "looting_multiplier": 0.1
+              "condition": "minecraft:random_chance_with_enchanted_bonus",
+              "enchanted_chance": {
+                "type": "minecraft:linear",
+                "base": 0.2,
+                "per_level_above_first": 0.1
+              },
+              "enchantment": "minecraft:looting",
+              "unenchanted_chance": 0.1
             }
           ]
         }
