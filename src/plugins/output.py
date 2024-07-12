@@ -3,12 +3,12 @@ from beet import Context
 from bolt import Module
 import os
 
-VERSION = os.getenv("VERSION", "1.20.6")
-MAJOR_VERSION = "1_20"
-FORMAT = 15
-FORMATS = [15,41]
-RP_FORMAT = 15
-RP_FORMATS = [15,32]
+VERSION = os.getenv("VERSION", "1.21")
+MAJOR_VERSION = "1_21"
+FORMAT = 48
+FORMATS = 48
+RP_FORMAT = 34
+RP_FORMATS = 34
 
 def beet_default(ctx: Context):
 	"""Saves the datapack to the ./out folder."""
