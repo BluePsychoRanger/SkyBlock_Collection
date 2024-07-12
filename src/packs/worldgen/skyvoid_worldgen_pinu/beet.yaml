@@ -11,3 +11,4 @@ data_pack:
 
 pipeline:
   - src.plugins.worldgen.get_empty_biomes.normal_end
+  - src.plugins.worldgen.get_empty_structures.normal_end
