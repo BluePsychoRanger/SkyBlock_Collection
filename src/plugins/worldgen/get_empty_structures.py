@@ -24,9 +24,10 @@ def beet_default(ctx: Context):
     "air",
     "cave_air",
     "void_air",
-    "trial_spawner",
     "jigsaw",
-    "structure_block"
+    "structure_block",
+    "trial_spawner",
+    "vault"
   ]
   kept_entities = [
     "shulker",
@@ -70,9 +71,10 @@ def normal_end(ctx: Context):
     "air",
     "cave_air",
     "void_air",
-    "trial_spawner",
     "jigsaw",
-    "structure_block"
+    "structure_block",
+    "trial_spawner",
+    "vault"
   ]
   kept_entities = [
     "allay"
