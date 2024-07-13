@@ -4,6 +4,7 @@ scoreboard objectives add skyvoid_play_noteblock minecraft.custom:minecraft.play
 scoreboard objectives add skyvoid_note dummy
 scoreboard objectives add skyvoid_levelup dummy
 scoreboard objectives add skyvoid_config dummy
+scoreboard objectives add skyvoid_raid_tracker dummy
 
 function skyvoid_additions:customize/default_values
 execute if score $feedback skyvoid_additions matches 1 run gamerule sendCommandFeedback true
@@ -27,11 +28,13 @@ schedule clear skyvoid_additions:mechanics/chorus_from_endermites/clock
 schedule clear skyvoid_additions:mechanics/end_stone_from_endermites/clock
 schedule clear skyvoid_additions:mechanics/amethyst_geode_creation/clock
 schedule clear skyvoid_additions:mechanics/end_phantoms/clock
+schedule clear skyvoid_additions:mechanics/heavy_core_from_winded_anvil/clock
 
 # every tick
 execute if score diamonds_from_coal_blocks skyvoid_config matches 1 run schedule function skyvoid_additions:mechanics/diamonds_from_coal_blocks/clock 1t replace
 execute if score sand_from_burnt_husks skyvoid_config matches 1 run schedule function skyvoid_additions:mechanics/sand_from_burnt_husks/clock 1t replace
 execute if score allay_conversion skyvoid_config matches 1 run schedule function skyvoid_additions:mechanics/allay_conversion/clock_1t 1t replace
+execute if score heavy_core_from_winded_anvil skyvoid_config matches 1 run schedule function skyvoid_additions:mechanics/heavy_core_from_winded_anvil/clock 1t replace
 
 # every second
 execute if score allay_conversion skyvoid_config matches 1 run schedule function skyvoid_additions:mechanics/allay_conversion/clock_1s 4t replace
@@ -47,9 +50,10 @@ execute if score shriekers_from_enderman skyvoid_config matches 1 run schedule f
 
 # every 10 seconds
 execute if score cobwebs_from_spiders skyvoid_config matches 1 run schedule function skyvoid_additions:mechanics/cobwebs_from_spiders/clock 23t replace
-execute if score chorus_from_endermites skyvoid_config matches 1 run schedule function skyvoid_additions:mechanics/chorus_from_endermites/clock 67t replace
-execute if score end_stone_from_endermites skyvoid_config matches 1 run schedule function skyvoid_additions:mechanics/end_stone_from_endermites/clock 111t replace
-execute if score suspicious_sniffers skyvoid_config matches 1 run schedule function skyvoid_additions:mechanics/suspicious_sniffers/clock 155t replace
+execute if score chorus_from_endermites skyvoid_config matches 1 run schedule function skyvoid_additions:mechanics/chorus_from_endermites/clock 63t replace
+execute if score end_stone_from_endermites skyvoid_config matches 1 run schedule function skyvoid_additions:mechanics/end_stone_from_endermites/clock 103t replace
+execute if score suspicious_sniffers skyvoid_config matches 1 run schedule function skyvoid_additions:mechanics/suspicious_sniffers/clock 163t replace
+execute if score ominous_raid_captains skyvoid_config matches 1 run schedule function skyvoid_additions:mechanics/ominous_raid_captains/clock 183t replace
 
 # every minute
 execute if score amethyst_geode_creation skyvoid_config matches 1 run schedule function skyvoid_additions:mechanics/amethyst_geode_creation/clock 51t replace

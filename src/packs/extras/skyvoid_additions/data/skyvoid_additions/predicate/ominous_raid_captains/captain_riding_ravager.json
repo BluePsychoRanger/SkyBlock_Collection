@@ -1,0 +1,14 @@
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "type_specific": {
+      "type": "minecraft:raider",
+      "has_raid": true,
+      "is_captain": true
+    },
+    "vehicle": {
+      "type": "minecraft:ravager"
+    }
+  }
+}

@@ -42,6 +42,47 @@
               "range": 1
             }
           ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 1,
+          "value": "skyvoid_additions:gameplay/pottery_sherd_mason_gift/chamber_sherds",
+          "conditions": [
+            {
+              "condition": "minecraft:location_check",
+              "predicate": {
+                "structures": "minecraft:trial_chambers"
+              }
+            },
+            {
+              "condition": "minecraft:random_chance",
+              "chance": 0.03
+            },
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "skyvoid_additions"
+                },
+                "score": "load.status"
+              },
+              "range": 1
+            },
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "chamber_sherd_mason_gift"
+                },
+                "score": "skyvoid_config"
+              },
+              "range": 1
+            }
+          ]
         }
       ],
       "rolls": 1.0
@@ -56,6 +97,14 @@
         "source": {
           "type": "reference",
           "path": "pools[0].entries[1]"
+        }
+      },
+      {
+        "type": "append",
+        "target": "pools[0].entries",
+        "source": {
+          "type": "reference",
+          "path": "pools[0].entries[2]"
         }
       }
     ]

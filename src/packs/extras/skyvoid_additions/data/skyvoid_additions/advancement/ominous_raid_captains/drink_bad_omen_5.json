@@ -1,0 +1,18 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": "minecraft:ominous_bottle",
+          "components": {
+            "minecraft:ominous_bottle_amplifier": 4
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "skyvoid_additions:mechanics/ominous_raid_captains/drink_bad_omen_5"
+  }
+}

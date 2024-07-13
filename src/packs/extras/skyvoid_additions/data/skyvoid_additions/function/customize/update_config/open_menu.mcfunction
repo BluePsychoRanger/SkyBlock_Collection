@@ -27,6 +27,11 @@ all_settings = [
     "desc": "Armorers will gift armor trims based on the biome"
   },
   {
+    "id": "breeze_from_frozen_blaze",
+    "name": "Breeze Conversion",
+    "desc": "Blazes killed by powdered snow will convert into a breeze"
+  },
+  {
     "id": "bastion_loot_gravel",
     "name": "Bastion Loot from Suspicious Gravel",
     "desc": "Sniffers placing suspicious gravel in a bastion remnant can contain bastion loot.\n**Requires Sneezy Suspicious Sniffers"
@@ -35,6 +40,16 @@ all_settings = [
     "id": "cave_spiders_in_cobwebs",
     "name": "Cave Spiders Spawn in Cobwebs",
     "desc": "Some spiders spawned inside cobwebs (3x3) at light level 0 will spawn as cave spiders"
+  },
+  {
+    "id": "chamber_sherd_mason_gift",
+    "name": "Trial Chamber Sherd Gifts",
+    "desc": "Masons in trial chambers will gift pottery sherds exclusive to trial chambers"
+  },
+  {
+    "id": "chamber_sherds_from_traders",
+    "name": "Trial Chamber Sherds from Traders",
+    "desc": "Wandering traders will sell pottery sherds exclusive to trial chambers"
   },
   {
     "id": "chorus_from_endermites",
@@ -137,6 +152,11 @@ all_settings = [
     "desc": "Hearts of the sea can be fished as treasure"
   },
   {
+    "id": "heavy_core_from_winded_anvil",
+    "name": "Heavy Core Renewability",
+    "desc": "Falling anvils shot by a breeze have a chance to convert into a heavy core"
+  },
+  {
     "id": "lava_from_traders",
     "name": "Wandering Traders Sell Lava Buckets",
     "desc": "Lava can be bought for 5 emeralds\n**Requires Additional Wandering Trades"
@@ -180,6 +200,11 @@ all_settings = [
     "id": "nylium_portals",
     "name": "Nylium Portals",
     "desc": "Nylium platforms will generate instead of obsidian when spawning over the void in crimson and warped forests\n**Requires Netherrack Portals"
+  },
+  {
+    "id": "ominous_raid_captains",
+    "name": "Ominous Raid Captains",
+    "desc": "Raid Captains in a level 5 raid can drop ominous trial keys and can replace bells with vaults"
   },
   {
     "id": "ores_from_magma_cubes",

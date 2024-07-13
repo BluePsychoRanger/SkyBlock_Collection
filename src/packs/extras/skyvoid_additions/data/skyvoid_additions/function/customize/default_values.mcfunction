@@ -11,8 +11,8 @@ execute unless score armor_chipping skyvoid_config matches 0..1 run scoreboard p
 execute unless score armor_trim_armorer_gift skyvoid_config matches 0..1 run scoreboard players set armor_trim_armorer_gift skyvoid_config 1
 execute unless score bastion_loot_gravel skyvoid_config matches 0..1 run scoreboard players set bastion_loot_gravel skyvoid_config 1
 execute unless score cave_spiders_in_cobwebs skyvoid_config matches 0..1 run scoreboard players set cave_spiders_in_cobwebs skyvoid_config 1
+execute unless score chamber_sherd_mason_gift skyvoid_config matches 0..1 run scoreboard players set chamber_sherd_mason_gift skyvoid_config 1
 execute unless score chorus_from_endermites skyvoid_config matches 0..1 run scoreboard players set chorus_from_endermites skyvoid_config 1
-execute unless score cobwebs_from_spiders skyvoid_config matches 0..1 run scoreboard players set cobwebs_from_spiders skyvoid_config 1
 execute unless score cocoa_beans_from_fishing skyvoid_config matches 0..1 run scoreboard players set cocoa_beans_from_fishing skyvoid_config 1
 execute unless score coral_growth skyvoid_config matches 0..1 run scoreboard players set coral_growth skyvoid_config 1
 execute unless score dead_bushes_from_fishing skyvoid_config matches 0..1 run scoreboard players set dead_bushes_from_fishing skyvoid_config 1
@@ -29,7 +29,6 @@ execute unless score netherrack_portals skyvoid_config matches 0..1 run scoreboa
 execute unless score nylium_portals skyvoid_config matches 0..1 run scoreboard players set nylium_portals skyvoid_config 1
 execute unless score ores_from_magma_cubes skyvoid_config matches 0..1 run scoreboard players set ores_from_magma_cubes skyvoid_config 1
 execute unless score sand_from_burnt_husks skyvoid_config matches 0..1 run scoreboard players set sand_from_burnt_husks skyvoid_config 1
-execute unless score silverfish_from_lightning skyvoid_config matches 0..1 run scoreboard players set silverfish_from_lightning skyvoid_config 1
 execute unless score small_dripleaf_sheared skyvoid_config matches 0..1 run scoreboard players set small_dripleaf_sheared skyvoid_config 1
 execute unless score sniffer_eggs_from_drowneds skyvoid_config matches 0..1 run scoreboard players set sniffer_eggs_from_drowneds skyvoid_config 1
 execute unless score spore_blossom_moss skyvoid_config matches 0..1 run scoreboard players set spore_blossom_moss skyvoid_config 1
@@ -41,6 +40,9 @@ execute unless score traders_with_camels skyvoid_config matches 0..1 run scorebo
 
 # off by default
 execute unless score allay_conversion skyvoid_config matches 0..1 run scoreboard players set allay_conversion skyvoid_config 0
+execute unless score breeze_from_frozen_blaze skyvoid_config matches 0..1 run scoreboard players set breeze_from_frozen_blaze skyvoid_config 0
+execute unless score chamber_sherds_from_traders skyvoid_config matches 0..1 run scoreboard players set chamber_sherds_from_traders skyvoid_config 0
+execute unless score cobwebs_from_spiders skyvoid_config matches 0..1 run scoreboard players set cobwebs_from_spiders skyvoid_config 0
 execute unless score diamonds_from_coal_blocks skyvoid_config matches 0..1 run scoreboard players set diamonds_from_coal_blocks skyvoid_config 0
 execute unless score dragon_egg_drop skyvoid_config matches 0..1 run scoreboard players set dragon_egg_drop skyvoid_config 0
 execute unless score dragon_elytra_drop skyvoid_config matches 0..1 run scoreboard players set dragon_elytra_drop skyvoid_config 0
@@ -49,14 +51,17 @@ execute unless score enchanted_gapples_from_traders skyvoid_config matches 0..1 
 execute unless score end_phantoms skyvoid_config matches 0..1 run scoreboard players set end_phantoms skyvoid_config 0
 execute unless score grass_from_traders skyvoid_config matches 0..1 run scoreboard players set grass_from_traders skyvoid_config 0
 execute unless score heart_of_the_sea_from_fishing skyvoid_config matches 0..1 run scoreboard players set heart_of_the_sea_from_fishing skyvoid_config 0
+execute unless score heavy_core_from_winded_anvil skyvoid_config matches 0..1 run scoreboard players set heavy_core_from_winded_anvil skyvoid_config 0
 execute unless score lava_from_traders skyvoid_config matches 0..1 run scoreboard players set lava_from_traders skyvoid_config 0
 execute unless score lava_toolsmith_gift skyvoid_config matches 0..1 run scoreboard players set lava_toolsmith_gift skyvoid_config 0
 execute unless score nether_wart_from_bartering skyvoid_config matches 0..1 run scoreboard players set nether_wart_from_bartering skyvoid_config 0
 execute unless score netherrack_from_bartering skyvoid_config matches 0..1 run scoreboard players set netherrack_from_bartering skyvoid_config 0
 execute unless score nylium_from_bartering skyvoid_config matches 0..1 run scoreboard players set nylium_from_bartering skyvoid_config 0
+execute unless score ominous_raid_captains skyvoid_config matches 0..1 run scoreboard players set ominous_raid_captains skyvoid_config 0
 execute unless score portal_frame_from_enderman skyvoid_config matches 0..1 run scoreboard players set portal_frame_from_enderman skyvoid_config 0
 execute unless score pottery_sherd_mason_gift skyvoid_config matches 0..1 run scoreboard players set pottery_sherd_mason_gift skyvoid_config 0
 execute unless score sand_from_husk_kill skyvoid_config matches 0..1 run scoreboard players set sand_from_husk_kill skyvoid_config 0
+execute unless score silverfish_from_lightning skyvoid_config matches 0..1 run scoreboard players set silverfish_from_lightning skyvoid_config 0
 execute unless score shriekers_from_enderman skyvoid_config matches 0..1 run scoreboard players set shriekers_from_enderman skyvoid_config 0
 execute unless score shulkers_from_lightning skyvoid_config matches 0..1 run scoreboard players set shulkers_from_lightning skyvoid_config 0
 execute unless score sniffer_eggs_from_traders skyvoid_config matches 0..1 run scoreboard players set sniffer_eggs_from_traders skyvoid_config 0
