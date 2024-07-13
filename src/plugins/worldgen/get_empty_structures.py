@@ -25,9 +25,7 @@ def beet_default(ctx: Context):
     "cave_air",
     "void_air",
     "jigsaw",
-    "structure_block",
-    "trial_spawner",
-    "vault"
+    "structure_block"
   ]
   kept_entities = [
     "shulker",
@@ -41,7 +39,6 @@ def empty(ctx: Context):
   target_structures = [
     # "ancient_city",
     # "bastion",
-    # "end_city",
     # "pillager_outpost",
     "trial_chambers",
     # "woodland_mansion"
@@ -71,10 +68,7 @@ def normal_end(ctx: Context):
     "air",
     "cave_air",
     "void_air",
-    "jigsaw",
-    "structure_block",
-    "trial_spawner",
-    "vault"
+    "jigsaw"
   ]
   kept_entities = [
     "allay"
