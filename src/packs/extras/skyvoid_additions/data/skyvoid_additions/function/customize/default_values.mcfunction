@@ -57,7 +57,7 @@ execute unless score heavy_core_from_winded_anvil skyvoid_config matches 0..1 ru
 execute unless score lava_from_traders skyvoid_config matches 0..1 run scoreboard players set lava_from_traders skyvoid_config 0
 execute unless score lava_toolsmith_gift skyvoid_config matches 0..1 run scoreboard players set lava_toolsmith_gift skyvoid_config 0
 execute unless score nether_wart_from_bartering skyvoid_config matches 0..1 run scoreboard players set nether_wart_from_bartering skyvoid_config 0
-execute unless score key_from_ominous_raid_captains skyvoid_config matches 0..1 run scoreboard players set key_from_ominous_raid_captains skyvoid_config 0
+execute unless score keys_from_ominous_raid_captains skyvoid_config matches 0..1 run scoreboard players set keys_from_ominous_raid_captains skyvoid_config 0
 execute unless score netherrack_from_bartering skyvoid_config matches 0..1 run scoreboard players set netherrack_from_bartering skyvoid_config 0
 execute unless score nylium_from_bartering skyvoid_config matches 0..1 run scoreboard players set nylium_from_bartering skyvoid_config 0
 execute unless score portal_frame_from_enderman skyvoid_config matches 0..1 run scoreboard players set portal_frame_from_enderman skyvoid_config 0
@@ -71,4 +71,5 @@ execute unless score sweet_berries_from_traders skyvoid_config matches 0..1 run 
 
 # additional logic
 scoreboard players set ominous_raid_captains skyvoid_config 0
-execute unless score vaults_from_ominous_raid_captains skyvoid_config matches 0 unless score key_from_ominous_raid_captains skyvoid_config matches 0 run scoreboard players set ominous_raid_captains skyvoid_config 1
+execute if score vaults_from_ominous_raid_captains skyvoid_config matches 1 run scoreboard players set ominous_raid_captains skyvoid_config 1
+execute if score keys_from_ominous_raid_captains skyvoid_config matches 1 run scoreboard players set ominous_raid_captains skyvoid_config 1

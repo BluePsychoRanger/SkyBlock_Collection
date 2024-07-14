@@ -35,6 +35,7 @@ execute if score diamonds_from_coal_blocks skyvoid_config matches 1 run schedule
 execute if score sand_from_burnt_husks skyvoid_config matches 1 run schedule function skyvoid_additions:mechanics/sand_from_burnt_husks/clock 1t replace
 execute if score allay_conversion skyvoid_config matches 1 run schedule function skyvoid_additions:mechanics/allay_conversion/clock_1t 1t replace
 execute if score heavy_core_from_winded_anvil skyvoid_config matches 1 run schedule function skyvoid_additions:mechanics/heavy_core_from_winded_anvil/clock 1t replace
+execute if score breeze_from_frozen_blaze skyvoid_config matches 1 run schedule function skyvoid_additions:mechanics/breeze_from_frozen_blaze/clock 1t replace
 
 # every second
 execute if score allay_conversion skyvoid_config matches 1 run schedule function skyvoid_additions:mechanics/allay_conversion/clock_1s 4t replace

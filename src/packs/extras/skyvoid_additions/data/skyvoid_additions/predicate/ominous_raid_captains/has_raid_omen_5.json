@@ -4,7 +4,11 @@
   "predicate": {
     "effects": {
       "minecraft:raid_omen": {
-        "amplifier": 4
+        "amplifier": 4,
+        "duration": {
+          "min": 0,
+          "max": 15
+        }
       }
     }
   }

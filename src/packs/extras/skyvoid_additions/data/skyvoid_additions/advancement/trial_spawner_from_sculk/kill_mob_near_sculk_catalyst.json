@@ -548,7 +548,13 @@
           }
         ],
         "entity": {
-          "type": "minecraft:bogged"
+          "type": "minecraft:bogged",
+          "stepping_on": {
+            "structures": "minecraft:trial_chambers",
+            "block": {
+              "blocks": "minecraft:sculk_shrieker"
+            }
+          }
         }
       }
     }

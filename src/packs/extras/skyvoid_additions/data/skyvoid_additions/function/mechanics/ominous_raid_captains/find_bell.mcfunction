@@ -1,191 +1,34 @@
 # search for nearby bells
 # @s = ravager ridden by a raid captain
-# located at @s
+# located at @s positioned ~ ~1 ~ (center of ravager)
 # run from skyvoid_additions:ominous_raid_captains/clock
 
 # search for any nearby bells
-execute store result score $bell_count skyvoid_additions run clone ~-4 ~ ~-4 ~4 ~ ~4 ~-4 ~1 ~-4 filtered bell
+execute store result score $bell_count skyvoid_additions run clone ~-2 ~-2 ~-2 ~2 ~2 ~2 ~-2 ~-2 ~-2 filtered bell force
 execute if score $bell_count skyvoid_additions matches 0 run return 0
 
 # replace bell
 execute on passengers run tag @s add skyvoid_additions_replaced_bell
 
-execute if block ~-4 ~ ~-4 bell positioned ~-4 ~ ~-4 run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-execute if block ~-4 ~ ~-3 bell positioned ~-4 ~ ~-3 run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-execute if block ~-4 ~ ~-2 bell positioned ~-4 ~ ~-2 run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-execute if block ~-4 ~ ~-1 bell positioned ~-4 ~ ~-1 run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-execute if block ~-4 ~ ~ bell positioned ~-4 ~ ~ run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-execute if block ~-4 ~ ~1 bell positioned ~-4 ~ ~1 run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-execute if block ~-4 ~ ~2 bell positioned ~-4 ~ ~2 run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-execute if block ~-4 ~ ~3 bell positioned ~-4 ~ ~3 run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-execute if block ~-4 ~ ~4 bell positioned ~-4 ~ ~4 run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
+ADJ_OFFSET = ((0, 0, -1), (1, 0, 0), (0, 0, 1), (-1, 0, 0), (0, 1, 0), (0, -1, 0))
 
-execute if block ~-3 ~ ~-4 bell positioned ~-3 ~ ~-4 run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-execute if block ~-3 ~ ~-3 bell positioned ~-3 ~ ~-3 run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-execute if block ~-3 ~ ~-2 bell positioned ~-3 ~ ~-2 run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-execute if block ~-3 ~ ~-1 bell positioned ~-3 ~ ~-1 run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-execute if block ~-3 ~ ~ bell positioned ~-3 ~ ~ run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-execute if block ~-3 ~ ~1 bell positioned ~-3 ~ ~1 run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-execute if block ~-3 ~ ~2 bell positioned ~-3 ~ ~2 run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-execute if block ~-3 ~ ~3 bell positioned ~-3 ~ ~3 run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-execute if block ~-3 ~ ~4 bell positioned ~-3 ~ ~4 run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
+def bfs_fill(size):
+  visited = set()
+  queue = [(0, 0, 0)]
 
-execute if block ~-2 ~ ~-4 bell positioned ~-2 ~ ~-4 run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-execute if block ~-2 ~ ~-3 bell positioned ~-2 ~ ~-3 run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-execute if block ~-2 ~ ~-2 bell positioned ~-2 ~ ~-2 run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-execute if block ~-2 ~ ~-1 bell positioned ~-2 ~ ~-1 run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-execute if block ~-2 ~ ~ bell positioned ~-2 ~ ~ run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-execute if block ~-2 ~ ~1 bell positioned ~-2 ~ ~1 run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-execute if block ~-2 ~ ~2 bell positioned ~-2 ~ ~2 run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-execute if block ~-2 ~ ~3 bell positioned ~-2 ~ ~3 run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-execute if block ~-2 ~ ~4 bell positioned ~-2 ~ ~4 run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
+  while queue:
+    pos = queue.pop(0)
+    visited.add(pos)
 
-execute if block ~-1 ~ ~-4 bell positioned ~-1 ~ ~-4 run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-execute if block ~-1 ~ ~-3 bell positioned ~-1 ~ ~-3 run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-execute if block ~-1 ~ ~-2 bell positioned ~-1 ~ ~-2 run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-execute if block ~-1 ~ ~-1 bell positioned ~-1 ~ ~-1 run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-execute if block ~-1 ~ ~ bell positioned ~-1 ~ ~ run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-execute if block ~-1 ~ ~1 bell positioned ~-1 ~ ~1 run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-execute if block ~-1 ~ ~2 bell positioned ~-1 ~ ~2 run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-execute if block ~-1 ~ ~3 bell positioned ~-1 ~ ~3 run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-execute if block ~-1 ~ ~4 bell positioned ~-1 ~ ~4 run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
+    yield pos
 
-execute if block ~ ~ ~-4 bell positioned ~ ~ ~-4 run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-execute if block ~ ~ ~-3 bell positioned ~ ~ ~-3 run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-execute if block ~ ~ ~-2 bell positioned ~ ~ ~-2 run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-execute if block ~ ~ ~-1 bell positioned ~ ~ ~-1 run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-execute if block ~ ~ ~ bell positioned ~ ~ ~ run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-execute if block ~ ~ ~1 bell positioned ~ ~ ~1 run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-execute if block ~ ~ ~2 bell positioned ~ ~ ~2 run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-execute if block ~ ~ ~3 bell positioned ~ ~ ~3 run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-execute if block ~ ~ ~4 bell positioned ~ ~ ~4 run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
+    for offset in ADJ_OFFSET:
+      adj_pos = (pos[0] + offset[0], pos[1] + offset[1], pos[2] + offset[2])
+      if adj_pos in visited or adj_pos in queue:
+        continue
+      if abs(adj_pos[0]) > size or abs(adj_pos[1]) > size or abs(adj_pos[2]) > size:
+        continue
+      queue.append(adj_pos)
 
-execute if block ~4 ~ ~-4 bell positioned ~4 ~ ~-4 run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-execute if block ~4 ~ ~-3 bell positioned ~4 ~ ~-3 run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-execute if block ~4 ~ ~-2 bell positioned ~4 ~ ~-2 run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-execute if block ~4 ~ ~-1 bell positioned ~4 ~ ~-1 run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-execute if block ~4 ~ ~ bell positioned ~4 ~ ~ run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-execute if block ~4 ~ ~1 bell positioned ~4 ~ ~1 run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-execute if block ~4 ~ ~2 bell positioned ~4 ~ ~2 run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-execute if block ~4 ~ ~3 bell positioned ~4 ~ ~3 run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-execute if block ~4 ~ ~4 bell positioned ~4 ~ ~4 run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-
-execute if block ~3 ~ ~-4 bell positioned ~3 ~ ~-4 run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-execute if block ~3 ~ ~-3 bell positioned ~3 ~ ~-3 run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-execute if block ~3 ~ ~-2 bell positioned ~3 ~ ~-2 run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-execute if block ~3 ~ ~-1 bell positioned ~3 ~ ~-1 run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-execute if block ~3 ~ ~ bell positioned ~3 ~ ~ run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-execute if block ~3 ~ ~1 bell positioned ~3 ~ ~1 run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-execute if block ~3 ~ ~2 bell positioned ~3 ~ ~2 run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-execute if block ~3 ~ ~3 bell positioned ~3 ~ ~3 run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-execute if block ~3 ~ ~4 bell positioned ~3 ~ ~4 run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-
-execute if block ~2 ~ ~-4 bell positioned ~2 ~ ~-4 run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-execute if block ~2 ~ ~-3 bell positioned ~2 ~ ~-3 run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-execute if block ~2 ~ ~-2 bell positioned ~2 ~ ~-2 run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-execute if block ~2 ~ ~-1 bell positioned ~2 ~ ~-1 run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-execute if block ~2 ~ ~ bell positioned ~2 ~ ~ run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-execute if block ~2 ~ ~1 bell positioned ~2 ~ ~1 run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-execute if block ~2 ~ ~2 bell positioned ~2 ~ ~2 run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-execute if block ~2 ~ ~3 bell positioned ~2 ~ ~3 run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-execute if block ~2 ~ ~4 bell positioned ~2 ~ ~4 run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-
-execute if block ~1 ~ ~-4 bell positioned ~1 ~ ~-4 run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-execute if block ~1 ~ ~-3 bell positioned ~1 ~ ~-3 run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-execute if block ~1 ~ ~-2 bell positioned ~1 ~ ~-2 run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-execute if block ~1 ~ ~-1 bell positioned ~1 ~ ~-1 run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-execute if block ~1 ~ ~ bell positioned ~1 ~ ~ run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-execute if block ~1 ~ ~1 bell positioned ~1 ~ ~1 run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-execute if block ~1 ~ ~2 bell positioned ~1 ~ ~2 run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-execute if block ~1 ~ ~3 bell positioned ~1 ~ ~3 run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-execute if block ~1 ~ ~4 bell positioned ~1 ~ ~4 run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-
-execute if block ~-4 ~1 ~-4 bell positioned ~-4 ~1 ~-4 run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-execute if block ~-4 ~1 ~-3 bell positioned ~-4 ~1 ~-3 run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-execute if block ~-4 ~1 ~-2 bell positioned ~-4 ~1 ~-2 run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-execute if block ~-4 ~1 ~-1 bell positioned ~-4 ~1 ~-1 run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-execute if block ~-4 ~1 ~ bell positioned ~-4 ~1 ~ run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-execute if block ~-4 ~1 ~1 bell positioned ~-4 ~1 ~1 run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-execute if block ~-4 ~1 ~2 bell positioned ~-4 ~1 ~2 run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-execute if block ~-4 ~1 ~3 bell positioned ~-4 ~1 ~3 run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-execute if block ~-4 ~1 ~4 bell positioned ~-4 ~1 ~4 run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-
-execute if block ~-3 ~1 ~-4 bell positioned ~-3 ~1 ~-4 run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-execute if block ~-3 ~1 ~-3 bell positioned ~-3 ~1 ~-3 run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-execute if block ~-3 ~1 ~-2 bell positioned ~-3 ~1 ~-2 run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-execute if block ~-3 ~1 ~-1 bell positioned ~-3 ~1 ~-1 run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-execute if block ~-3 ~1 ~ bell positioned ~-3 ~1 ~ run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-execute if block ~-3 ~1 ~1 bell positioned ~-3 ~1 ~1 run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-execute if block ~-3 ~1 ~2 bell positioned ~-3 ~1 ~2 run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-execute if block ~-3 ~1 ~3 bell positioned ~-3 ~1 ~3 run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-execute if block ~-3 ~1 ~4 bell positioned ~-3 ~1 ~4 run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-
-execute if block ~-2 ~1 ~-4 bell positioned ~-2 ~1 ~-4 run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-execute if block ~-2 ~1 ~-3 bell positioned ~-2 ~1 ~-3 run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-execute if block ~-2 ~1 ~-2 bell positioned ~-2 ~1 ~-2 run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-execute if block ~-2 ~1 ~-1 bell positioned ~-2 ~1 ~-1 run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-execute if block ~-2 ~1 ~ bell positioned ~-2 ~1 ~ run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-execute if block ~-2 ~1 ~1 bell positioned ~-2 ~1 ~1 run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-execute if block ~-2 ~1 ~2 bell positioned ~-2 ~1 ~2 run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-execute if block ~-2 ~1 ~3 bell positioned ~-2 ~1 ~3 run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-execute if block ~-2 ~1 ~4 bell positioned ~-2 ~1 ~4 run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-
-execute if block ~-1 ~1 ~-4 bell positioned ~-1 ~1 ~-4 run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-execute if block ~-1 ~1 ~-3 bell positioned ~-1 ~1 ~-3 run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-execute if block ~-1 ~1 ~-2 bell positioned ~-1 ~1 ~-2 run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-execute if block ~-1 ~1 ~-1 bell positioned ~-1 ~1 ~-1 run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-execute if block ~-1 ~1 ~ bell positioned ~-1 ~1 ~ run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-execute if block ~-1 ~1 ~1 bell positioned ~-1 ~1 ~1 run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-execute if block ~-1 ~1 ~2 bell positioned ~-1 ~1 ~2 run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-execute if block ~-1 ~1 ~3 bell positioned ~-1 ~1 ~3 run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-execute if block ~-1 ~1 ~4 bell positioned ~-1 ~1 ~4 run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-
-execute if block ~ ~1 ~-4 bell positioned ~ ~1 ~-4 run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-execute if block ~ ~1 ~-3 bell positioned ~ ~1 ~-3 run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-execute if block ~ ~1 ~-2 bell positioned ~ ~1 ~-2 run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-execute if block ~ ~1 ~-1 bell positioned ~ ~1 ~-1 run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-execute if block ~ ~1 ~ bell positioned ~ ~1 ~ run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-execute if block ~ ~1 ~1 bell positioned ~ ~1 ~1 run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-execute if block ~ ~1 ~2 bell positioned ~ ~1 ~2 run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-execute if block ~ ~1 ~3 bell positioned ~ ~1 ~3 run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-execute if block ~ ~1 ~4 bell positioned ~ ~1 ~4 run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-
-execute if block ~4 ~1 ~-4 bell positioned ~4 ~1 ~-4 run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-execute if block ~4 ~1 ~-3 bell positioned ~4 ~1 ~-3 run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-execute if block ~4 ~1 ~-2 bell positioned ~4 ~1 ~-2 run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-execute if block ~4 ~1 ~-1 bell positioned ~4 ~1 ~-1 run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-execute if block ~4 ~1 ~ bell positioned ~4 ~1 ~ run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-execute if block ~4 ~1 ~1 bell positioned ~4 ~1 ~1 run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-execute if block ~4 ~1 ~2 bell positioned ~4 ~1 ~2 run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-execute if block ~4 ~1 ~3 bell positioned ~4 ~1 ~3 run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-execute if block ~4 ~1 ~4 bell positioned ~4 ~1 ~4 run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-
-execute if block ~3 ~1 ~-4 bell positioned ~3 ~1 ~-4 run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-execute if block ~3 ~1 ~-3 bell positioned ~3 ~1 ~-3 run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-execute if block ~3 ~1 ~-2 bell positioned ~3 ~1 ~-2 run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-execute if block ~3 ~1 ~-1 bell positioned ~3 ~1 ~-1 run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-execute if block ~3 ~1 ~ bell positioned ~3 ~1 ~ run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-execute if block ~3 ~1 ~1 bell positioned ~3 ~1 ~1 run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-execute if block ~3 ~1 ~2 bell positioned ~3 ~1 ~2 run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-execute if block ~3 ~1 ~3 bell positioned ~3 ~1 ~3 run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-execute if block ~3 ~1 ~4 bell positioned ~3 ~1 ~4 run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-
-execute if block ~2 ~1 ~-4 bell positioned ~2 ~1 ~-4 run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-execute if block ~2 ~1 ~-3 bell positioned ~2 ~1 ~-3 run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-execute if block ~2 ~1 ~-2 bell positioned ~2 ~1 ~-2 run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-execute if block ~2 ~1 ~-1 bell positioned ~2 ~1 ~-1 run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-execute if block ~2 ~1 ~ bell positioned ~2 ~1 ~ run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-execute if block ~2 ~1 ~1 bell positioned ~2 ~1 ~1 run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-execute if block ~2 ~1 ~2 bell positioned ~2 ~1 ~2 run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-execute if block ~2 ~1 ~3 bell positioned ~2 ~1 ~3 run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-execute if block ~2 ~1 ~4 bell positioned ~2 ~1 ~4 run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-
-execute if block ~1 ~1 ~-4 bell positioned ~1 ~1 ~-4 run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-execute if block ~1 ~1 ~-3 bell positioned ~1 ~1 ~-3 run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-execute if block ~1 ~1 ~-2 bell positioned ~1 ~1 ~-2 run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-execute if block ~1 ~1 ~-1 bell positioned ~1 ~1 ~-1 run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-execute if block ~1 ~1 ~ bell positioned ~1 ~1 ~ run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-execute if block ~1 ~1 ~1 bell positioned ~1 ~1 ~1 run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-execute if block ~1 ~1 ~2 bell positioned ~1 ~1 ~2 run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-execute if block ~1 ~1 ~3 bell positioned ~1 ~1 ~3 run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
-execute if block ~1 ~1 ~4 bell positioned ~1 ~1 ~4 run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell
+for x, y, z in bfs_fill(2):
+  execute if block ~x ~y ~z bell positioned ~x ~y ~z run return run function skyvoid_additions:mechanics/ominous_raid_captains/replace_bell

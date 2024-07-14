@@ -59,7 +59,11 @@
               "predicate": {
                 "source_entity": {
                   "type": "minecraft:player",
-                  "nbt": "{Tags:[\"skyvoid_additions_started_raid\"]}"
+                  "effects": {
+                    "minecraft:bad_omen": {
+                      "amplifier": 4
+                    }
+                  }
                 }
               }
             }
@@ -85,7 +89,7 @@
             "type": "minecraft:score",
             "target": {
               "type": "minecraft:fixed",
-              "name": "key_from_ominous_raid_captains"
+              "name": "keys_from_ominous_raid_captains"
             },
             "score": "skyvoid_config"
           },
