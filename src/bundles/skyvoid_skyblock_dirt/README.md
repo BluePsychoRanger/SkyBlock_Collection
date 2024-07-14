@@ -16,6 +16,7 @@ Structures that are important in SkyBlock will generate at the same coordinates 
 - **Witch Huts** will generate with the same bounding box (witch farms can be built as normal)
 - **Mansions** will generate any allays that would generate in a normal world
 - **Nether Fortresses** will generate with the same bounding box
+- **Trial Chambers** will generate with the same bounding box
 
 ### The End Dimension
 In the end dimension will generate as normal.

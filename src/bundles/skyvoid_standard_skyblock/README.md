@@ -28,6 +28,7 @@ Structures that are important in SkyBlock will generate at the same coordinates 
 - **Mansions** will generate any allays that would generate in a normal world
 - **Nether Fortresses** will generate with the same bounding box
 - **End Cities** will generate any shulkers and ships that would generate in a normal world
+- **Trial Chambers** will generate with the same bounding box
 
 ### The End Dimension
 In the end dimension, the obsidian pillars and the exit end portal generate as normal. When a player goes through an end gateway, a small end island will still generate, but the rest of the outer end islands will not.

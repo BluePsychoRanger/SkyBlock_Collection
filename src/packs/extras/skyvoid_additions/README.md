@@ -106,6 +106,18 @@ Otherside, relic, disc fragment 5, double tall flowers, and glow berries can be 
 ### Traders with Camels
 Some wandering traders will have a camel on a leash instead of trader llamas
 
+### Breeze Conversion
+Blazes killed by powdered snow will convert into a breeze
+
+### Trial Chamber Sherd Gifts
+Masons in trial chambers will gift pottery sherds exclusive to trial chambers
+
+### Trial Spawners from Sculk
+Players in trial chambers with Bad Omen V can convert shriekers into trial spawners by killing mobs on shriekers above a catalyst
+
+### Vaults from Ominous Raid Captains
+Raid Captains in a level 5 raid can replace bells with vaults within a trial chamber bounding box
+
 ## Extra Mechanics
 The following settings are disabled by default
 
@@ -197,3 +209,13 @@ Sniffer eggs can be bought for 6 emeralds
 *fox spawning is the default way to get sweet berries*  
 Sweet berries can be bought for 1 emerald  
 **Requires Additional Wandering Trades*
+
+### Trial Chamber Sherds from Traders
+Wandering traders will sell pottery sherds exclusive to trial chambers  
+**Requires Additional Wandering Trades*
+
+### Heavy Core Renewability
+Falling anvils shot by a breeze have a chance to convert into a heavy core
+
+### Ominous Keys from Ominous Raid Captains
+Raid Captains in a level 5 raid can drop ominous trial keys
