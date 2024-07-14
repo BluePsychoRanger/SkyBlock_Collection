@@ -1,0 +1,17 @@
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "type_specific": {
+      "type": "minecraft:raider",
+      "has_raid": true,
+      "is_captain": true
+    },
+    "location": {
+      "structures": "minecraft:trial_chambers"
+    },
+    "vehicle": {
+      "type": "minecraft:ravager"
+    }
+  }
+}

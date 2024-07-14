@@ -1,7 +1,7 @@
 id: 'skyvoid_standard_skyblock'
 name: 'Standard SkyBlock'
 author: 'BluePsychoRanger'
-version: 1.0.5
+version: 1.1.0
 
 pipeline:
   - src.plugins.bundle.standard_skyblock

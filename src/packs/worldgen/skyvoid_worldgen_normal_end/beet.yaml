@@ -1,7 +1,7 @@
 id: 'skyvoid_worldgen_normal_end'
 name: 'Normal End Sky Void'
 author: 'BluePsychoRanger'
-version: 1.0.3
+version: 1.1.0
 
 require: 
   - src.plugins.worldgen.generate.base_with_end
@@ -11,3 +11,4 @@ data_pack:
 
 pipeline:
   - src.plugins.worldgen.get_empty_biomes.normal_end
+  - src.plugins.worldgen.get_empty_structures.normal_end

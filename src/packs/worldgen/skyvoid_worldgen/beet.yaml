@@ -1,7 +1,7 @@
 id: 'skyvoid_worldgen'
 name: 'Sky Void'
 author: 'BluePsychoRanger'
-version: 1.0.5
+version: 1.1.0
 
 require: 
   - src.plugins.worldgen.generate.base
@@ -11,3 +11,4 @@ data_pack:
 
 pipeline:
   - src.plugins.worldgen.get_empty_biomes
+  - src.plugins.worldgen.get_empty_structures

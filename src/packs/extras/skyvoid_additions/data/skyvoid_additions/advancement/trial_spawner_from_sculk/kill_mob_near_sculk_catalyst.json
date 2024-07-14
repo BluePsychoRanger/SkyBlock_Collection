@@ -1,0 +1,580 @@
+{
+  "criteria": {
+    "breeze": {
+      "trigger": "minecraft:kill_mob_near_sculk_catalyst",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:value_check",
+            "value": {
+              "type": "minecraft:score",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "skyvoid_additions"
+              },
+              "score": "load.status"
+            },
+            "range": 1
+          },
+          {
+            "condition": "minecraft:value_check",
+            "value": {
+              "type": "minecraft:score",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "trial_spawner_from_sculk"
+              },
+              "score": "skyvoid_config"
+            },
+            "range": 1
+          },
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "effects": {
+                "minecraft:bad_omen": {
+                  "amplifier": 4
+                }
+              }
+            }
+          }
+        ],
+        "entity": {
+          "type": "minecraft:breeze",
+          "stepping_on": {
+            "structures": "minecraft:trial_chambers",
+            "block": {
+              "blocks": "minecraft:sculk_shrieker"
+            }
+          }
+        }
+      }
+    },
+    "zombie": {
+      "trigger": "minecraft:kill_mob_near_sculk_catalyst",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:value_check",
+            "value": {
+              "type": "minecraft:score",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "skyvoid_additions"
+              },
+              "score": "load.status"
+            },
+            "range": 1
+          },
+          {
+            "condition": "minecraft:value_check",
+            "value": {
+              "type": "minecraft:score",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "trial_spawner_from_sculk"
+              },
+              "score": "skyvoid_config"
+            },
+            "range": 1
+          },
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "effects": {
+                "minecraft:bad_omen": {
+                  "amplifier": 4
+                }
+              }
+            }
+          }
+        ],
+        "entity": {
+          "type": "minecraft:zombie",
+          "stepping_on": {
+            "structures": "minecraft:trial_chambers",
+            "block": {
+              "blocks": "minecraft:sculk_shrieker"
+            }
+          }
+        }
+      }
+    },
+    "husk": {
+      "trigger": "minecraft:kill_mob_near_sculk_catalyst",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:value_check",
+            "value": {
+              "type": "minecraft:score",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "skyvoid_additions"
+              },
+              "score": "load.status"
+            },
+            "range": 1
+          },
+          {
+            "condition": "minecraft:value_check",
+            "value": {
+              "type": "minecraft:score",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "trial_spawner_from_sculk"
+              },
+              "score": "skyvoid_config"
+            },
+            "range": 1
+          },
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "effects": {
+                "minecraft:bad_omen": {
+                  "amplifier": 4
+                }
+              }
+            }
+          }
+        ],
+        "entity": {
+          "type": "minecraft:husk",
+          "stepping_on": {
+            "structures": "minecraft:trial_chambers",
+            "block": {
+              "blocks": "minecraft:sculk_shrieker"
+            }
+          }
+        }
+      }
+    },
+    "spider": {
+      "trigger": "minecraft:kill_mob_near_sculk_catalyst",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:value_check",
+            "value": {
+              "type": "minecraft:score",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "skyvoid_additions"
+              },
+              "score": "load.status"
+            },
+            "range": 1
+          },
+          {
+            "condition": "minecraft:value_check",
+            "value": {
+              "type": "minecraft:score",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "trial_spawner_from_sculk"
+              },
+              "score": "skyvoid_config"
+            },
+            "range": 1
+          },
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "effects": {
+                "minecraft:bad_omen": {
+                  "amplifier": 4
+                }
+              }
+            }
+          }
+        ],
+        "entity": {
+          "type": "minecraft:spider",
+          "stepping_on": {
+            "structures": "minecraft:trial_chambers",
+            "block": {
+              "blocks": "minecraft:sculk_shrieker"
+            }
+          }
+        }
+      }
+    },
+    "slime": {
+      "trigger": "minecraft:kill_mob_near_sculk_catalyst",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:value_check",
+            "value": {
+              "type": "minecraft:score",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "skyvoid_additions"
+              },
+              "score": "load.status"
+            },
+            "range": 1
+          },
+          {
+            "condition": "minecraft:value_check",
+            "value": {
+              "type": "minecraft:score",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "trial_spawner_from_sculk"
+              },
+              "score": "skyvoid_config"
+            },
+            "range": 1
+          },
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "effects": {
+                "minecraft:bad_omen": {
+                  "amplifier": 4
+                }
+              }
+            }
+          }
+        ],
+        "entity": {
+          "type": "minecraft:slime",
+          "stepping_on": {
+            "structures": "minecraft:trial_chambers",
+            "block": {
+              "blocks": "minecraft:sculk_shrieker"
+            }
+          }
+        }
+      }
+    },
+    "silverfish": {
+      "trigger": "minecraft:kill_mob_near_sculk_catalyst",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:value_check",
+            "value": {
+              "type": "minecraft:score",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "skyvoid_additions"
+              },
+              "score": "load.status"
+            },
+            "range": 1
+          },
+          {
+            "condition": "minecraft:value_check",
+            "value": {
+              "type": "minecraft:score",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "trial_spawner_from_sculk"
+              },
+              "score": "skyvoid_config"
+            },
+            "range": 1
+          },
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "effects": {
+                "minecraft:bad_omen": {
+                  "amplifier": 4
+                }
+              }
+            }
+          }
+        ],
+        "entity": {
+          "type": "minecraft:silverfish",
+          "stepping_on": {
+            "structures": "minecraft:trial_chambers",
+            "block": {
+              "blocks": "minecraft:sculk_shrieker"
+            }
+          }
+        }
+      }
+    },
+    "baby_zombie": {
+      "trigger": "minecraft:kill_mob_near_sculk_catalyst",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:value_check",
+            "value": {
+              "type": "minecraft:score",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "skyvoid_additions"
+              },
+              "score": "load.status"
+            },
+            "range": 1
+          },
+          {
+            "condition": "minecraft:value_check",
+            "value": {
+              "type": "minecraft:score",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "trial_spawner_from_sculk"
+              },
+              "score": "skyvoid_config"
+            },
+            "range": 1
+          },
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "effects": {
+                "minecraft:bad_omen": {
+                  "amplifier": 4
+                }
+              }
+            }
+          }
+        ],
+        "entity": {
+          "type": "minecraft:zombie",
+          "flags": {
+            "is_baby": true
+          }
+        }
+      }
+    },
+    "cave_spider": {
+      "trigger": "minecraft:kill_mob_near_sculk_catalyst",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:value_check",
+            "value": {
+              "type": "minecraft:score",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "skyvoid_additions"
+              },
+              "score": "load.status"
+            },
+            "range": 1
+          },
+          {
+            "condition": "minecraft:value_check",
+            "value": {
+              "type": "minecraft:score",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "trial_spawner_from_sculk"
+              },
+              "score": "skyvoid_config"
+            },
+            "range": 1
+          },
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "effects": {
+                "minecraft:bad_omen": {
+                  "amplifier": 4
+                }
+              }
+            }
+          }
+        ],
+        "entity": {
+          "type": "minecraft:cave_spider",
+          "stepping_on": {
+            "structures": "minecraft:trial_chambers",
+            "block": {
+              "blocks": "minecraft:sculk_shrieker"
+            }
+          }
+        }
+      }
+    },
+    "stray": {
+      "trigger": "minecraft:kill_mob_near_sculk_catalyst",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:value_check",
+            "value": {
+              "type": "minecraft:score",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "skyvoid_additions"
+              },
+              "score": "load.status"
+            },
+            "range": 1
+          },
+          {
+            "condition": "minecraft:value_check",
+            "value": {
+              "type": "minecraft:score",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "trial_spawner_from_sculk"
+              },
+              "score": "skyvoid_config"
+            },
+            "range": 1
+          },
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "effects": {
+                "minecraft:bad_omen": {
+                  "amplifier": 4
+                }
+              }
+            }
+          }
+        ],
+        "entity": {
+          "type": "minecraft:stray",
+          "stepping_on": {
+            "structures": "minecraft:trial_chambers",
+            "block": {
+              "blocks": "minecraft:sculk_shrieker"
+            }
+          }
+        }
+      }
+    },
+    "skeleton": {
+      "trigger": "minecraft:kill_mob_near_sculk_catalyst",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:value_check",
+            "value": {
+              "type": "minecraft:score",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "skyvoid_additions"
+              },
+              "score": "load.status"
+            },
+            "range": 1
+          },
+          {
+            "condition": "minecraft:value_check",
+            "value": {
+              "type": "minecraft:score",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "trial_spawner_from_sculk"
+              },
+              "score": "skyvoid_config"
+            },
+            "range": 1
+          },
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "effects": {
+                "minecraft:bad_omen": {
+                  "amplifier": 4
+                }
+              }
+            }
+          }
+        ],
+        "entity": {
+          "type": "minecraft:skeleton",
+          "stepping_on": {
+            "structures": "minecraft:trial_chambers",
+            "block": {
+              "blocks": "minecraft:sculk_shrieker"
+            }
+          }
+        }
+      }
+    },
+    "bogged": {
+      "trigger": "minecraft:kill_mob_near_sculk_catalyst",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:value_check",
+            "value": {
+              "type": "minecraft:score",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "skyvoid_additions"
+              },
+              "score": "load.status"
+            },
+            "range": 1
+          },
+          {
+            "condition": "minecraft:value_check",
+            "value": {
+              "type": "minecraft:score",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "trial_spawner_from_sculk"
+              },
+              "score": "skyvoid_config"
+            },
+            "range": 1
+          },
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "effects": {
+                "minecraft:bad_omen": {
+                  "amplifier": 4
+                }
+              }
+            }
+          }
+        ],
+        "entity": {
+          "type": "minecraft:bogged",
+          "stepping_on": {
+            "structures": "minecraft:trial_chambers",
+            "block": {
+              "blocks": "minecraft:sculk_shrieker"
+            }
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "breeze",
+      "zombie",
+      "husk",
+      "spider",
+      "slime",
+      "silverfish",
+      "baby_zombie",
+      "cave_spider",
+      "stray",
+      "skeleton",
+      "bogged"
+    ]
+  ],
+  "rewards": {
+    "function": "skyvoid_additions:mechanics/trial_spawner_from_sculk/killed_mob"
+  }
+}
