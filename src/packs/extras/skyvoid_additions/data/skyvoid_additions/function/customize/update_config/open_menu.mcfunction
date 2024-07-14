@@ -202,9 +202,9 @@ all_settings = [
     "desc": "Nylium platforms will generate instead of obsidian when spawning over the void in crimson and warped forests\n**Requires Netherrack Portals"
   },
   {
-    "id": "ominous_raid_captains",
-    "name": "Ominous Raid Captains",
-    "desc": "Raid Captains in a level 5 raid can drop ominous trial keys and can replace bells with vaults"
+    "id": "keys_from_ominous_raid_captains",
+    "name": "Ominous Keys from Ominous Raid Captains",
+    "desc": "Raid Captains in a level 5 raid can drop ominous trial keys"
   },
   {
     "id": "ores_from_magma_cubes",
@@ -295,6 +295,16 @@ all_settings = [
     "id": "traders_with_camels",
     "name": "Traders Lead Camels",
     "desc": "Some wandering traders will have a camel on a leash instead of trader llamas"
+  },
+  {
+    "id": "trial_spawner_from_sculk",
+    "name": "Trial Spawners from Sculk",
+    "desc": "Players in trial chambers with Bad Omen V can convert shriekers into trial spawners by killing mobs on shriekers above a catalyst"
+  },
+  {
+    "id": "vaults_from_ominous_raid_captains",
+    "name": "Vaults from Ominous Raid Captains",
+    "desc": "Raid Captains in a level 5 raid can replace bells with vaults within a trial chamber bounding box"
   }
 ]
 

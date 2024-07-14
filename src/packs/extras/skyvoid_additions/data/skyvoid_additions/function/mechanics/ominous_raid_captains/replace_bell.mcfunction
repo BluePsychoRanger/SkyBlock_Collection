@@ -6,8 +6,11 @@
 # only replace some bells
 execute unless predicate skyvoid_additions:ominous_raid_captains/placement_chance run return run setblock ~ ~ ~ air destroy
 
-setblock ~ ~ ~ vault[ominous=true]{config:{key_item:{count:1,id:"minecraft:ominous_trial_key"},loot_table:"skyvoid_additions:chests/ominous_raid_captains/combined_reward"}} destroy
-playsound minecraft:block.trial_spawner.ominous_activate block @a[distance=..16] ~ ~ ~ 0.6 1.4
+# 10% ominous
+execute store result score $rand skyvoid_additions run random roll 1..10 skyvoid_additions:ominous_raid_captains/vault
+execute if score $rand skyvoid_additions matches 2..10 run setblock ~ ~ ~ vault{config: {key_item: {count: 1, id: "minecraft:trial_key"}}} destroy
+execute if score $rand skyvoid_additions matches 1 run setblock ~ ~ ~ vault[ominous=true]{config: {key_item: {count: 1, id: "minecraft:ominous_trial_key"}, loot_table: "minecraft:chests/trial_chambers/reward_ominous"}} destroy
+playsound minecraft:block.trial_spawner.detect_player block @a[distance=..16] ~ ~ ~ 1.6 1.4
 
 # set the return run score
 return 1

@@ -85,7 +85,7 @@
             "type": "minecraft:score",
             "target": {
               "type": "minecraft:fixed",
-              "name": "ominous_raid_captains"
+              "name": "key_from_ominous_raid_captains"
             },
             "score": "skyvoid_config"
           },

@@ -7,6 +7,9 @@
       "has_raid": true,
       "is_captain": true
     },
+    "location": {
+      "structures": "minecraft:trial_chambers"
+    },
     "vehicle": {
       "type": "minecraft:ravager"
     }
