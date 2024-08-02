@@ -19,7 +19,7 @@ The nether island will generate with 40 netherrack, 7 crimson nylium, 7 warped n
 ![Nether Island](https://raw.githubusercontent.com/BluePsychoRanger/SkyBlock_Collection/main/images/standard_nether_island.jpg)
 
 ### Structures
-Structures that are important in SkyBlock will generate at the same coordinates along with some entities as they would in a normal world with the same seed:
+Structure bounding boxes that are important in SkyBlock will generate at the same coordinates along with some entities as they would in a normal world with the same seed:
 - **Ancient Cities** will generate the same bounding boxes and sculk shriekers that can spawn wardens (location of shriekers won't match with a normal world)
 - **Ocean Monuments** will generate the same bounding box, but no elder guardians (guardians farms can be built as normal)
 - **Pillager Outposts** will generate the same bounding box with any allays that normally generate
