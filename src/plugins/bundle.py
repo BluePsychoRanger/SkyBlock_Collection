@@ -1,5 +1,5 @@
 from beet import Context, DataPack
-from beet.contrib.worldgen import *
+from beet.contrib.worldgen import * # type: ignore
 import os
 
 all_worldgen = [
@@ -26,9 +26,9 @@ all_worldgen = [
   WorldgenPlacedFeatureTag,
 ]
 
-MAJOR_VERSION = "1_20"
-
 def standard_skyblock(ctx: Context):
+  island_path = ""
+  generation_path = ""
   for filename in os.listdir("build"):
     f = os.path.join("build", filename)
     # checking if it is a file
@@ -44,6 +44,9 @@ def standard_skyblock(ctx: Context):
   ctx.data.merge(island)
 
 def vanilla_oneblock(ctx: Context):
+  island_path = ""
+  generation_path = ""
+  extra_path = ""
   for filename in os.listdir("build"):
     f = os.path.join("build", filename)
     # checking if it is a file
@@ -64,6 +67,8 @@ def vanilla_oneblock(ctx: Context):
 
 
 def skyblock_dirt(ctx: Context):
+  island_path = ""
+  generation_path = ""
   for filename in os.listdir("build"):
     f = os.path.join("build", filename)
     # checking if it is a file
