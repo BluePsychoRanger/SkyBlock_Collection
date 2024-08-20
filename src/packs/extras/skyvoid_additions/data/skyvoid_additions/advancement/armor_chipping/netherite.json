@@ -22,7 +22,7 @@
               "type": "minecraft:score",
               "target": {
                 "type": "minecraft:fixed",
-                "name": "echo_shards_from_amethyst"
+                "name": "armor_chipping"
               },
               "score": "skyvoid_config"
             },
