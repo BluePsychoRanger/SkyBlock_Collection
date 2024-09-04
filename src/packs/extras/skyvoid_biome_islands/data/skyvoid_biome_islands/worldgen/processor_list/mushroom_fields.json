@@ -1,0 +1,14 @@
+{
+  "processors": [
+    {
+      "processor_type": "minecraft:block_rot",
+      "integrity": 0.4,
+      "rottable_blocks": "minecraft:red_mushroom"
+    },
+    {
+      "processor_type": "minecraft:block_rot",
+      "integrity": 0.4,
+      "rottable_blocks": "minecraft:brown_mushroom"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:jigsaw",
+  "biomes": "#skyvoid_biome_islands:has_structure/deep_dark",
+  "step": "top_layer_modification",
+  "spawn_overrides": {},
+  "start_pool": "skyvoid_biome_islands:deep_dark",
+  "size": 1,
+  "start_height": {
+    "type": "minecraft:uniform",
+    "min_inclusive": {
+      "absolute": -50
+    },
+    "max_inclusive": {
+      "absolute": 20
+    }
+  },
+  "max_distance_from_center": 80,
+  "use_expansion_hack": false,
+  "dimension_padding": 10,
+  "liquid_settings": "ignore_waterlogging"
+}

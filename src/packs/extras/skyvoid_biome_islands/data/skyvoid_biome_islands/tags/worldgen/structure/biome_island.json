@@ -1,0 +1,24 @@
+{
+  "values": [
+    "skyvoid_biome_islands:badlands",
+    "skyvoid_biome_islands:basalt_deltas",
+    "skyvoid_biome_islands:birch_forest",
+    "skyvoid_biome_islands:cherry_grove",
+    "skyvoid_biome_islands:crimson_forest",
+    "skyvoid_biome_islands:dark_forest",
+    "skyvoid_biome_islands:deep_dark",
+    "skyvoid_biome_islands:desert",
+    "skyvoid_biome_islands:dripstone_caves",
+    "skyvoid_biome_islands:end_highlands",
+    "skyvoid_biome_islands:ice_spikes",
+    "skyvoid_biome_islands:jungle",
+    "skyvoid_biome_islands:lush_caves",
+    "skyvoid_biome_islands:mangrove_swamp",
+    "skyvoid_biome_islands:mushroom_fields",
+    "skyvoid_biome_islands:savanna",
+    "skyvoid_biome_islands:soul_sand_valley",
+    "skyvoid_biome_islands:sunflower_plains",
+    "skyvoid_biome_islands:taiga",
+    "skyvoid_biome_islands:warped_forest"
+  ]
+}

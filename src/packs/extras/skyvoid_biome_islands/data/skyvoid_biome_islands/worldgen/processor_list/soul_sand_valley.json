@@ -1,0 +1,14 @@
+{
+  "processors": [
+    {
+      "processor_type": "minecraft:block_rot",
+      "integrity": 0.3,
+      "rottable_blocks": "minecraft:crimson_roots"
+    },
+    {
+      "processor_type": "minecraft:block_rot",
+      "integrity": 0.1,
+      "rottable_blocks": "minecraft:soul_fire"
+    }
+  ]
+}

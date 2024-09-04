@@ -1,0 +1,14 @@
+{
+  "processors": [
+    {
+      "processor_type": "minecraft:block_rot",
+      "integrity": 0.2,
+      "rottable_blocks": "minecraft:fern"
+    },
+    {
+      "processor_type": "minecraft:block_rot",
+      "integrity": 0.4,
+      "rottable_blocks": "minecraft:sweet_berry_bush"
+    }
+  ]
+}

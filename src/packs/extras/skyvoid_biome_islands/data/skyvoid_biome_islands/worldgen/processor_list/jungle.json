@@ -1,0 +1,49 @@
+{
+  "processors": [
+    {
+      "processor_type": "minecraft:block_rot",
+      "integrity": 0.2,
+      "rottable_blocks": "minecraft:fern"
+    },
+    {
+      "processor_type": "minecraft:block_rot",
+      "integrity": 0.7,
+      "rottable_blocks": "minecraft:vine"
+    },
+    {
+      "processor_type": "minecraft:block_rot",
+      "integrity": 0.6,
+      "rottable_blocks": "minecraft:cocoa"
+    },
+    {
+      "processor_type": "minecraft:rule",
+      "rules": [
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:random_block_match",
+            "block": "minecraft:lime_stained_glass",
+            "probability": 0.4
+          },
+          "output_state": {
+            "Name": "minecraft:melon"
+          }
+        },
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:lime_stained_glass"
+          },
+          "output_state": {
+            "Name": "minecraft:air"
+          }
+        }
+      ]
+    }
+  ]
+}

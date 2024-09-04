@@ -1,0 +1,9 @@
+{
+  "processors": [
+    {
+      "processor_type": "minecraft:block_rot",
+      "integrity": 0.2,
+      "rottable_blocks": "minecraft:lily_of_the_valley"
+    }
+  ]
+}

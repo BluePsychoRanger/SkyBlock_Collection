@@ -1,0 +1,95 @@
+{
+  "processors": [
+    {
+      "processor_type": "minecraft:rule",
+      "rules": [
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:random_block_match",
+            "block": "minecraft:cyan_stained_glass",
+            "probability": 0.3
+          },
+          "output_state": {
+            "Name": "minecraft:sculk_vein",
+            "Properties": {
+              "down": "true",
+              "east": "false",
+              "north": "false",
+              "south": "false",
+              "up": "false",
+              "waterlogged": "false",
+              "west": "false"
+            }
+          }
+        },
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:random_block_match",
+            "block": "minecraft:cyan_stained_glass",
+            "probability": 0.05
+          },
+          "output_state": {
+            "Name": "minecraft:sculk_sensor",
+            "Properties": {
+              "power": "0",
+              "sculk_sensor_phase": "active",
+              "waterlogged": "false"
+            }
+          }
+        },
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:random_block_match",
+            "block": "minecraft:cyan_stained_glass",
+            "probability": 0.01
+          },
+          "output_state": {
+            "Name": "minecraft:sculk_catalyst",
+            "Properties": {
+              "bloom": "false"
+            }
+          }
+        },
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:random_block_match",
+            "block": "minecraft:cyan_stained_glass",
+            "probability": 0.01
+          },
+          "output_state": {
+            "Name": "minecraft:sculk_shrieker",
+            "Properties": {
+              "can_summon": "true",
+              "shrieking": "false",
+              "waterlogged": "false"
+            }
+          }
+        },
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:cyan_stained_glass"
+          },
+          "output_state": {
+            "Name": "minecraft:air"
+          }
+        }
+      ]
+    }
+  ]
+}

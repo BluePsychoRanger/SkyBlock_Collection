@@ -1,0 +1,35 @@
+{
+  "processors": [
+    {
+      "processor_type": "minecraft:block_rot",
+      "integrity": 0.3,
+      "rottable_blocks": "minecraft:sugar_cane"
+    },
+    {
+      "processor_type": "minecraft:block_rot",
+      "integrity": 0.2,
+      "rottable_blocks": "minecraft:lily_pad"
+    },
+    {
+      "processor_type": "minecraft:rule",
+      "rules": [
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:random_block_match",
+            "block": "minecraft:seagrass",
+            "probability": 0.6
+          },
+          "output_state": {
+            "Name": "minecraft:water",
+            "Properties": {
+              "level": "0"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

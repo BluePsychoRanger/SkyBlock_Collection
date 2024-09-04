@@ -1,0 +1,94 @@
+{
+  "processors": [
+    {
+      "processor_type": "minecraft:block_rot",
+      "integrity": 0.2,
+      "rottable_blocks": "minecraft:short_grass"
+    },
+    {
+      "processor_type": "minecraft:rule",
+      "rules": [
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:random_block_match",
+            "block": "minecraft:pink_stained_glass",
+            "probability": 0.1
+          },
+          "output_state": {
+            "Name": "minecraft:pink_petals",
+            "Properties": {
+              "facing": "north",
+              "flower_amount": "1"
+            }
+          }
+        },
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:random_block_match",
+            "block": "minecraft:pink_stained_glass",
+            "probability": 0.1
+          },
+          "output_state": {
+            "Name": "minecraft:pink_petals",
+            "Properties": {
+              "facing": "north",
+              "flower_amount": "2"
+            }
+          }
+        },
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:random_block_match",
+            "block": "minecraft:pink_stained_glass",
+            "probability": 0.1
+          },
+          "output_state": {
+            "Name": "minecraft:pink_petals",
+            "Properties": {
+              "facing": "north",
+              "flower_amount": "3"
+            }
+          }
+        },
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:random_block_match",
+            "block": "minecraft:pink_stained_glass",
+            "probability": 0.1
+          },
+          "output_state": {
+            "Name": "minecraft:pink_petals",
+            "Properties": {
+              "facing": "north",
+              "flower_amount": "4"
+            }
+          }
+        },
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:pink_stained_glass"
+          },
+          "output_state": {
+            "Name": "minecraft:air"
+          }
+        }
+      ]
+    }
+  ]
+}

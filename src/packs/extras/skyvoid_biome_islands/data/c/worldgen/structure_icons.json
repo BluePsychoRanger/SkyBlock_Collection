@@ -1,0 +1,62 @@
+{
+  "skyvoid_biome_islands:badlands": {
+    "item": "minecraft:terracotta"
+  },
+  "skyvoid_biome_islands:basalt_deltas": {
+    "item": "minecraft:basalt"
+  },
+  "skyvoid_biome_islands:birch_forest": {
+    "item": "minecraft:birch_sapling"
+  },
+  "skyvoid_biome_islands:cherry_grove": {
+    "item": "minecraft:cherry_sapling"
+  },
+  "skyvoid_biome_islands:crimson_forest": {
+    "item": "minecraft:crimson_fungus"
+  },
+  "skyvoid_biome_islands:dark_forest": {
+    "item": "minecraft:dark_oak_sapling"
+  },
+  "skyvoid_biome_islands:deep_dark": {
+    "item": "minecraft:sculk_catalyst"
+  },
+  "skyvoid_biome_islands:desert": {
+    "item": "minecraft:cactus"
+  },
+  "skyvoid_biome_islands:dripstone_caves": {
+    "item": "minecraft:pointed_dripstone"
+  },
+  "skyvoid_biome_islands:end_highlands": {
+    "item": "minecraft:chorus_flower"
+  },
+  "skyvoid_biome_islands:ice_spikes": {
+    "item": "minecraft:snow"
+  },
+  "skyvoid_biome_islands:jungle": {
+    "item": "minecraft:jungle_sapling"
+  },
+  "skyvoid_biome_islands:lush_caves": {
+    "item": "minecraft:spore_blossom"
+  },
+  "skyvoid_biome_islands:mangrove_swamp": {
+    "item": "minecraft:muddy_mangrove_roots"
+  },
+  "skyvoid_biome_islands:mushroom_fields": {
+    "item": "minecraft:red_mushroom"
+  },
+  "skyvoid_biome_islands:savanna": {
+    "item": "minecraft:acacia_sapling"
+  },
+  "skyvoid_biome_islands:soul_sand_valley": {
+    "item": "minecraft:soul_soil"
+  },
+  "skyvoid_biome_islands:sunflower_plains": {
+    "item": "minecraft:sunflower"
+  },
+  "skyvoid_biome_islands:taiga": {
+    "item": "minecraft:spruce_sapling"
+  },
+  "skyvoid_biome_islands:warped_forest": {
+    "item": "minecraft:warped_fungus"
+  }
+}

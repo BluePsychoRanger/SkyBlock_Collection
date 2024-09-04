@@ -1,0 +1,125 @@
+{
+  "processors": [
+    {
+      "processor_type": "minecraft:block_rot",
+      "integrity": 0.2,
+      "rottable_blocks": "minecraft:azalea"
+    },
+    {
+      "processor_type": "minecraft:block_rot",
+      "integrity": 0.3,
+      "rottable_blocks": "minecraft:flowering_azalea"
+    },
+    {
+      "processor_type": "minecraft:block_rot",
+      "integrity": 0.2,
+      "rottable_blocks": "minecraft:spore_blossom"
+    },
+    {
+      "processor_type": "minecraft:block_rot",
+      "integrity": 0.4,
+      "rottable_blocks": "minecraft:short_grass"
+    },
+    {
+      "processor_type": "minecraft:block_rot",
+      "integrity": 0.7,
+      "rottable_blocks": "minecraft:moss_carpet"
+    },
+    {
+      "processor_type": "minecraft:block_rot",
+      "integrity": 0.2,
+      "rottable_blocks": "minecraft:large_amethyst_bud"
+    },
+    {
+      "processor_type": "minecraft:block_rot",
+      "integrity": 0.2,
+      "rottable_blocks": "minecraft:medium_amethyst_bud"
+    },
+    {
+      "processor_type": "minecraft:block_rot",
+      "integrity": 0.2,
+      "rottable_blocks": "minecraft:small_amethyst_bud"
+    },
+    {
+      "processor_type": "minecraft:block_rot",
+      "integrity": 0.1,
+      "rottable_blocks": "minecraft:amethyst_cluster"
+    },
+    {
+      "processor_type": "minecraft:rule",
+      "rules": [
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:random_block_match",
+            "block": "minecraft:budding_amethyst",
+            "probability": 0.6
+          },
+          "output_state": {
+            "Name": "minecraft:deepslate",
+            "Properties": {
+              "axis": "y"
+            }
+          }
+        },
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:random_block_match",
+            "block": "minecraft:budding_amethyst",
+            "probability": 0.7
+          },
+          "output_state": {
+            "Name": "minecraft:amethyst_block"
+          }
+        },
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:random_blockstate_match",
+            "block_state": {
+              "Name": "minecraft:cave_vines_plant",
+              "Properties": {
+                "berries": "true"
+              }
+            },
+            "probability": 0.8
+          },
+          "output_state": {
+            "Name": "minecraft:cave_vines_plant",
+            "Properties": {
+              "berries": "false"
+            }
+          }
+        },
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:random_blockstate_match",
+            "block_state": {
+              "Name": "minecraft:cave_vines",
+              "Properties": {
+                "berries": "true"
+              }
+            },
+            "probability": 0.8
+          },
+          "output_state": {
+            "Name": "minecraft:cave_vines",
+            "Properties": {
+              "berries": "false"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

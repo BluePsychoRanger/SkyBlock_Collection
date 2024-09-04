@@ -1,0 +1,91 @@
+{
+  "structures": [
+    {
+      "structure": "skyvoid_biome_islands:badlands",
+      "weight": 1
+    },
+    {
+      "structure": "skyvoid_biome_islands:basalt_deltas",
+      "weight": 1
+    },
+    {
+      "structure": "skyvoid_biome_islands:birch_forest",
+      "weight": 1
+    },
+    {
+      "structure": "skyvoid_biome_islands:cherry_grove",
+      "weight": 1
+    },
+    {
+      "structure": "skyvoid_biome_islands:crimson_forest",
+      "weight": 1
+    },
+    {
+      "structure": "skyvoid_biome_islands:dark_forest",
+      "weight": 1
+    },
+    {
+      "structure": "skyvoid_biome_islands:deep_dark",
+      "weight": 1
+    },
+    {
+      "structure": "skyvoid_biome_islands:desert",
+      "weight": 1
+    },
+    {
+      "structure": "skyvoid_biome_islands:dripstone_caves",
+      "weight": 1
+    },
+    {
+      "structure": "skyvoid_biome_islands:end_highlands",
+      "weight": 1
+    },
+    {
+      "structure": "skyvoid_biome_islands:ice_spikes",
+      "weight": 1
+    },
+    {
+      "structure": "skyvoid_biome_islands:jungle",
+      "weight": 1
+    },
+    {
+      "structure": "skyvoid_biome_islands:lush_caves",
+      "weight": 1
+    },
+    {
+      "structure": "skyvoid_biome_islands:mangrove_swamp",
+      "weight": 1
+    },
+    {
+      "structure": "skyvoid_biome_islands:mushroom_fields",
+      "weight": 1
+    },
+    {
+      "structure": "skyvoid_biome_islands:savanna",
+      "weight": 1
+    },
+    {
+      "structure": "skyvoid_biome_islands:soul_sand_valley",
+      "weight": 1
+    },
+    {
+      "structure": "skyvoid_biome_islands:sunflower_plains",
+      "weight": 1
+    },
+    {
+      "structure": "skyvoid_biome_islands:taiga",
+      "weight": 1
+    },
+    {
+      "structure": "skyvoid_biome_islands:warped_forest",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 10387312,
+    "spread_type": "triangular",
+    "spacing": 20,
+    "separation": 8
+  }
+}
