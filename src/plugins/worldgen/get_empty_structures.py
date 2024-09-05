@@ -10,12 +10,19 @@ BIOME_FOLDER = f"minecraft/worldgen/biome"
 
 def beet_default(ctx: Context):
   target_structures:list[str] = [
-    # "ancient_city",
-    # "bastion",
-    # "end_city",
-    # "pillager_outpost",
+    "ancient_city",
+    "bastion",
+    "end_city",
+    "fossil",
+    "igloo",
+    "nether_fossils",
+    "pillager_outpost",
+    "ruined_portal"
+    "trial_ruins",
     "trial_chambers",
-    # "woodland_mansion"
+    "underwater_ruin",
+    "village",
+    "woodland_mansion"
   ]
   kept_pieces:list[str] = [
     "end_city/ship"
@@ -37,11 +44,19 @@ def beet_default(ctx: Context):
 
 def empty(ctx: Context):
   target_structures:list[str] = [
-    # "ancient_city",
-    # "bastion",
-    # "pillager_outpost",
+    "ancient_city",
+    "bastion",
+    "end_city",
+    "fossil",
+    "igloo",
+    "nether_fossils",
+    "pillager_outpost",
+    "ruined_portal"
+    "trial_ruins",
     "trial_chambers",
-    # "woodland_mansion"
+    "underwater_ruin",
+    "village",
+    "woodland_mansion"
   ]
   kept_pieces:list[str] = []
   kept_blocks:list[str] = [
@@ -57,11 +72,19 @@ def empty(ctx: Context):
 
 def normal_end(ctx: Context):
   target_structures:list[str] = [
-    # "ancient_city",
-    # "bastion",
-    # "pillager_outpost",
+    "ancient_city",
+    "bastion",
+    # "end_city",
+    "fossil",
+    "igloo",
+    "nether_fossils",
+    "pillager_outpost",
+    "ruined_portal"
+    "trial_ruins",
     "trial_chambers",
-    # "woodland_mansion"
+    "underwater_ruin",
+    "village",
+    "woodland_mansion"
   ]
   kept_pieces:list[str] = []
   kept_blocks:list[str] = [
@@ -77,6 +100,36 @@ def normal_end(ctx: Context):
 
 
 
+def pinu(ctx: Context):
+  target_structures:list[str] = [
+    "ancient_city",
+    "bastion",
+    # "end_city",
+    "fossil",
+    "igloo",
+    "nether_fossils",
+    "pillager_outpost",
+    "ruined_portal"
+    "trial_ruins",
+    "trial_chambers",
+    "underwater_ruin",
+    "village",
+    "woodland_mansion"
+  ]
+  kept_pieces:list[str] = []
+  kept_blocks:list[str] = [
+    "air",
+    "cave_air",
+    "void_air",
+    "jigsaw"
+  ]
+  kept_entities:list[str] = [
+    # "allay"
+  ]
+  gen(ctx, target_structures, kept_pieces, kept_blocks, kept_entities, "pinu")
+
+
+
 
 
 
@@ -89,6 +142,9 @@ def gen(ctx:Context, target_structures:list[str], kept_pieces:list[str], kept_bl
   with ctx.generate.draft() as draft:
     # generate only upon cache miss
     draft.cache(f"skyvoid/empty_structures/{cache_loc}", "")
+
+    if len(target_structures) == 0:
+      return
 
     vanilla = ctx.inject(Vanilla)
     structures = vanilla.mount("data/minecraft").data[Structure]
