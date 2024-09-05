@@ -1,0 +1,9 @@
+{
+  "values": [
+    "skyvoid_worldgen:swamp_hut/clear_hut",
+    "skyvoid_worldgen:swamp_hut/clear_surface",
+    "skyvoid_worldgen:swamp_hut/clear_surface_0",
+    "skyvoid_worldgen:swamp_hut/create_surface",
+    "skyvoid_worldgen:swamp_hut/create_surface_0"
+  ]
+}
