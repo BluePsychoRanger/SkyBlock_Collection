@@ -38,7 +38,7 @@
             "Name": "minecraft:sculk_sensor",
             "Properties": {
               "power": "0",
-              "sculk_sensor_phase": "active",
+              "sculk_sensor_phase": "inactive",
               "waterlogged": "false"
             }
           }
