@@ -1,0 +1,19 @@
+{
+  "feature": "skyvoid_worldgen:end_fix",
+  "placement": [
+    {
+      "type": "minecraft:fixed_placement",
+      "positions": [
+        [
+          0,
+          100,
+          0
+        ]
+      ]
+    },
+    {
+      "type": "minecraft:heightmap",
+      "heightmap": "WORLD_SURFACE_WG"
+    }
+  ]
+}

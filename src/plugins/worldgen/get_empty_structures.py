@@ -17,7 +17,8 @@ def beet_default(ctx: Context):
     "igloo",
     "nether_fossils",
     "pillager_outpost",
-    "ruined_portal"
+    "ruined_portal",
+    "shipwreck",
     "trial_ruins",
     "trial_chambers",
     "underwater_ruin",
@@ -51,7 +52,8 @@ def empty(ctx: Context):
     "igloo",
     "nether_fossils",
     "pillager_outpost",
-    "ruined_portal"
+    "ruined_portal",
+    "shipwreck",
     "trial_ruins",
     "trial_chambers",
     "underwater_ruin",
@@ -79,7 +81,8 @@ def normal_end(ctx: Context):
     "igloo",
     "nether_fossils",
     "pillager_outpost",
-    "ruined_portal"
+    "ruined_portal",
+    "shipwreck",
     "trial_ruins",
     "trial_chambers",
     "underwater_ruin",
@@ -109,7 +112,8 @@ def pinu(ctx: Context):
     "igloo",
     "nether_fossils",
     "pillager_outpost",
-    "ruined_portal"
+    "ruined_portal",
+    "shipwreck",
     "trial_ruins",
     "trial_chambers",
     "underwater_ruin",
@@ -159,12 +163,23 @@ def gen(ctx:Context, target_structures:list[str], kept_pieces:list[str], kept_bl
         # update block palette to keep only certain blocks
         palette_swap:list[int] = []
         new_palette:List = [] # type: ignore
-        palette = data['palette'] # type: ignore
-        for i, b in enumerate(palette): # type: ignore
-          if b['Name'].removeprefix("minecraft:") in kept_blocks: # type: ignore
-            palette_swap.append(i)
-            new_palette.append(b) # type: ignore
-        data['palette'] = new_palette
+        if "palette" in data:
+          palette = data['palette'] # type: ignore
+          for i, b in enumerate(palette): # type: ignore
+            if b['Name'].removeprefix("minecraft:") in kept_blocks: # type: ignore
+              palette_swap.append(i)
+              new_palette.append(b) # type: ignore
+          data['palette'] = new_palette
+        
+        if "palettes" in data:
+          palette = data['palettes'][0] # type: ignore
+          for i, b in enumerate(palette): # type: ignore
+            if b['Name'].removeprefix("minecraft:") in kept_blocks: # type: ignore
+              palette_swap.append(i)
+              new_palette.append(b) # type: ignore
+          data['palette'] = new_palette
+          del data['palettes']
+
 
         # update block definitions to new palette
         new_blocks = []

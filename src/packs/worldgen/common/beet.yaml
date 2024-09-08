@@ -1,0 +1,14 @@
+id: 'skyvoid_worldgen_common'
+name: 'Sky Void Base'
+author: 'BluePsychoRanger'
+version: 1.1.0
+
+require: 
+  - src.plugins.worldgen.generate.base
+
+data_pack:
+  load: .
+
+pipeline:
+  - src.plugins.worldgen.get_empty_biomes
+  - src.plugins.worldgen.get_empty_structures
