@@ -96,7 +96,7 @@ def gen(ctx: Context, cache_loc:str, ignored_dimensions: list[str] = [], full_re
 def geode_purge(draft: Draft, dimension: str, phase: str):
   purge: list[str] = []
   first: int = 0
-  last: int = 128
+  last: int = 256
   if dimension == "overworld":
     first = -64
     last = 320
