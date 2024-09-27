@@ -76,7 +76,9 @@ def gen(ctx: Context, cache_loc:str, ignored_dimensions: list[str] = [], full_re
       elif name in END_BIOMES:
         if clear_end:
           data["features"] = [[], [], [], [], [], [], [], geode_purge(draft, "end", "initial"),
-                  [], [], [], geode_purge(draft, "end", "final"), ["skyvoid_worldgen:end_fix"]]
+                  [], [], [], geode_purge(draft, "end", "final")]
+          if (name == "the_end"):
+            data["features"].append(["skyvoid_worldgen:end_fix"])
           if not full_removal and (name == "end_highlands"):
             data["features"][9] = ["minecraft:end_gateway_return"]
           elif not full_removal and (name == "the_end"):
