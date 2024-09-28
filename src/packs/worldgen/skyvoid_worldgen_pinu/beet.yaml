@@ -1,7 +1,7 @@
 id: 'skyvoid_worldgen_pinu'
 name: 'Sky Void (Pinu Custom)'
 author: 'BluePsychoRanger'
-version: 1.2.0
+version: 2.0.0
 
 require: 
   - src.plugins.worldgen.generate.base_with_end
