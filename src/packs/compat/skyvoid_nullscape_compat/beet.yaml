@@ -5,3 +5,6 @@ version: 1.2.8
 
 pipeline:
   - src.plugins.worldgen.compat.nullscape
+
+data_pack:
+  load: .

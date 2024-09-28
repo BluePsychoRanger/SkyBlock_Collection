@@ -20,19 +20,19 @@ The nether island will generate with 40 netherrack, 7 crimson nylium, 7 warped n
 ![Nether Island](https://raw.githubusercontent.com/BluePsychoRanger/SkyBlock_Collection/main/images/standard_nether_island.jpg)
 
 ### Structures
-Structure bounding boxes that are important in SkyBlock will generate at the same coordinates along with some entities as they would in a normal world with the same seed:
-- **Ancient Cities** will generate the same bounding boxes and sculk shriekers that can spawn wardens (location of shriekers won't match with a normal world)
-- **Ocean Monuments** will generate the same bounding box, but no elder guardians (guardians farms can be built as normal)
-- **Pillager Outposts** will generate the same bounding box with any allays that normally generate
-- **Strongholds** will only generate an entrance end portal with some filled eyes (though it won't match with a normal world with the same seed)
+All structure bounding boxes will generate (i.e. no blocks will generate) at the same coordinates along with some entities as they would in a normal world with the same seed. Below is a list of notable structures:
+- **Ancient Cities** will generate the same bounding boxes (mobs will not spawn in the bounding box) and sculk shriekers that can spawn wardens (location of shriekers won't match with a normal world)
+- **Ocean Monuments** will generate the same bounding box (guardians farms can be built as normal); elder guardians will generate, but immediately fall into the void
+- **Pillager Outposts** will generate the same bounding box (pillagers will spawn in the bounding box) with any allays that normally generate
+- **Strongholds** will generate the same bounding box with the end portal in the same location (though the eyes won't always match with a normal world with the same seed)
 - **Witch Huts** will generate the same bounding box (witch farms can be built as normal)
 - **Mansions** will generate any allays that would generate in a normal world
-- **Nether Fortresses** will generate the same bounding box
+- **Nether Fortresses** will generate the same bounding box (spawner-less fortress farms can be built as normal)
 - **End Cities** will generate any shulkers and ships that would generate in a normal world
-- **Trial Chambers** will generate the same bounding box
+- **Trial Chambers** will generate the same bounding box (mobs will not spawn in the bounding box)
 
 ### The End Dimension
-In the end dimension, the obsidian pillars and the exit end portal generate as normal. When a player goes through an end gateway, a small end island will still generate, but the rest of the outer end islands will not.
+In the end dimension, the obsidian pillars and the exit end portal generate as normal. When a player goes through an end gateway, a small end island will still generate, but the rest of the outer end islands will not. In the end highlands, return gateways can generate.
 
 ## Advancements
 It's highly recommended to download the companion [SkyBlock Advancements](https://smithed.net/packs/skyblock-advancements) data pack to improve the advancement interface. This pack rearranges the main advancement tab to be better suited for SkyBlock instead of vanilla Minecraft.
@@ -42,3 +42,9 @@ Some items are unobtainable with just this simple world generation. I made an ex
 
 ## Other Void Worldgen Packs
 My [SkyBlock Collection](https://github.com/BluePsychoRanger/SkyBlock_Collection) has additional options for how the void world generates. Most notably there are other presets that have the stronghold generate with the pit of lava beneath the end portal, or the entire portal room. There is also a preset that removes all blocks and entities, leaving only a biome map with structure bounding boxes. 
+
+## Compatibility
+Standard SkyBlock is automatically compatible with any datapacks that only add structures to the world, such as Dungeons and Taverns, Structory, and Explorify. Any datapacks that modify worldgen using only density functions and noise are automatically compatible, such as Tectonic and Continents. Datapacks that modify worldgen in other ways or modify or add biomes are incompatible without an extra compatibility patch. The following compatibility patches are available:
+- Terralith - [SkyBlock Terralith Compat](https://smithed.net/packs/sky-void-terralith)
+- Nullscape - [SkyBlock Nullscape Compat](https://smithed.net/packs/sky-void-nullscape)
+- Amplified Nether - [SkyBlock Amplified Nether Compat](https://smithed.net/packs/sky-void-amplified-nether)

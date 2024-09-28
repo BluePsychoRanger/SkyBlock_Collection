@@ -5,3 +5,6 @@ version: 1.2.5
 
 pipeline:
   - src.plugins.worldgen.compat.amplified_nether
+
+data_pack:
+  load: .
