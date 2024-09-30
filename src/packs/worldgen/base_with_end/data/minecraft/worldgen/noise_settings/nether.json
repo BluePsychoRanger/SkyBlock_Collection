@@ -5,17 +5,15 @@
   "ore_veins_enabled": false,
   "legacy_random_source": true,
   "default_block": {
-    "Name": "minecraft:light",
+    "Name": "minecraft:jigsaw",
     "Properties": {
-      "level": "0",
-      "waterlogged": "false"
+      "orientation": "down_north"
     }
   },
   "default_fluid": {
-    "Name": "minecraft:light",
+    "Name": "minecraft:lava",
     "Properties": {
-      "level": "0",
-      "waterlogged": "false"
+      "level": "0"
     }
   },
   "noise": {

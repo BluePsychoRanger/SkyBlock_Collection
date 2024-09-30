@@ -1,0 +1,10 @@
+id: 'skyvoid_compat_terralith'
+name: 'SkyBlock Terralith Compat'
+author: 'BluePsychoRanger'
+version: 2.5.5
+
+pipeline:
+  - src.plugins.worldgen.compat.terralith
+
+data_pack:
+  load: .

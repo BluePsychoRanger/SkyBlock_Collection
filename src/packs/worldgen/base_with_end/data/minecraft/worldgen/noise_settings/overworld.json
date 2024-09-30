@@ -5,17 +5,15 @@
   "ore_veins_enabled": false,
   "legacy_random_source": false,
   "default_block": {
-    "Name": "minecraft:light",
+    "Name": "minecraft:jigsaw",
     "Properties": {
-      "level": "0",
-      "waterlogged": "false"
+      "orientation": "down_north"
     }
   },
   "default_fluid": {
-    "Name": "minecraft:light",
+    "Name": "minecraft:water",
     "Properties": {
-      "level": "0",
-      "waterlogged": "false"
+      "level": "0"
     }
   },
   "noise": {
@@ -245,8 +243,8 @@
             "type": "minecraft:stone_depth",
             "offset": 0,
             "surface_type": "floor",
-            "add_surface_depth": false,
-            "secondary_depth_range": 0
+            "add_surface_depth": true,
+            "secondary_depth_range": 20
           }
         },
         "then_run": {

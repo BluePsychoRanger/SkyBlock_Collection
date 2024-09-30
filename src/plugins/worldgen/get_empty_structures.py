@@ -10,12 +10,20 @@ BIOME_FOLDER = f"minecraft/worldgen/biome"
 
 def beet_default(ctx: Context):
   target_structures:list[str] = [
-    # "ancient_city",
-    # "bastion",
-    # "end_city",
-    # "pillager_outpost",
+    "ancient_city",
+    "bastion",
+    "end_city",
+    "fossil",
+    "igloo",
+    "nether_fossils",
+    "pillager_outpost",
+    "ruined_portal",
+    "shipwreck",
+    "trial_ruins",
     "trial_chambers",
-    # "woodland_mansion"
+    "underwater_ruin",
+    "village",
+    "woodland_mansion"
   ]
   kept_pieces:list[str] = [
     "end_city/ship"
@@ -37,11 +45,20 @@ def beet_default(ctx: Context):
 
 def empty(ctx: Context):
   target_structures:list[str] = [
-    # "ancient_city",
-    # "bastion",
-    # "pillager_outpost",
+    "ancient_city",
+    "bastion",
+    "end_city",
+    "fossil",
+    "igloo",
+    "nether_fossils",
+    "pillager_outpost",
+    "ruined_portal",
+    "shipwreck",
+    "trial_ruins",
     "trial_chambers",
-    # "woodland_mansion"
+    "underwater_ruin",
+    "village",
+    "woodland_mansion"
   ]
   kept_pieces:list[str] = []
   kept_blocks:list[str] = [
@@ -57,11 +74,20 @@ def empty(ctx: Context):
 
 def normal_end(ctx: Context):
   target_structures:list[str] = [
-    # "ancient_city",
-    # "bastion",
-    # "pillager_outpost",
+    "ancient_city",
+    "bastion",
+    # "end_city",
+    "fossil",
+    "igloo",
+    "nether_fossils",
+    "pillager_outpost",
+    "ruined_portal",
+    "shipwreck",
+    "trial_ruins",
     "trial_chambers",
-    # "woodland_mansion"
+    "underwater_ruin",
+    "village",
+    "woodland_mansion"
   ]
   kept_pieces:list[str] = []
   kept_blocks:list[str] = [
@@ -74,6 +100,37 @@ def normal_end(ctx: Context):
     "allay"
   ]
   gen(ctx, target_structures, kept_pieces, kept_blocks, kept_entities, "normal_end")
+
+
+
+def pinu(ctx: Context):
+  target_structures:list[str] = [
+    "ancient_city",
+    "bastion",
+    # "end_city",
+    "fossil",
+    "igloo",
+    "nether_fossils",
+    "pillager_outpost",
+    "ruined_portal",
+    "shipwreck",
+    "trial_ruins",
+    "trial_chambers",
+    "underwater_ruin",
+    "village",
+    "woodland_mansion"
+  ]
+  kept_pieces:list[str] = []
+  kept_blocks:list[str] = [
+    "air",
+    "cave_air",
+    "void_air",
+    "jigsaw"
+  ]
+  kept_entities:list[str] = [
+    # "allay"
+  ]
+  gen(ctx, target_structures, kept_pieces, kept_blocks, kept_entities, "pinu")
 
 
 
@@ -90,6 +147,9 @@ def gen(ctx:Context, target_structures:list[str], kept_pieces:list[str], kept_bl
     # generate only upon cache miss
     draft.cache(f"skyvoid/empty_structures/{cache_loc}", "")
 
+    if len(target_structures) == 0:
+      return
+
     vanilla = ctx.inject(Vanilla)
     structures = vanilla.mount("data/minecraft").data[Structure]
 
@@ -103,12 +163,23 @@ def gen(ctx:Context, target_structures:list[str], kept_pieces:list[str], kept_bl
         # update block palette to keep only certain blocks
         palette_swap:list[int] = []
         new_palette:List = [] # type: ignore
-        palette = data['palette'] # type: ignore
-        for i, b in enumerate(palette): # type: ignore
-          if b['Name'].removeprefix("minecraft:") in kept_blocks: # type: ignore
-            palette_swap.append(i)
-            new_palette.append(b) # type: ignore
-        data['palette'] = new_palette
+        if "palette" in data:
+          palette = data['palette'] # type: ignore
+          for i, b in enumerate(palette): # type: ignore
+            if b['Name'].removeprefix("minecraft:") in kept_blocks: # type: ignore
+              palette_swap.append(i)
+              new_palette.append(b) # type: ignore
+          data['palette'] = new_palette
+        
+        if "palettes" in data:
+          palette = data['palettes'][0] # type: ignore
+          for i, b in enumerate(palette): # type: ignore
+            if b['Name'].removeprefix("minecraft:") in kept_blocks: # type: ignore
+              palette_swap.append(i)
+              new_palette.append(b) # type: ignore
+          data['palette'] = new_palette
+          del data['palettes']
+
 
         # update block definitions to new palette
         new_blocks = []

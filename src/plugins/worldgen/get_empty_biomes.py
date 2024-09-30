@@ -1,8 +1,10 @@
-from beet import Context
+from beet import Context, Draft, BlockTag
 from beet.contrib.vanilla import Vanilla
-from beet.contrib.worldgen import WorldgenBiome
+from beet.contrib.worldgen import WorldgenBiome, WorldgenPlacedFeature
+import os
+import requests
 
-
+VERSION = os.getenv("VERSION", "1.21")
 NAME = "skyvoid_worldgen"      # name of the module
 DIR = f"worldgen/{NAME}/data"
 TEMP_PATH = f"worldgen/{NAME}/temp_files"
@@ -49,6 +51,13 @@ def gen(ctx: Context, cache_loc:str, ignored_dimensions: list[str] = [], full_re
     # generate only upon cache miss
     draft.cache(f"skyvoid/empty_biomes/{cache_loc}", "")
 
+    # generate block tag of all blocks except jigsaw
+    final_purge: list[str] = requests.get(f"https://raw.githubusercontent.com/misode/mcmeta/{VERSION}-registries/block/data.min.json").json() #type: ignore
+    if "jigsaw" in final_purge: final_purge.remove("jigsaw") #type: ignore
+    if "minecraft:jigsaw" in final_purge: final_purge.remove("minecraft:jigsaw") #type: ignore
+    draft.data[f"{NAME}:final_purge"] = BlockTag({"values": final_purge})
+
+    # remove all carvers and placed features
     vanilla = ctx.inject(Vanilla)
     biomes = vanilla.mount("data/minecraft/worldgen").data[WorldgenBiome]
 
@@ -62,23 +71,45 @@ def gen(ctx: Context, cache_loc:str, ignored_dimensions: list[str] = [], full_re
       # clear features
       if name in NETHER_BIOMES:
         if clear_nether:
-          data["features"] = [[], [], [], [], [], [], [],
-                  [], [], [f"{NAME}:purge/nether_fortress"]]
+          data["features"] = [[], [], [], [], [], [], [], geode_purge(draft, 0, 256, "initial"),
+                  [], [], [], geode_purge(draft, 0, 256, "final")]
       elif name in END_BIOMES:
         if clear_end:
-          data["features"] = [[], [], [], [], [], [], [],
-                  [], [], [], [f"{NAME}:purge/end_second_layer"]]
+          data["features"] = [[], [], [], [], [], [], [], geode_purge(draft, 0, 256, "initial"),
+                  [], [], [], geode_purge(draft, 0, 256, "final")]
+          if (name == "the_end"):
+            data["features"].append(["skyvoid_worldgen:end_fix"])
           if not full_removal and (name == "end_highlands"):
-            data["features"][4] = ["minecraft:end_gateway_return"]
+            data["features"][9] = ["minecraft:end_gateway_return"]
           elif not full_removal and (name == "the_end"):
-            data["features"][4] = ["minecraft:end_spike"]
+            data["features"][9] = ["minecraft:end_spike"]
       elif clear_overworld:
         flowers:list[str] = []
         step_9 = data["features"][9]
         for feature in step_9:
-          if "flowers" in feature or "minecraft:flower" in feature:
+          if "minecraft:flower" in feature:
             flowers.append(feature)
-        data["features"] = [[], [], [], [], [], [], [], [], [],
-                  flowers, [f"{NAME}:purge/overworld_second_layer"]]
+        data["features"] = [[], [], [], [], [], [], [], geode_purge(draft, -64, 320, "initial"), 
+                  [], [], [], flowers, geode_purge(draft, -64, 320, "final")]
 
       draft.data[f"minecraft:{name}"] = WorldgenBiome(data)
+
+
+def geode_purge(draft: Draft, first: int, last: int, phase: str):
+  purge: list[str] = []
+  for i in range(first, last, 16):
+    purge.append(f"{NAME}:geode_purge_{phase}/{i}")
+    data = {
+      "feature": f"skyvoid_worldgen:geode_purge_{phase}",
+      "placement": [
+        {
+          "type": "minecraft:height_range",
+          "height": {
+            "absolute": i
+          }
+        }
+      ]
+    }
+    draft.data[f"{NAME}:geode_purge_{phase}/{i}"] = WorldgenPlacedFeature(data)
+  
+  return purge
