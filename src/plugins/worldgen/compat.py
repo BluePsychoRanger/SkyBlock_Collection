@@ -198,28 +198,13 @@ def create_noise_setting_patch(ctx: Context, cache_loc: str, url: str, dimension
     # set surface rule
     if dimension == "overworld":
       noise_settings["surface_rule"] = {
-        "type": "minecraft:sequence",
-        "sequence": [
-          {
-            "type": "minecraft:condition",
-            "if_true": {
-              "type": "minecraft:not",
-              "invert": {
-                "type": "minecraft:stone_depth",
-                "offset": 0,
-                "surface_type": "floor",
-                "add_surface_depth": True,
-                "secondary_depth_range": 20
-              }
-            },
-            "then_run": {
-              "type": "minecraft:block",
-              "result_state": {
-                "Name": "minecraft:air"
-              }
-            }
+        "type": "minecraft:block",
+        "result_state": {
+          "Name": "minecraft:jigsaw",
+          "Properties": {
+            "orientation": "down_north"
           }
-        ]
+        }
       }
     elif dimension == "nether":
       noise_settings["surface_rule"] = {
