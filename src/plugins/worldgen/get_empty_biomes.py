@@ -35,10 +35,11 @@ def empty(ctx: Context):
 def normal_end(ctx: Context):
   gen(ctx, "normal_end", ["end"])
 
+def structures(ctx: Context):
+  gen(ctx, "structures", remove_structures=False)
 
 
-
-def gen(ctx: Context, cache_loc:str, ignored_dimensions: list[str] = [], full_removal: bool = False):
+def gen(ctx: Context, cache_loc:str, ignored_dimensions: list[str] = [], full_removal: bool = False, remove_structures: bool = True):
   clear_overworld = "overworld" not in ignored_dimensions
   clear_nether = "nether" not in ignored_dimensions
   clear_end = "end" not in ignored_dimensions
@@ -53,6 +54,14 @@ def gen(ctx: Context, cache_loc:str, ignored_dimensions: list[str] = [], full_re
 
     # generate block tag of all blocks except jigsaw
     final_purge: list[str] = requests.get(f"https://raw.githubusercontent.com/misode/mcmeta/{VERSION}-registries/block/data.min.json").json() #type: ignore
+    if not remove_structures:
+      initial_purge = final_purge.copy() #type: ignore
+      if "water" in initial_purge: initial_purge.remove("water") #type: ignore
+      if "minecraft:water" in initial_purge: initial_purge.remove("minecraft:water") #type: ignore
+      if "lava" in initial_purge: initial_purge.remove("lava") #type: ignore
+      if "minecraft:lava" in initial_purge: initial_purge.remove("minecraft:lava") #type: ignore
+      draft.data[f"{NAME}:initial_purge"] = BlockTag({"values": initial_purge})
+
     if "jigsaw" in final_purge: final_purge.remove("jigsaw") #type: ignore
     if "minecraft:jigsaw" in final_purge: final_purge.remove("minecraft:jigsaw") #type: ignore
     draft.data[f"{NAME}:final_purge"] = BlockTag({"values": final_purge})
@@ -71,11 +80,11 @@ def gen(ctx: Context, cache_loc:str, ignored_dimensions: list[str] = [], full_re
       # clear features
       if name in NETHER_BIOMES:
         if clear_nether:
-          data["features"] = [[], [], [], [], [], [], [], geode_purge(draft, 0, 256, "initial"),
+          data["features"] = [[], [], [] if remove_structures else geode_purge(draft, 0, 256, "initial"), [], [], [], [], geode_purge(draft, 0, 256, "initial") if remove_structures else [],
                   [], [], [], geode_purge(draft, 0, 256, "final")]
       elif name in END_BIOMES:
         if clear_end:
-          data["features"] = [[], [], [], [], [], [], [], geode_purge(draft, 0, 256, "initial"),
+          data["features"] = [[], [], [], [], [], [], [], geode_purge(draft, 0, 256, "initial") if remove_structures else [],
                   [], [], [], geode_purge(draft, 0, 256, "final")]
           if (name == "the_end"):
             data["features"].append(["skyvoid_worldgen:end_fix"])
@@ -89,7 +98,7 @@ def gen(ctx: Context, cache_loc:str, ignored_dimensions: list[str] = [], full_re
         for feature in step_9:
           if "minecraft:flower" in feature:
             flowers.append(feature)
-        data["features"] = [[], [], [], [], [], [], [], geode_purge(draft, -64, 320, "initial"), 
+        data["features"] = [[], [], [] if remove_structures else geode_purge(draft, -64, 320, "initial"), [], [], [], [], geode_purge(draft, -64, 320, "initial") if remove_structures else [], 
                   [], [], [], flowers, geode_purge(draft, -64, 320, "final")]
 
       draft.data[f"minecraft:{name}"] = WorldgenBiome(data)
