@@ -1,7 +1,7 @@
 id: 'skyvoid_additions'
 name: 'Sky Void Additions'
 author: 'BluePsychoRanger'
-version: 1.2.2
+version: 1.2.3
 
 require:
   - bolt
