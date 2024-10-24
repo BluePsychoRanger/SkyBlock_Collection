@@ -101,6 +101,39 @@ def normal_end(ctx: Context):
   ]
   gen(ctx, target_structures, kept_pieces, kept_blocks, kept_entities, "normal_end")
 
+def spawners(ctx: Context):
+  target_structures:list[str] = [
+    "ancient_city",
+    "bastion",
+    "end_city",
+    "fossil",
+    "igloo",
+    "nether_fossils",
+    "pillager_outpost",
+    "ruined_portal",
+    "shipwreck",
+    "trial_ruins",
+    "trial_chambers",
+    "underwater_ruin",
+    "village",
+    "woodland_mansion"
+  ]
+  kept_pieces:list[str] = [
+    "end_city/ship"
+  ]
+  kept_blocks:list[str] = [
+    "air",
+    "cave_air",
+    "void_air",
+    "jigsaw",
+    "structure_block",
+    "spawner"
+  ]
+  kept_entities:list[str] = [
+    "shulker",
+    "allay"
+  ]
+  gen(ctx, target_structures, kept_pieces, kept_blocks, kept_entities, "spawners")
 
 
 def pinu(ctx: Context):

@@ -38,8 +38,11 @@ def normal_end(ctx: Context):
 def structures(ctx: Context):
   gen(ctx, "structures", remove_structures=False)
 
+def spawners(ctx: Context):
+  gen(ctx, "spawners", keep_spawners=True)
 
-def gen(ctx: Context, cache_loc:str, ignored_dimensions: list[str] = [], full_removal: bool = False, remove_structures: bool = True):
+
+def gen(ctx: Context, cache_loc:str, ignored_dimensions: list[str] = [], full_removal: bool = False, remove_structures: bool = True, keep_spawners: bool = False):
   clear_overworld = "overworld" not in ignored_dimensions
   clear_nether = "nether" not in ignored_dimensions
   clear_end = "end" not in ignored_dimensions
@@ -75,7 +78,8 @@ def gen(ctx: Context, cache_loc:str, ignored_dimensions: list[str] = [], full_re
       name = biome.removeprefix("minecraft:")
 
       # clear carvers
-      data["carvers"] = {}
+      if not keep_spawners:
+        data["carvers"] = {}
 
       # clear features
       if name in NETHER_BIOMES:
@@ -93,12 +97,18 @@ def gen(ctx: Context, cache_loc:str, ignored_dimensions: list[str] = [], full_re
           elif not full_removal and (name == "the_end"):
             data["features"][9] = ["minecraft:end_spike"]
       elif clear_overworld:
+        spawners:list[str] = []
+        if keep_spawners:
+          step_3 = data["features"][3]
+          for feature in step_3:
+            if "minecraft:monster_room" in feature:
+              spawners.append(feature)
         flowers:list[str] = []
         step_9 = data["features"][9]
         for feature in step_9:
           if "minecraft:flower" in feature:
             flowers.append(feature)
-        data["features"] = [[], [], [] if remove_structures else geode_purge(draft, -64, 320, "initial"), [], [], [], [], geode_purge(draft, -64, 320, "initial") if remove_structures else [], 
+        data["features"] = [[], [], [] if remove_structures else geode_purge(draft, -64, 320, "initial"), spawners, [], [], [], geode_purge(draft, -64, 320, "initial") if remove_structures else [], 
                   [], [], [], flowers, geode_purge(draft, -64, 320, "final")]
 
       draft.data[f"minecraft:{name}"] = WorldgenBiome(data)

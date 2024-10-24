@@ -1,0 +1,11 @@
+id: 'skyvoid_worldgen_base_main_end'
+name: 'Sky Void Main End Island'
+author: 'BluePsychoRanger'
+version: 1.0.0
+
+require: 
+  - src.plugins.worldgen.generate.base_with_end
+  
+data_pack:
+  load: .
+
