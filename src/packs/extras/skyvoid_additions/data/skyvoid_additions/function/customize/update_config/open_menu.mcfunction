@@ -324,13 +324,13 @@ for i, settings in enumerate(setting_pages, start=1):
         "color": "yellow",
         "clickEvent": {
           "action": "open_url",
-          "value": "https://github.com/BluePsychoRanger/SkyBlock_Collection"
+          "value": "https://github.com/BPR02/SkyBlock_Collection"
         },
         "hoverEvent":{
           "action":"show_text",
           "contents":[
             {
-              "text": "Created by BluePsychoRanger",
+              "text": "Created by BPR",
               "color": "aqua"
             }
           ]

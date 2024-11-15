@@ -2,7 +2,7 @@
 name = "src"
 version = "1.0.0"
 description = "SkyBlock Data Packs"
-authors = ["BluePsychoRanger"]
+authors = ["BPR"]
 license = "MIT"
 readme = "README.md"
 
