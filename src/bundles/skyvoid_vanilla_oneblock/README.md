@@ -2,7 +2,7 @@ Interact:	[![Discord Badge](https://img.shields.io/badge/_-Discord-black?logo=di
 [![Github Badge](https://img.shields.io/badge/_-GitHub-black?logo=github&logoColor=white&labelColor=%23181717&color=white&)](https://github.com/BluePsychoRanger/SkyBlock_Collection)  
 Download: [![Smithed Badge](https://img.shields.io/badge/_-Smithed-black?logo=hackthebox&logoColor=%231b48c4&labelColor=black&color=%231b48c4)](https://smithed.net/packs/vanilla_one_block)
 [![Modrinth Badge](https://img.shields.io/badge/_-Modrinth-black?logo=modrinth&logoColor=%2300AF5C&labelColor=black&color=%2300AF5C)](https://modrinth.com/datapack/vanilla-one-block)  
-Support: [![BMC Badge](https://img.shields.io/badge/_%20-Buy%20Me%20a%20Coffee-black?logo=buymeacoffee&logoColor=%23FFDD00&labelColor=black&color=%23FFDD00)](https://bmc.link/bluepsychoranger)
+Support: [![BMC Badge](https://img.shields.io/badge/_%20-Buy%20Me%20a%20Coffee-black?logo=buymeacoffee&logoColor=%23FFDD00&labelColor=black&color=%23FFDD00)](https://bmc.link/bpr02)
 [![BisectHosting Badge](https://img.shields.io/badge/Rent%20a%20Server-black?logo=bisecthosting&logoColor=%2306ddff&labelColor=%23030525&color=%2337e3f3)](https://www.bisecthosting.com/skyvoid)
 ## Vanilla One Block
 This data pack generates a single grass block at the bottom of the world in a Snowy Taiga biome (at Y=-64). The world spawn point will be moved to the location of the grass block at Y=0, so mobs will be able to spawn on the grass block. The locator will fail if there isn't a snowy taiga within 2000 blocks, so some worlds will fail to generate the island.
