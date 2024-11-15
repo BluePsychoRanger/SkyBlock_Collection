@@ -1,5 +1,5 @@
 Interact:	[![Discord Badge](https://img.shields.io/badge/_-Discord-black?logo=discord&logoColor=%235865F2&labelColor=black&color=%235865F2)](https://discord.gg/mzWSZuGatd)
-[![Github Badge](https://img.shields.io/badge/_-GitHub-black?logo=github&logoColor=white&labelColor=%23181717&color=white&)](https://github.com/BluePsychoRanger/SkyBlock_Collection)  
+[![Github Badge](https://img.shields.io/badge/_-GitHub-black?logo=github&logoColor=white&labelColor=%23181717&color=white&)](https://github.com/BPR02/SkyBlock_Collection)  
 Download: [![Smithed Badge](https://img.shields.io/badge/_-Smithed-black?logo=hackthebox&logoColor=%231b48c4&labelColor=black&color=%231b48c4)](https://smithed.net/packs/standard-skyblock)
 [![Modrinth Badge](https://img.shields.io/badge/_-Modrinth-black?logo=modrinth&logoColor=%2300AF5C&labelColor=black&color=%2300AF5C)](https://modrinth.com/datapack/standard-skyblock)  
 Support: [![BMC Badge](https://img.shields.io/badge/_%20-Buy%20Me%20a%20Coffee-black?logo=buymeacoffee&logoColor=%23FFDD00&labelColor=black&color=%23FFDD00)](https://bmc.link/bpr02)
@@ -12,12 +12,12 @@ The worldgen data pack infinitely generates a void world with properties akin to
 ### Starter Island
 This island will generate with 54 dirt, 26 grass blocks, 1 bedrock (at world spawn), an oak tree, and a chest with an ice block and bucket of lava. 
 
-![Island](https://raw.githubusercontent.com/BluePsychoRanger/SkyBlock_Collection/main/images/standard_main_island.jpg)
+![Island](https://raw.githubusercontent.com/BPR02/SkyBlock_Collection/main/images/standard_main_island.jpg)
 
 ### Nether Island
 The nether island will generate with 40 netherrack, 7 crimson nylium, 7 warped nylium, 2 soul sand, 2 nether wart, and 14 obsidian for the portal.
 
-![Nether Island](https://raw.githubusercontent.com/BluePsychoRanger/SkyBlock_Collection/main/images/standard_nether_island.jpg)
+![Nether Island](https://raw.githubusercontent.com/BPR02/SkyBlock_Collection/main/images/standard_nether_island.jpg)
 
 ### Structures
 All structure bounding boxes will generate (i.e. no blocks will generate) at the same coordinates along with some entities as they would in a normal world with the same seed. Below is a list of notable structures:
@@ -41,7 +41,7 @@ It's highly recommended to download the companion [SkyBlock Advancements](https:
 Some items are unobtainable with just this simple world generation. I made an expansion pack that adds mechanics that allow all items, mobs, and advancements to be obtained. Download [Sky Void Additions](https://smithed.net/packs/skyvoid_additions) to expand the possibilities.
 
 ## Other Void Worldgen Packs
-My [SkyBlock Collection](https://github.com/BluePsychoRanger/SkyBlock_Collection) has additional options for how the void world generates. Most notably there are other presets that have the stronghold generate with the pit of lava beneath the end portal, or the entire portal room. There is also a preset that removes all blocks and entities, leaving only a biome map with structure bounding boxes. 
+My [SkyBlock Collection](https://github.com/BPR02/SkyBlock_Collection) has additional options for how the void world generates. Most notably there are other presets that have the stronghold generate with the pit of lava beneath the end portal, or the entire portal room. There is also a preset that removes all blocks and entities, leaving only a biome map with structure bounding boxes. 
 
 ## Compatibility
 Standard SkyBlock is automatically compatible with any datapacks that only add structures to the world, such as Dungeons and Taverns, Structory, and Explorify. Any datapacks that modify worldgen using only density functions and noise are automatically compatible, such as Tectonic and Continents. Datapacks that modify worldgen in other ways or modify or add biomes are incompatible without an extra compatibility patch. The following compatibility patches are available:
