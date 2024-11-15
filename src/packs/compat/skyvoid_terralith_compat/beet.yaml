@@ -1,10 +1,15 @@
 id: 'skyvoid_compat_terralith'
 name: 'SkyBlock Terralith Compat'
 author: 'BPR'
-version: 1.0.1+terralith-2.5.5
+version: 1.0.2+terralith-2.5.5
 
 pipeline:
   - src.plugins.worldgen.compat.terralith
 
 data_pack:
   load: .
+  overlays:
+    - formats:
+        min_inclusive: 48
+        max_inclusive: 48
+      directory: skyvoid_1_21

@@ -1,7 +1,7 @@
 id: 'skyvoid_additions'
 name: 'Sky Void Additions'
 author: 'BPR'
-version: 1.2.4
+version: 1.2.5
 
 require:
   - bolt
@@ -9,6 +9,11 @@ require:
   - mecha.contrib.nesting
 data_pack:
   load: .
+  overlays:
+    - formats:
+        min_inclusive: 48
+        max_inclusive: 48
+      directory: skyvoid_1_21
 pipeline:
   - mecha
 

@@ -1,7 +1,7 @@
 id: 'skyvoid_compat_amplified_nether'
 name: 'SkyBlock Amplified Nether'
 author: 'BPR'
-version: 1.0.0+nullscape-1.2.5
+version: 1.0.1+nullscape-1.2.5
 
 pipeline:
   - src.plugins.worldgen.compat.amplified_nether

@@ -1,10 +1,15 @@
 id: 'skyvoid_compat_nullscape'
 name: 'SkyBlock Nullscape Compat'
 author: 'BPR'
-version: 1.0.0+nullscape-1.2.8
+version: 1.0.1+nullscape-1.2.8
 
 pipeline:
   - src.plugins.worldgen.compat.nullscape
 
 data_pack:
   load: .
+  overlays:
+    - formats:
+        min_inclusive: 48
+        max_inclusive: 48
+      directory: skyvoid_1_21

@@ -3,8 +3,10 @@ from beet.contrib.vanilla import Vanilla
 from beet.contrib.worldgen import WorldgenBiome, WorldgenPlacedFeature
 import os
 import requests
+from typing import Any
 
-VERSION = os.getenv("VERSION", "1.21")
+VERSION = os.getenv("VERSION", "1.21.3")
+MAJOR_VERSION = "1_21"
 NAME = "skyvoid_worldgen"      # name of the module
 DIR = f"worldgen/{NAME}/data"
 TEMP_PATH = f"worldgen/{NAME}/temp_files"
@@ -79,7 +81,7 @@ def gen(ctx: Context, cache_loc:str, ignored_dimensions: list[str] = [], full_re
 
       # clear carvers
       if not keep_spawners:
-        data["carvers"] = {}
+        data["carvers"] = []
 
       # clear features
       if name in NETHER_BIOMES:
@@ -111,8 +113,17 @@ def gen(ctx: Context, cache_loc:str, ignored_dimensions: list[str] = [], full_re
         data["features"] = [[], [], [] if remove_structures else geode_purge(draft, -64, 320, "initial"), spawners, [], [], [], geode_purge(draft, -64, 320, "initial") if remove_structures else [], 
                   [], [], [], flowers, geode_purge(draft, -64, 320, "final")]
 
+      if (MAJOR_VERSION != ""): # type: ignore
+        overlay_data = gen_overlay(data)
+        draft.overlays[f"skyvoid_{MAJOR_VERSION}"].data[f"minecraft:{name}"] = WorldgenBiome(overlay_data)
+
       draft.data[f"minecraft:{name}"] = WorldgenBiome(data)
 
+def gen_overlay(data: dict[Any, Any]):
+  overlay_data = data.copy()
+  overlay_data["carvers"] = {}
+  return overlay_data
+  
 
 def geode_purge(draft: Draft, first: int, last: int, phase: str):
   purge: list[str] = []

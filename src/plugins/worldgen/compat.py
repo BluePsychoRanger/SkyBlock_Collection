@@ -5,7 +5,9 @@ import urllib.request
 from zipfile import ZipFile
 import json
 from .get_empty_biomes import geode_purge
+from typing import Any
 
+MAJOR_VERSION = "1_21"
 
 def terralith(ctx: Context):
   url = "https://cdn.modrinth.com/data/8oi3bsk5/versions/4LsxILTH/Terralith_1.21_v2.5.5.zip"
@@ -53,7 +55,7 @@ def create_biome_patch(ctx: Context, cache_loc: str, url: str, dimension: str = 
       data.pop("surface_builder", None)
 
       # clear carvers
-      data["carvers"] = {}
+      data["carvers"] = []
 
       # clear features
       flowers:list[str] = []
@@ -74,8 +76,16 @@ def create_biome_patch(ctx: Context, cache_loc: str, url: str, dimension: str = 
         data["features"].append(["minecraft:end_gateway_return"])
 
       # save modified biome
+      if (MAJOR_VERSION != ""): # type: ignore
+        overlay_data = gen_overlay(data)
+        draft.overlays[f"skyvoid_{MAJOR_VERSION}"].data[f"{namespace}:{name}"] = WorldgenBiome(overlay_data)
+        
       draft.data[f"{namespace}:{name}"] = WorldgenBiome(data)
 
+def gen_overlay(data: dict[Any, Any]):
+  overlay_data = data.copy()
+  overlay_data["carvers"] = {}
+  return overlay_data
 
 def get_dimension_bounds(zip: ZipFile, overlay_name: str, dimension: str):
   filename = f"data/minecraft/dimension_type/overworld.json" if dimension == "overworld" else f"data/minecraft/dimension_type/the_{dimension}.json"
